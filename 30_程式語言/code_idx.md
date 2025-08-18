@@ -1,0 +1,5 @@
+[[coding game]]
+[[post_increment ++]]
+[[programming is not coding]]
+[[Don't get too lost in the weeds.]]
+[[code review check list in google]]

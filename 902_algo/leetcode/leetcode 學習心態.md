@@ -1,0 +1,135 @@
+
+
+# why leetcode
+- algo 學習目標：
+	- 每一個題目，你要可以回答出這個問題：抓出這題要考你什麼
+	- 識別出思維盲點
+	- 內化演算法思考模式
+	- 建立演算法思考模式，類似看到 關鍵字 就知道有
+	- 哪些走法和坑
+	- think about how to make algo even better, 這也是 senior and junior 的差異
+	- appreciate when u got stuck and think in meta why you stuck
+- logical thinking means thinking in a way that ...
+    - **pattern** matching in programming
+        - stack? queue? decision tree?
+    - pays attention to **details**
+        - 主要是思考過程，有含糊、模糊、可能是、大概、的狀態
+        - 要避免這些狀態，因為電腦很笨，程式碼需要你提供精準確定的步驟
+        - 把這些東西弄清楚是關鍵
+    - decompose and **step-by-step** process
+        - 分解 decompose ，一步一步建立出來
+    - **test**-approved
+        - test case 可以幫你抓到很多沒有考慮到的部分，然後修改甚至整個需要算法的大改動。
+        - 一些失敗的interviewed就是太慢去跑所有的test case, 導致我的算法沒有考慮到各種情境！
+    - target-oriented
+    - well-defined
+- Try to adopt this thinking attitude to **everyday life behavior** and vice versa
+- this is good and beneficial for coding and real life
+- Example
+    - 對事情的處理要求要一絲不苟除非有刻意放寬考量(~ decompose logic and step by step)
+    - 對邏輯完善一致周全（~ test all test case)
+    - 是否有適合的既定高效處理方式（pattern search, is it DP, sliding window, decision tree, graph, stack, queue, linked list)
+    - do everything necessary (if not too much) to make things clear (write it down, take notes, compare..etc)
+
+# how leetcode
+- idenitfy if you are 急煩焦
+    - identify your popup emotional-self!
+    - it’s about self awareness
+    - 急什麼？急著犯錯阿，急，事情就不會做好，想事情就不會想清楚。
+    - 煩？think about why I 煩，自己處理一下。
+    - 焦躁什麼？ 為何會焦慮？思考一下？
+- 只有在解題釐清盲點的思考過程的那些時段，才是你真正厚實你演算法的時段
+    - 好好珍惜，好好體會，學會享受。
+    - Learn to enjoy the process of logical thinking
+- 錯了才要高興
+    - 因為表示你可以成長了，不管是知識面向，還是思維縝密度，有機會可以補完程式思維漏洞、修正程式思維錯誤。
+- if 如果覺得這題很輕鬆解掉，還可以..
+    - 思考一下這題在實際程式上的應用，會加深應用和提高活用套用的可能
+    - 思考一下這題的技術是什麼，是要讓我學習什麼觀念或技術
+- 提高解掉的機率
+    - 進行思考和規劃的前置作業 ”比" 邊做邊想” 好，因為可以在規劃的時候好好思考周全一點。
+- 解不掉和卡關的心態？
+    - 這事正常的，本來就是在一直recall, 一直在減少盲點的過程（一直在找unknown’s unknown的過程）
+    - use recall to uncover your unknown unknown
+    - make your logic thinking more complete
+- 思維到實做的gap有時候很大，用看的都會"看懂" 真的去寫，都做不出來。
+    - 甚至你思維的部分都已經可以跟當初學的時候，全部的概念都到位了，還是實做一直出問題。
+        - 這個考你要不要做到 “ clear understanding” 的程度
+        - 還是已經習慣了 “大概懂”的這種錯誤的觀念
+        - 有些東西可以”大概懂” 因為資訊/知識浩瀚無涯且時間有限
+        - 到有些東西如果你要有辦法”recall” 你就無法”大概懂”到讓你無法 “recall” 的程度了！！
+        - HOW TO DO?
+            - remember, this is the time, you are really exercise your logic, check your understanding (of the problem) and check correctness of you data/along assumption
+            - literally, do anything you can do to help
+            - JUST remember, this is the time “ONLY MATTER” in term of sold your algo foundation
+            - When you see the result ⇒ it become remember the answer, which is NO ANY HELP for deeping you algo foundamemtaul (might help on interview for which you can use the remember way to solve it)
+	- 每一題都會有兩關: 思維 and 實做
+- focus on solid foundation, not go to question that is very dislike ( messy solution ton, trick way to solve it, too many edge cases), choose most likely 100
+- you need to focus on one category until you get the “tick”, usually it would be around 20 question.
+- 融會貫通才是一切/ clear understanding
+- 寫題目多的一個好處是抓到盲點，但是也不要一個題目有很多地方你只有partly understand, 那就根本沒必要多寫題目了
+- 如果你過了一個禮拜後還可以自己寫出來，表示有吸收一定程度
+    - 5 min can't find a way to solve it, see ans
+        - check it after 1 day, 3 days, 1 week, 1 month
+        - if can't solve for the first time, you only have 5 min to know path
+        - if you can't solve for the second time, maybe 10 min
+        - if you can't solve for the thrid time, maybe 15 min
+- 參考可讀性可以理解的code為主
+- know the basic BG: basic data structure: [(3) Data Structures for Coding Interviews [In 10 Minutes] - YouTube](https://www.youtube.com/watch?v=_hiMlJDHQJ4)
+- 動態規劃算是滿重要的，一二線公司必考
+- 目標不是要解掉題目，而是學到一種可以通用化的解題技巧。通用化是說，你可以用這個技巧用在其他題目上。
+- 視覺化題目，like neetcode
+- take note each time when you have insight or something you want to give your future self some hint or easy to remember note to let you begin from scratch
+- don't worry, as long as you try to really understand and do all of those tips correctly, the next and the next next time you do the same question, you will be faster and faster next round
+- 後期用看的。如果會，看人家的code 是否正確。如果不會，看人家的code要怎麼做。這樣做的前提是，如果你說你會，你有辦法把code寫出來（這部分考驗實作功力，一開始這部分是無法的，但是後期就可以，這個tip適合用在後期）
+- focus 在medium
+- 把同一個 category弄熟在換下一個
+- 重質不重量, 確定你做的你都要會的, 不要看了一堆然後很多回去看都等於重看
+- edge case / TC 要清楚
+- 一些邊界條件寫錯，or wrong edge case => 這些算是個人錯誤，需要自己寫去發現
+- 歸納總結很重要！
+- make sure “understand the problem” very very clearly
+    - 99% of my mistake come from the case I didn't have a clear understanding and miss the edge case
+    - (in the real interview, i need to ask edge case for the interviewer!! or find it in quesiton
+    - IF i began my stgy and write the wrong algo then I will not have enough time to rewirte the new-algo again!!!
+- if i have a 阿匝 attitude and mindset...I just messup no1
+- make sure you logic is crstal clearly when u building up ur alog
+- 努力不是靠更長的工作時間去debug 和學習
+    - 而要看在更短時間下的思考要細緻縝密
+    - 這就要求更短時間下的專心程度和自我認知思考，後設要求要更高！
+- lesson:
+    - know the tool: I didn't know sumbit can show more test cases in NetSpoke interview and I didn’t use more test cases to verify (not only test cases)
+    - _**no any "blur" area when build up you algo logic**_
+    - know which pt you don't know and learn the lesson
+        - logic gap?
+        - failure assumption?
+        - can use pattern to apply?
+        - do you apply a wrong pattern to the question and you need to tweak the pattern a little bit to fit?
+- those are the thing I need to learn and build up a more and more solid foundation
+    - 不要記解法, 因為面試不會考一樣的題目
+    - 要持續瞭解和記住的是問題的模式
+        - 才可以套用在變化過後的題目上
+    - 每一個recall, 就是搞清，我對於算法上的盲點和觀念哪裡有誤差，
+        - 進行修正，做總結，然後記起來，學到教訓，下次不要犯同樣的錯誤。
+        - 也要能清楚的用英文跟面試官你說明你的思考和解題流程(解題試著學會解說)
+- Goal:
+    - clear understand all algo category and apply them
+    - use those pattern to different question and without too much trouble to solve them
+
+
+
+
+# link
+- [How to Effectively Prepare for LeetCode | Software Engineer - YouTube](https://www.youtube.com/watch?v=a-thH9a9_XE)
+- [(3) 8個偷吃步教你如何高效率的刷leetcode - YouTube](https://www.youtube.com/watch?v=fyf-GRH1Ceo&list=WL&index=2)
+- [(3) 花花酱 LeetCode 进入千题时代 该如何刷题？1/2 - 刷题找工作 SP15 - YouTube](https://www.youtube.com/watch?v=NdWYxz3izH4&t=4s)
+- [(3) Leetcode如何刷题 | 零基础小白6个 offer | CS学习资源推荐 | 田小齐超高效的刷题方法大公开 - YouTube](https://www.youtube.com/watch?v=7yWr0kSPh38)
+- [(3) 新手如何刷LeetCode | 刷题找工作 - YouTube](https://www.youtube.com/watch?v=zeo1AVd1CNk)
+- [(3) How to use Leetcode in 2020 - YouTube](https://www.youtube.com/watch?v=6jf6SK9qWBc)
+- [(3) Practical Guide to LeetCode | How I Passed Facebook’s Coding Interviews - YouTube](https://www.youtube.com/watch?v=Dc3JnpSD9x4&list=WL&index=2)
+- [(3) 【LeetCode 攻略】程序員找工作 如何刷題 | How to use LeetCode effectively | 新手必看學霸資料大公開 | 苏苏思量 - YouTube](https://www.youtube.com/watch?v=1AQ6twZrX38&list=WL&index=4)
+- [(3) LeetCode解題思維與演算法面試準備|新手軟體工程師| #AMA 直播活動精彩片段| ALPHA Camp - YouTube](https://www.youtube.com/watch?v=CgFlpuA-sv0&list=WL&index=5)
+- [(3) 示範如何高效率實作leetcode，有效利用solution讓coding功力大增 - YouTube](https://www.youtube.com/watch?v=rajRxGEjJOA)
+- ============ to see [(3) 安妮 - YouTube](https://www.youtube.com/channel/UCI6uOwwJ7FYgcyKKUTbBvIQ)
+- [(3) Behavior Question - 題型整理 - YouTube](https://www.youtube.com/watch?v=opTHQMqQcvc)
+- [(3) Data Structures for Coding Interviews [In 10 Minutes] - YouTube](https://www.youtube.com/watch?v=_hiMlJDHQJ4)

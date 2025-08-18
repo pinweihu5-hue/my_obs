@@ -1,0 +1,10 @@
+- 賺更多錢，多少你覺得才夠？我希望可以先設定 150萬
+- 我想要擁有更高的對程式的控制能力
+- I want to have 資源 to try more thing, to go further distance!!
+- I want to be able the handle 攻擊言論 from 家人
+- 你想要哪一種影響? (公司一直有人發揮影響力，你想要成為哪一種? Jack or Josh? Water? or Jean?..etc)
+- 你喜歡什麼
+    - 我喜歡製造影響力
+    - 我喜歡幫助別人
+    - 我喜歡搞清楚how it work
+- 你可以做什麼

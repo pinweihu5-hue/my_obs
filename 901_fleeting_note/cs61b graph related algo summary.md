@@ -1,0 +1,102 @@
+[[CS61B Data Structures and Algorithms|cs61b_index]]
+
+
+- undirected graph
+  - graph representation [Undirected Graphs](https://algs4.cs.princeton.edu/41graph/) 沒有方向性的圖，impl 上就是兩邊方向性都要加上
+  - s-t connectivity probelm [[cs61b Tree and Graph Traversals#s-t connectivity probelm]]
+  - Depth First path [[cs61b Tree and Graph Traversals#Depth-First Traversal]]
+  - graph traversal and impl
+    - [[cs61b Graph Traversal and impl#BFS]]
+      - [BreadthFirstPaths.java](https://algs4.cs.princeton.edu/41graph/BreadthFirstPaths.java.html)
+      - 找出 connected component [CC.java](https://algs4.cs.princeton.edu/41graph/CC.java.html) ,
+      - detect cycle. [Cycle.java](https://algs4.cs.princeton.edu/41graph/Cycle.java.html) detect logic: 不要是剛出發的那個 vertex 且 marked
+      - [SymbolGraph.java](https://algs4.cs.princeton.edu/41graph/SymbolGraph.java.html)
+        - kevin bacon 的底層
+        - ref: [Undirected Graphs](https://algs4.cs.princeton.edu/41graph/) and [DegreesOfSeparation.java](https://algs4.cs.princeton.edu/41graph/DegreesOfSeparation.java.html)
+    - [[cs61b Graph Traversal and impl#Paths]]
+    - 創意題：[第四題 Shortest Path Algorithm Design](https://sp19.datastructur.es/materials/discussion/examprep10sol.pdf)
+      - how to run undirected weighted shortest path and faster then Dijkstra?
+      - sol: 把 weighted graph 轉為 unweighted graph -> see [[cs61b examprep10sol]]
+- directed graph
+  - [Directed Graphs](https://algs4.cs.princeton.edu/42digraph/)
+  - graph representation: [Digraph.java](https://algs4.cs.princeton.edu/42digraph/Digraph.java.html)
+  - [DirectedDFS.java](https://algs4.cs.princeton.edu/42digraph/DirectedDFS.java.html) 把從某個 source 可以用 dfs 走到的路徑都 print 出來
+  - [DepthFirstDirectedPaths.java](https://algs4.cs.princeton.edu/42digraph/DepthFirstDirectedPaths.java.html) 給定 source, 用 dfs 走到每一個 vertex 的 DFS 路徑
+  - [BreadthFirstDirectedPaths.java](https://algs4.cs.princeton.edu/42digraph/BreadthFirstDirectedPaths.java.html) 給定 source(1 個或多個), 走到每一個 vertex 的 BFS 路徑
+  - [DirectedCycle.java](https://algs4.cs.princeton.edu/42digraph/DirectedCycle.java.html) also see: [[cycle_stack.excalidraw]] -> detect cycle
+  - [DepthFirstOrder.java](https://algs4.cs.princeton.edu/42digraph/DepthFirstOrder.java.html) -> 算 graph 的 preorder, postorder and reverse-postorder(= topological order)
+  - [Topological.java](https://algs4.cs.princeton.edu/42digraph/Topological.java.html) 有 topo sort 的前提： DAG (D is directed, A is acyclic)
+  - **Shortest directed cycle. 最短有向環** Given a digraph, design an algorithm to find a directed cycle with the minimum number of edges (or report that the graph is acyclic). The running time of your algorithm should be proportional to _E V_ in the worst case.
+	  - **應用：** 假設有一組需要腎臟移植的病人，每個病人都有家人願意捐贈腎臟，但血型不符。他們願意捐贈給另一個人，前提是他們的家人也能得到一個腎臟。醫院會進行「多米諾手術」，所有移植同時進行。 
+	  - 在這個問題中，病人和捐贈者可以用一個有向圖來表示。如果病人 A 的家人願意捐贈給病人 B，則在圖中添加一條從 A 到 B 的有向邊。  
+	  - 一個有向環表示一個循環的捐贈鏈，例如 A 的家人捐贈給 B，B 的家人捐贈給 C，C 的家人捐贈給 A。
+	- 最短有向環： 邊數最少的環表示參與「多米諾手術」的病人和捐贈者最少，這有助於降低手術風險和成本。
+	  - _Solution_: run BFS from each vertex s. The shortest cycle through s is an edge v->s, plus a shortest path from s to v. [ShortestDirectedCycle.java](https://algs4.cs.princeton.edu/42digraph/ShortestDirectedCycle.java.html) -> see [[最短有向環 code 示意圖]]
+  - [ ] [KosarajuSharirSCC.java](https://algs4.cs.princeton.edu/42digraph/KosarajuSharirSCC.java.html)
+  - [ ] [TransitiveClosure.java](https://algs4.cs.princeton.edu/42digraph/TransitiveClosure.java.html)
+  - [x] disc10 的 preorder, postorder and postorder [disc10sol.pdf](https://sp19.datastructur.es/materials/discussion/disc10sol.pdf)
+- shortest paths
+  - [Shortest Paths](https://algs4.cs.princeton.edu/44sp/)
+    - [DijkstraSP.java](https://algs4.cs.princeton.edu/44sp/DijkstraSP.java.html)
+      - Dijkstra's algorithm solves the single-source shortest-paths problem in edge-weighted digraphs with nonnegative weights using extra space proportional to V and time proportional to E log V (in the worst case).
+      - [[cs61b  Graph Shortest Paths#Dijkstra’s Algorithm]]
+      - 核心邏輯：
+        - 很直覺，先走近的路
+        - 遠近用 IdxminPQ 管理, 最上面的 就是要走的
+        - 每一步都 update v 的 鄰居(w)的 sourve -> w 的距離
+      - 使用到很多之前學的抽象，包括 `DirectedEdge`, `IndexMinPQ`, `EdgeWeightedDigraph`
+        - `EdgeWeightedDigraph` 是 `Digraph` 加上 weight, 而 `Digraph` 是 `Graph` 的有方向版(有方向反而簡單 XD `addEdge` 少記錄一個方向)
+        - `IndexMinPQ` 是 `MiniPQ` 的進階, 多了一個 idx 來 mapping 到 `Comparable 的 Key`, 也多了反向\_mapping `qp` 來協助 `swim` and `sink` 操作
+        - `DirectedEdge` 也是一絕
+          - 在 undirected graph 的情況下，本來 `adj[v] `返回是 vetex, `edgeTo` 記錄的也是 vertex
+          - 在 weighted DAG 下，變成是 `DirectedEdge`, 裡面包括了 v(from) w(to) 和 weight 三個資料
+    - A$^*$
+      - `/Users/re4388/project/personal/CS61B/cs61b_re4388/graph/AStarSP.java`
+      - 跟 Dijkstra 的 差異點
+        - 往那邊走的判斷，需要 加上 heristic function (具體這個 fn 如何實作，是地理位置上兩點的 Euclidean dist 還是其他邏輯，看具體應用) 的值，再挑最小的。
+          - imple-wise, 挑小的那邊走，是由 PQ 決定的，因此 distTo 塞入 PQ 時就會也會加上 heristic function 的值，讓 PQ 排好隊
+        - 找到 goal 就停了
+          - impl-wise, queue 的 head 拿出來是 goal, 就可以停了，表示 goal 在上一輪 relax 中已經被調整好了 dist (表示已經被走到)
+    - [AcyclicSP.java](https://algs4.cs.princeton.edu/44sp/AcyclicSP.java.html)
+      - acyclic shortest path
+      - 比 Dijkstra 進步的地方
+        - Dijkstra 是 O(E \* logV), 但我們可以用 O(E+V) 解
+          - 因為不需要 PQ 了
+        - 可以處理負的 edge weights
+          - 負 weight 會讓我們 發現已經走過的 node 其實更應該走，結果不會是 SPT
+          - 但 topo sort 讓我們有序的往箭頭放向走，遇到 負 weight 也沒差，因為不會往舊的去看了
+        - 可以處理其他問題，像是找最長 path
+      - 實作：
+        - The algorithm combines vertex relaxation with topological sorting.
+        - We initialize `distTo[s]` to 0 and all other `distTo[]` values to infinity, then relax the vertices, one by one, taking the vertices in *topological order*.  It relies on this version of [Topological.java](https://algs4.cs.princeton.edu/44sp/Topological.java.html), extended to support edge-weighted digraphs.
+        - 還比 Dijkstra, A\* 簡單很多，因為沒有 IndexMinPQ 的處理，就是 relax on Topological Order
+      - [[cs61b reductions and decomposition#Shortest Paths on DAGs -> relax on Topological Order]]
+    - [AcyclicLP.java](https://algs4.cs.princeton.edu/44sp/AcyclicLP.java.html)
+      - acyclic longest path
+      - We can solve the single-source **longest** paths problems in edge-weighted DAGs by initializing the `distTo[]` values to negative infinity and switching the sense of the inequality in` relax()`
+      - [[cs61b reductions and decomposition#Longest Paths]]
+      - [ ] longest path 應用 -> Critical path method [CPM.java](https://algs4.cs.princeton.edu/44sp/CPM.java.html)
+    - [ ] Bellman-Ford algorithm [BellmanFordSP.java](https://algs4.cs.princeton.edu/44sp/BellmanFordSP.java.html)
+    - [ ] Arbitrage detection [Arbitrage.java](https://algs4.cs.princeton.edu/44sp/Arbitrage.java.html)
+    - [ ] [Suurballe's algorithm](https://en.wikipedia.org/wiki/Suurballe%27s_algorithm). Given a digraph with non-negative edge weights and two distinguished vertices s and t, find two edge-disjoint paths from s to t such that the sum of the weights of the two paths is minimized
+    - [ ] Internet routing
+      - [ ] [OSPF (Open Shortest Path First)](http://en.wikipedia.org/wiki/Open_shortest_path_first) is a widely used protocol for Internet routing that uses Dijkstra's algorithm.
+      - [ ] [RIP (Routing Information Protocol)](http://en.wikipedia.org/wiki/Routing_Information_Protocol) is another routing protocol based on the Bellman-Ford algorithm.
+  - [[cs61b  Graph Shortest Paths#Dijkstra’s Algorithm]]
+  - [[cs61b  Graph Shortest Paths#A*]]
+- MST 最小生成樹
+  - 最小 weight 加總，包括 all vertices 的 樹 (acyclic connected graph)
+  - [Minimum Spanning Trees](https://algs4.cs.princeton.edu/43mst/)
+    - [EdgeWeightedGraph.java](https://algs4.cs.princeton.edu/43mst/EdgeWeightedGraph.java.html)
+    - [PrimMST.java](https://algs4.cs.princeton.edu/43mst/PrimMST.java.html)
+    - [LazyPrimMST.java](https://algs4.cs.princeton.edu/43mst/LazyPrimMST.java.html)
+    - [KruskalMST.java](https://algs4.cs.princeton.edu/43mst/KruskalMST.java.html)
+  - [[cs61b Minimum Spanning Trees#prim pseudocode]]
+  - [[cs61b Minimum Spanning Trees#Kruskal impl demo]]
+- midterm
+  - [Midterm 2 Review Document](https://sp19.datastructur.es/materials/review/MT2ReviewDocument.pdf) ([Solution](https://sp19.datastructur.es/materials/review/MT2ReviewDocumentSolution.pdf))
+  - [Midterm 2 Review Guerrilla Section](https://sp19.datastructur.es/materials/review/MT2Guerrilla.pdf) ([Solution](https://sp19.datastructur.es/materials/review/MT2GuerrillaSolution.pdf))
+
+
+
+

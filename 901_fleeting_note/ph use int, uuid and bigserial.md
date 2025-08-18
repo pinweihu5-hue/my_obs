@@ -1,0 +1,3 @@
+- [Shekhar Gulati --- My Notes on GitLab Postgres Schema Design – Shekhar Gulati](https://shekhargulati.com/2022/07/08/my-notes-on-gitlabs-postgres-schema-design/)
+    - pk 要用 bigserial 而不是 uuid v4, 大資料下差了 25 倍速度 → see [Link](https://shekhargulati.com/2022/06/23/choosing-a-primary-key-type-in-postgres/)
+    - int 只能到2b 資料量，如果到時候超過，你不會想要 shard, 但你如果要改為 bigserial, 要跑 11s 至少 → 所以你要用 int or bigserial 要 tradeOff

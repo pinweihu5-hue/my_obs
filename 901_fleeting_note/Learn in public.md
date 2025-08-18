@@ -1,0 +1,3 @@
+- [Learn In Public: The fastest way to learn](https://www.instapaper.com/read/1525804876) ^6ae59e
+- [[译] - 当众学习 - 最快的学习方式 - 掘金](https://juejin.cn/post/6855456536056037389)
+- [[Write for others but mostly for yourself — Jack Vanlightly]]

@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "3f2a94e34d2e0d3d",
+    "type": "split",
+    "children": [
+      {
+        "id": "be10211089d8432f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f98c1891aa34eac5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/000_reading_log.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "000_reading_log"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f01ef6b271cb059d",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c0e52b95eb3e0f1f",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "28dc3aefbae9082e",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "ea6a93b3850bbc39",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "23c5941109d72b4f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8364f2bc64f56059",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "00_inbox/000_reading_log.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "e14a55807518368b",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "02_learning/be specific.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "d5951893edcb2f1f",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "calendar-with-checkmark",
+          "title": "Calendar"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "vim-toggle:Toggle Vim Mode": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-importer:Open Importer": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "templater-obsidian:Templater": false,
+      "edit-history:Open edit history": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "f98c1891aa34eac5",
+  "lastOpenFiles": [
+    "00_inbox/002_on_going_thoughts.md",
+    "30_程式語言/lang_idx.md",
+    "00_inbox/000_reading_log.md",
+    "901_fleeting_note/禪與摩托車維修的藝術 Zen and the Art of Motorcycle Maintenance.md",
+    "02_learning/100_book_idx.md",
+    "02_learning/004_learn_idx.md",
+    "17_system_design/非功能需求.md",
+    "00_inbox/001_log.md",
+    "02_learning/life, value, value_idx.md",
+    "5_calendar/2024-02-06.md",
+    "5_calendar/2024-05-19.md",
+    "5_calendar/2024-02-06.md.edtz",
+    "5_calendar/2024-05-18.md",
+    "5_calendar/2024-05-17.md",
+    "5_calendar/2024-05-17.md.edtz",
+    "5_calendar/2024-06-19.md",
+    "5_calendar/2023-08-21.md",
+    "5_calendar/2023-08-21.md.edtz",
+    "5_calendar/2024-09-05.md",
+    "5_calendar/2024-05-18.md.edtz",
+    "50_book/The Subtle Art of Not Giving a F*ck Note.md.edtz",
+    "50_book/The Subtle Art of Not Giving a F*ck Note.md",
+    "02_learning/Ben Shapiro - Politics, Kanye, Trump, Biden, Hitler, Extremism, and War - Lex Fridman Podcast.md",
+    "02_learning/Ben Shapiro - Politics, Kanye, Trump, Biden, Hitler, Extremism, and War - Lex Fridman Podcast.md.edtz",
+    "02_learning/貴人成全你～小人成就你.md",
+    "02_learning/communicate_idx.md.edtz",
+    "02_learning/small note/Interleaving learning.md.edtz",
+    "02_learning/small note/how to improve my communication skill.md.edtz",
+    "02_learning/small note/所有關係的本質都建立在「利益」和「價值」上.md",
+    "02_learning/small note/Interleaving learning.md",
+    "02_learning/small note/所有關係的本質都建立在「利益」和「價值」上.md.edtz",
+    "02_learning/small note/how to improve my communication skill.md",
+    "02_learning/communicate_idx.md",
+    "901_fleeting_note/上次測試 at wemo ENFJ.md",
+    "901_fleeting_note/如何找到自己的天賦.md",
+    "901_fleeting_note/目標設計 - 专访暂停实验室.md",
+    "100_attachements/IMG-test on bull queue when pod is not graceful shutdown-20250803162619496.png",
+    "100_attachements/IMG-test on bull queue when pod is not graceful shutdown-20250803162619657.png",
+    "100_attachements/IMG-kafka_index-20250803162630917.png",
+    "100_attachements/IMG-Kafka 常见问题总结-20250803162630635.png",
+    "100_attachements/IMG-Kafka 常见问题总结-20250803162631064.png",
+    "100_attachements/IMG-kafka_index-20250803162630352.png",
+    "100_attachements/IMG-kafka_index-20250803162630793.png",
+    "100_attachements/IMG-Kafka 常见问题总结-20250803162631499.png",
+    "100_attachements/IMG-kafka_index-20250803162629755.png",
+    "100_attachements/IMG-test on bull queue when pod is not graceful shutdown-20250803162619825.png"
+  ]
+}

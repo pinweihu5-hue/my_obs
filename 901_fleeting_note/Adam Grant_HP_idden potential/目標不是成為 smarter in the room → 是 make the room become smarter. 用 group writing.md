@@ -1,0 +1,10 @@
+- 不是有高手的團隊贏，是團隊中有 ppl skill 高手可以挖掘找到彰顯團隊強的那種的人
+- 是大家團結一心，通常表現也是以整個 team 衡量
+- 哪種 team 表現比較好？
+-  如果團隊比較被動，通常外向型的人
+  - 但是如果團隊大家都很主動，那會 listening skill 強的人主導
+- not be the smarter one in the room, the goal is to make the room become smarter
+- group thinking → 容易變成外相、ego 多，想要表現，talk alot，甚至自戀者的 idea win → not good idea win
+  - use group writing
+    - 2 step, step1: 先讓大家寫 idea, 匿名
+    - step2, 大家再一起 review 那些 idea

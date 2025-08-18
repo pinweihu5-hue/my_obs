@@ -1,0 +1,255 @@
+{
+  "main": {
+    "id": "0fbb1b43dcdbc60a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c984c307121b8d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dfacf7235ab7ec12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/992_prompt_idx.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "992_prompt_idx"
+            }
+          },
+          {
+            "id": "5e58b587711d0306",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_learning/003_health_idx.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "003_health_idx"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fb6b12aef140c74b",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e4735d8c6e07277",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8b22b195ec1de2d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ffea8d7462d5c39f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "cors",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "73a55b757b7857fe",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 341.50390243530273
+  },
+  "right": {
+    "id": "a138ca7a8d2ed5fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "91bbd01adde6d6a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8cde7ab010b43f8d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "43_軟體工具tools/autohotkey  bug.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for autohotkey  bug"
+            }
+          },
+          {
+            "id": "0b8536878b5d61c1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "43_軟體工具tools/autohotkey  bug.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from autohotkey  bug"
+            }
+          },
+          {
+            "id": "4cb28e5e55175b1c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "42ede5c553f9565f",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 440.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-importer:Open Importer": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
+      "edit-history:Open edit history": false,
+      "vim-toggle:Toggle Vim Mode": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "5e58b587711d0306",
+  "lastOpenFiles": [
+    "README.md",
+    "00_inbox/000_reading_log.md",
+    "00_inbox/皮膚使用含類固醇藥膏.md",
+    "00_inbox/皮膚使用含類固醇藥膏.md.edtz",
+    "00_inbox/30_sw_design_idx.md",
+    "00_inbox/dist_sys_idx.md",
+    "901_fleeting_note/非功能需求.md",
+    "901_fleeting_note/Learning 3 step (step3).md",
+    "00_inbox/001_log.md",
+    "00_inbox/002_on_going_thoughts.md",
+    "00_inbox/04 yt_sub分類.md",
+    "00_inbox/09_inbox.md",
+    "00_inbox/22_to_read.md",
+    "00_inbox/99_whatever.md",
+    "00_inbox/989_app_idx.md",
+    "901_fleeting_note/Splitwise clone prompt.md",
+    "00_inbox/992_prompt_idx.md",
+    "00_inbox/999_ai_ask.md",
+    "901_fleeting_note/basic 理解 for raft consensus algo.md",
+    "00_inbox/spotify music.md",
+    "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md",
+    "00_inbox/tmp1.md",
+    "00_inbox/archived_inbox/_habit to build.md",
+    "901_fleeting_note/obs code style example.md",
+    "901_fleeting_note/Access-Control-Allow-Credentials.md",
+    "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
+    "901_fleeting_note/CORS.md",
+    "901_fleeting_note/CORS.md.edtz",
+    "901_fleeting_note/basic 理解 for raft consensus algo.md.edtz",
+    "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md.edtz",
+    "100_attachements/IMG-000_reading_log-20250817113903139.png",
+    "00_inbox/tmp1.md.edtz",
+    "901_fleeting_note/電動刮鬍刀 study.md.edtz",
+    "02_learning/buy_idx.md.edtz",
+    "02_learning/hotel for 2026 new year.md.edtz",
+    "02_learning/《怎样激励 10 到 25 岁的人》- 中英双语 10 to 25 The Science of Motivating Young People (David Yeager) (Z-Library).pdf.md.edtz",
+    "901_fleeting_note/百歲人生：延壽的科學與策略.md.edtz",
+    "100_attachements/IMG-mac_idx-20250810084840426.png",
+    "100_attachements/IMG-ssh 設定 in gcp-20250308075956883.png",
+    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203344588.png",
+    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203343411.png",
+    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203342455.png",
+    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203341439.png",
+    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203340143.png",
+    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203339313.png",
+    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203338299.png"
+  ]
+}

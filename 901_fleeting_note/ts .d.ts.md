@@ -1,0 +1,6 @@
+- type in .d.ts is gloabl -> bad bad bad
+- only use this to type type def with JS
+	- you can covert js to ts dirctly, so you use .d.ts is when you can't touch js
+- skip lip check is to check .d.ts in tsconfig
+	- so, if you have .d.ts in your repo and wana speed up, turn this off
+- if you are writing ts and nothing to do with js, just have ur type in .ts, not use .d.ts

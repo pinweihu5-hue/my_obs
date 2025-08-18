@@ -1,0 +1,16 @@
+.cm-cursorLayer {
+  animation: none !important;
+}
+
+.CodeMirror-focused .CodeMirror-cursors {
+  visibility: visible !important;
+}
+
+.CodeMirror-cursor,
+div.CodeMirror-cursor,
+.cm-fat-cursor,
+.cm-animate-fat-cursor,
+.cm-fat-cursor-mark,
+.cm-cursor {
+  visibility: visible !important;
+}

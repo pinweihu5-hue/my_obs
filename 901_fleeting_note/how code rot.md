@@ -1,0 +1,11 @@
+[(778) How software rots - Uncle Bob - YouTube](https://www.youtube.com/watch?v=5AFYWKavQgA&t=80s)
+- 當你在寫 fear, 改 code...whatever..
+- 你看到 bad code, rotted code
+- u fear
+- u don't want to touch
+- why u fear?
+- if you touch it and you modify it and if it break or change the behavior -> ur fault
+- you create unexpected work for youself, this ticket is 1 pt -> you create and it become 3 pt
+- and if you don't fix it or just it be there -> the code conti become even more rotten -> this is how code become more harder to matintain over time
+- you also help unit test can protect u, but maybe not, the unit test is not well written and the test is not proctect u
+- 不管你最後的決定是什麼，你離開時，這段 code 是更好？還是更糟

@@ -1,0 +1,11 @@
+### Black-Box-learning technique
+- learn what it is and how to use it
+- more specifically, think in term of input and output
+- we called it black box for not needing to know HOW it works at the first place
+- We learn how it work (how it internally it is ) later at the later stage of the learning phrase.
+- advantage?
+    - works quickly
+    - lets you know where to look
+    - let you identify related problems
+    - keep learning focused
+    - makes learning less scary

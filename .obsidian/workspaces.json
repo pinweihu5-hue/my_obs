@@ -1,0 +1,1149 @@
+{
+  "workspaces": {
+    "split2": {
+      "main": {
+        "id": "7e8623b439898c61",
+        "type": "split",
+        "children": [
+          {
+            "id": "e92aba19308c4e62",
+            "type": "tabs",
+            "dimension": 48.31697054698457,
+            "children": [
+              {
+                "id": "4889ecf947a67cec",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0_inbox/inbox.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "1da54e294600cedc",
+            "type": "tabs",
+            "dimension": 51.68302945301543,
+            "children": [
+              {
+                "id": "366598fd86b7f134",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0_inbox/inbox.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "7a86f58b440024b7",
+        "type": "split",
+        "children": [
+          {
+            "id": "48f41b49f91eea7a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "db3db998c31fcfc7",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "b1e7569262a38ec2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "561391bd660be878",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 283.51103591918945
+      },
+      "right": {
+        "id": "7eecd1c9da62381f",
+        "type": "split",
+        "children": [
+          {
+            "id": "0b57b22d9a44cf22",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "47e36cce76960125",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "0_inbox/inbox.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "03f7dc09b3182567",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "0_inbox/inbox.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "9426032344cabb54",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "aa68ed4568dab36f",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "0_inbox/inbox.md"
+                  }
+                }
+              },
+              {
+                "id": "d4ed7c032fe52b23",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f325ccbb72929020",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "273aeffb318b9d47",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "1a7581df8f7f914a",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-chat-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "c0dc71c39d3910ba",
+                "type": "leaf",
+                "state": {
+                  "type": "copilot-chat-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 368.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "obsidian-importer:Open Importer": false,
+          "edit-history:Open edit history": false,
+          "oz-clear-unused-images:Clear Unused Images": false,
+          "omnisearch:Omnisearch": false,
+          "copilot:Copilot Chat": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "366598fd86b7f134",
+      "mtime": "2024-05-15T08:38:35+08:00"
+    },
+    "up&down": {
+      "main": {
+        "id": "7e8623b439898c61",
+        "type": "split",
+        "children": [
+          {
+            "id": "ac6df2fed3c9b890",
+            "type": "split",
+            "children": [
+              {
+                "id": "e92aba19308c4e62",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "4889ecf947a67cec",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "0_inbox/inbox.md",
+                        "mode": "source",
+                        "backlinks": false,
+                        "source": false
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "83491984a504a7fd",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "8581cff2a57d506e",
+                    "type": "leaf",
+                    "state": {
+                      "type": "empty",
+                      "state": {}
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "7a86f58b440024b7",
+        "type": "split",
+        "children": [
+          {
+            "id": "48f41b49f91eea7a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "db3db998c31fcfc7",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "b1e7569262a38ec2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "561391bd660be878",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 299.51103591918945
+      },
+      "right": {
+        "id": "7eecd1c9da62381f",
+        "type": "split",
+        "children": [
+          {
+            "id": "0b57b22d9a44cf22",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "47e36cce76960125",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "0_inbox/inbox.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "03f7dc09b3182567",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "0_inbox/inbox.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "9426032344cabb54",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "aa68ed4568dab36f",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "0_inbox/inbox.md"
+                  }
+                }
+              },
+              {
+                "id": "d4ed7c032fe52b23",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f325ccbb72929020",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "273aeffb318b9d47",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "1a7581df8f7f914a",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-chat-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "c0dc71c39d3910ba",
+                "type": "leaf",
+                "state": {
+                  "type": "copilot-chat-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 368.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "obsidian-importer:Open Importer": false,
+          "edit-history:Open edit history": false,
+          "oz-clear-unused-images:Clear Unused Images": false,
+          "omnisearch:Omnisearch": false,
+          "copilot:Copilot Chat": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "4889ecf947a67cec",
+      "mtime": "2024-05-15T08:39:13+08:00"
+    },
+    "split_with_graph_view": {
+      "main": {
+        "id": "7e8623b439898c61",
+        "type": "split",
+        "children": [
+          {
+            "id": "e92aba19308c4e62",
+            "type": "tabs",
+            "dimension": 34.06896551724138,
+            "children": [
+              {
+                "id": "10cb0011cfab8e04",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0_inbox/inbox.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "36d60150c5fbbaa9",
+            "type": "tabs",
+            "dimension": 65.93103448275862,
+            "children": [
+              {
+                "id": "315cc301e90186e9",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "7a86f58b440024b7",
+        "type": "split",
+        "children": [
+          {
+            "id": "48f41b49f91eea7a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "db3db998c31fcfc7",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "b1e7569262a38ec2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "561391bd660be878",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 258.51103591918945
+      },
+      "right": {
+        "id": "7eecd1c9da62381f",
+        "type": "split",
+        "children": [
+          {
+            "id": "0b57b22d9a44cf22",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "47e36cce76960125",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true,
+                    "file": "0_inbox/inbox.md"
+                  }
+                }
+              },
+              {
+                "id": "03f7dc09b3182567",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true,
+                    "file": "0_inbox/inbox.md"
+                  }
+                }
+              },
+              {
+                "id": "9426032344cabb54",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "aa68ed4568dab36f",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "0_inbox/inbox.md"
+                  }
+                }
+              },
+              {
+                "id": "d4ed7c032fe52b23",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f325ccbb72929020",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "273aeffb318b9d47",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "1a7581df8f7f914a",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-chat-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "c0dc71c39d3910ba",
+                "type": "leaf",
+                "state": {
+                  "type": "copilot-chat-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 368.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "obsidian-importer:Open Importer": false,
+          "edit-history:Open edit history": false,
+          "oz-clear-unused-images:Clear Unused Images": false,
+          "omnisearch:Omnisearch": false,
+          "copilot:Copilot Chat": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "315cc301e90186e9",
+      "mtime": "2024-05-15T08:41:19+08:00"
+    },
+    "d5_local_graph": {
+      "main": {
+        "id": "7e8623b439898c61",
+        "type": "split",
+        "children": [
+          {
+            "id": "bc54a7b1a31a02d9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "eff30c76190867c7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_projects/ticker_里程費矯正/ticket_里程費資料矯正.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "a7cb7acd2726b3bd",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "2_area/30_learning/How to take smart note.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "7a86f58b440024b7",
+        "type": "split",
+        "children": [
+          {
+            "id": "48f41b49f91eea7a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "db3db998c31fcfc7",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "b1e7569262a38ec2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "訊號",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "561391bd660be878",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 305.51103591918945
+      },
+      "right": {
+        "id": "7eecd1c9da62381f",
+        "type": "split",
+        "children": [
+          {
+            "id": "0b57b22d9a44cf22",
+            "type": "tabs",
+            "dimension": 55.7632398753894,
+            "children": [
+              {
+                "id": "9426032344cabb54",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "aa68ed4568dab36f",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "1_projects/ticker_里程費矯正/ticket_里程費資料矯正.md"
+                  }
+                }
+              },
+              {
+                "id": "d4ed7c032fe52b23",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f325ccbb72929020",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "273aeffb318b9d47",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "1a7581df8f7f914a",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-chat-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "7c74bcd37c589459",
+            "type": "tabs",
+            "dimension": 44.23676012461059,
+            "children": [
+              {
+                "id": "03f7dc09b3182567",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "1_projects/ticker_里程費矯正/ticket_里程費資料矯正.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "47e36cce76960125",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "1_projects/ticker_里程費矯正/ticket_里程費資料矯正.md",
+                    "collapseAll": true,
+                    "extraContext": true,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "a7eaccfa4a99b30f",
+                "type": "leaf",
+                "state": {
+                  "type": "link-tree",
+                  "state": {}
+                }
+              },
+              {
+                "id": "03d4efa61ab4c0f1",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "1_projects/ticker_里程費矯正/ticket_里程費資料矯正.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.6666666666666666,
+                      "close": true
+                    }
+                  }
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 418.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": true,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": true,
+          "command-palette:Open command palette": true,
+          "obsidian-importer:Open Importer": false,
+          "edit-history:Open edit history": false,
+          "oz-clear-unused-images:Clear Unused Images": false,
+          "omnisearch:Omnisearch": true,
+          "copilot:Copilot Chat": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": true,
+          "link-tree:Link Tree": false,
+          "obsidian-omnivore:Omnivore": false
+        }
+      },
+      "active": "eff30c76190867c7",
+      "mtime": "2024-05-18T15:52:18+08:00"
+    },
+    "graph_view_0": {
+      "main": {
+        "id": "7e8623b439898c61",
+        "type": "split",
+        "children": [
+          {
+            "id": "e92aba19308c4e62",
+            "type": "tabs",
+            "dimension": 27.91696492483894,
+            "children": [
+              {
+                "id": "10cb0011cfab8e04",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "2_area/20_career_path/company/Bubbleye 大眼科技有限公司.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "36d60150c5fbbaa9",
+            "type": "tabs",
+            "dimension": 72.08303507516106,
+            "children": [
+              {
+                "id": "315cc301e90186e9",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "7a86f58b440024b7",
+        "type": "split",
+        "children": [
+          {
+            "id": "48f41b49f91eea7a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "db3db998c31fcfc7",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "b1e7569262a38ec2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "561391bd660be878",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 311.51103591918945
+      },
+      "right": {
+        "id": "7eecd1c9da62381f",
+        "type": "split",
+        "children": [
+          {
+            "id": "0b57b22d9a44cf22",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "47e36cce76960125",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "2_area/20_career_path/company/Bubbleye 大眼科技有限公司.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "03f7dc09b3182567",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "2_area/20_career_path/company/Bubbleye 大眼科技有限公司.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "9426032344cabb54",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "aa68ed4568dab36f",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "2_area/20_career_path/company/Bubbleye 大眼科技有限公司.md"
+                  }
+                }
+              },
+              {
+                "id": "d4ed7c032fe52b23",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f325ccbb72929020",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "273aeffb318b9d47",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "1a7581df8f7f914a",
+                "type": "leaf",
+                "state": {
+                  "type": "smart-connections-chat-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "c0dc71c39d3910ba",
+                "type": "leaf",
+                "state": {
+                  "type": "copilot-chat-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f54c79b1c9c95048",
+                "type": "leaf",
+                "state": {
+                  "type": "link-tree",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 9
+          }
+        ],
+        "direction": "horizontal",
+        "width": 368.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "link-tree:Link Tree": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-omnivore:Omnivore": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "obsidian-importer:Open Importer": false,
+          "edit-history:Open edit history": false,
+          "oz-clear-unused-images:Clear Unused Images": false,
+          "omnisearch:Omnisearch": false,
+          "copilot:Copilot Chat": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "10cb0011cfab8e04",
+      "mtime": "2024-05-19T14:53:09+08:00"
+    }
+  },
+  "active": "d5_local_graph"
+}

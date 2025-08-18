@@ -1,0 +1,51 @@
+# advance youtube vid for coder
+- perf and data strrcutr
+	- [(592) SimonDev - YouTube](https://www.youtube.com/@simondev758)
+	- [ByteMonk](https://www.youtube.com/watch?v=ExJxPANMreM&list=WL&index=5)
+- 資安
+	- [Low Level Learning - YouTube](https://www.youtube.com/@LowLevelLearning)
+	- [(592) pwn.college - YouTube](https://www.youtube.com/@pwncollege/videos)
+	- [(592) John Hammond - YouTube](https://www.youtube.com/@_JohnHammond/videos)
+	- [LiveOverflow - YouTube](https://www.youtube.com/@LiveOverflow)
+- 基礎知識
+	- [(592) Numberphile2 - YouTube](https://www.youtube.com/@numberphile2)
+	- [Numberphile - YouTube](https://www.youtube.com/@numberphile)
+	- [Computerphile - YouTube](https://www.youtube.com/@Computerphile)
+- sw design
+	- [CodeAesthetic - YouTube](https://www.youtube.com/@CodeAesthetic)
+- algo
+	- neetCode, neetCodeIO
+- ts
+	- [Matt Pocock - YouTube](https://www.youtube.com/@mattpocockuk)
+- algo
+	- [NeetCode - YouTube](https://www.youtube.com/@NeetCode/videos)
+- 其他, 什麼都有
+	- [Notion – The all-in-one workspace for your notes, tasks, wikis, and databases.](https://sanilk.notion.site/d87db336139a4ef5b989350334ce748d?v=1390026fe1944c5b832e95104dd07e52)
+	- fireship
+	- [20 Best YouTube Channels for Back-end and Front-end Engineers | Better Stack Community](https://betterstack.com/community/comparisons/best-youtube-channels-for-developers/)
+	- Traversy Media
+	- Net Ninja
+	- Dev Ed
+	- CS50
+	- fly.io
+	- [ThePrimeTime - YouTube](https://www.youtube.com/@ThePrimeTimeagen)
+	- [(592) Dreams of Code - YouTube](https://www.youtube.com/@dreamsofcode)
+	- [(592) Code Munchies - YouTube](https://www.youtube.com/@codemunchies)
+- chinese
+	- [Isword先生 - YouTube](https://www.youtube.com/@swordroid)
+	- [(642) 轩辕的编程宇宙 - YouTube](https://www.youtube.com/@xuanyuancoding)
+	- [(592) Ele实验室 - YouTube](https://www.youtube.com/@ele870/featured)
+	- [(592) epcdiy - YouTube](https://www.youtube.com/@epcdiy)
+- BE
+	- [(592) Hussein Nasser - YouTube](https://www.youtube.com/@hnasr/videos)
+- ts
+	- [(592) Matt Pocock - YouTube](https://www.youtube.com/@mattpocockuk)
+- [(452) kimylamp - YouTube](https://www.youtube.com/@kimylamp)
+- NDC conference
+		- strangeLoop
+		- Qcon
+		- YT
+			- CodeAesthic
+			- ThePrimeTime
+			- Molly Rocket
+- [(161) Dave Burji - YouTube](https://www.youtube.com/@daveburji)

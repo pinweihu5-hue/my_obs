@@ -1,0 +1,12 @@
+### craft vs art vs science
+- ref [(246) 搞懂这件事，你也能成为技术大神？｜Crafts｜限时公开到3.29 - YouTube](https://www.youtube.com/watch?v=yHgktd99hbU)
+- craft vs art vs science → 都不同
+- coding 多數比較偏向 craft
+- 匠人精神
+- 鑽研，發現更多深奧的地方，進而借鏡其他學科
+- 找mentor → 不一定是真人，也可以是某個網路上的人，role model, even 只是 code
+- 要 coachable, [[Intellectual honesty]], curiosity
+- 不是去把 where, select 寫的很熟練
+- 是會去專研 [[什麼是”懂”]]
+- 學的過程中會有的 “體感” 或 感悟”很重要，光是看書知道知識還不夠，需要搭配不斷去實作，去獲得那些“體感” 或 感悟” 
+	- [[做中學 learning by doing|leanringByDoing]]

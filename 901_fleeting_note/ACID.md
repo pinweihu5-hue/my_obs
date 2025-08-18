@@ -1,0 +1,3 @@
+- [[DDIA DB transaction 交易#What is ACID? atomicity, consistency, isolation, durability]]
+- [[db-udemy-acid, ACID]]
+- [[假设你工作的系统不支持事务性 你会如何从头开始实现它]]

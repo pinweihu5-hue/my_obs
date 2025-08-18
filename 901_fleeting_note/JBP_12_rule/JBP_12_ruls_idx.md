@@ -1,0 +1,15 @@
+
+
+[[rule01 站直，抬頭挺胸 - how you shall behave]]
+[[rule02 善待自己，就像善待任何你有責任幫助的人 - how you shall treat your self]]
+[[rule03  結交希望你變得更好的朋友 - the psychology of making bad friend and how it evolve]]
+[[rule04 跟昨天的自己比，而不是跟今天的別人比]]
+[[rule05 別讓孩子做出令你討厭他們的事]]
+[[rule06 批評世界之前，先整理好自己的房間]]
+[[rule07 做有意義的事，不要便宜行事]]
+[[rule08  說實話，或至少不要說謊]]
+[[rule09  假設你聆聽的對象，可能知道一些你不知道的事]]
+[[rule10 說話要精準]]
+[[rule11 孩子玩滑板時，不要干擾他們 -> 必要強悍過程的社會化進展]]
+[[rule12 在路上遇到貓，就摸一摸]]
+[[JBP終章]]

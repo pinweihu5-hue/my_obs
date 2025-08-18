@@ -1,0 +1,32 @@
+- Gil 的 Call Yachol
+-   - 一開始他想要幫助那些殘疾人，他是臨床，一個太少，想要幫更多
+  - 後來開公司, call cenetr 專門找這些
+  - 特定的面試方法
+  - 公司 like host, 讓面試的人過來，可以被接待的感覺
+    - 不是用拷問的奇怪問題
+      - 因為這會讓本來出身不好的人壓力更大，而你要找的最重要的，又不是面試經驗豐富的人，而是可以把工作給做好的人
+    - 問的是 即時的 work sample
+      - 可以面試請面試者提供過去 work sample
+        - coder, like show github page[] 
+        - 不過這個不夠，過去做的工作未必是好的未來工作的 proxy
+      - 現場即時去做特定工作
+        - 要設計，類似業務問他會如何賣等等
+        - 現場解程式問題，也可以，透過交流，了解程式思考的內容是否到位
+    - 自己評價表現好壞
+    - if you want 給你 second chance，因為只看第一次還是無法確定你的潛力
+  - 他們目前表現最好的那個員工，就是有 asutim, 傾向，然後 second chance 進來的
+  - 這個公司目前在 call center 產業是前面的公司
+  - 目前 gil 還要加入其他群組，類似以前被關過，移民等等
+  - “Interrogations make all of us anxious, and anyone can run into mishaps on the way to a job interview.
+  - Skills are best gauged by what people can do, not what they say or what they’ve done before.
+  - Instead of trying to trip people up, we should give them the chance to put their best foot forward.
+  - How they respond in a do-over is a more meaningful window into their character than how they handle the first try.”
+- jose, 未來提高進入 nasa 的機率，後來發現進去的人都有飛行員經驗，cuba diving 的經驗和執照，他也會學會和拿到執政
+  - 另外他又持續 try (全部好像 12 次), 總算進入 final list (2~3k 挑 120 人)
+  - 1998 年這次他進入 nasa 當工程師
+  - 然後又過了幾年努力，2004 年，47 歲，他入選太空人計畫，最後進入太空 ISS
+  - “José had gone from picking strawberries in fields to floating among the stars.
+  - Over the course of two weeks in space, he flew over five million miles.
+  - It was a short hop compared to the distance he had traveled for the chance to wear a space suit.”
+  - “Our job isn’t to apply the pressure that brings out their brilliance.
+  - It’s to make sure we don’t overlook those who have already faced that pressure—and recognize their potential to shine.”
