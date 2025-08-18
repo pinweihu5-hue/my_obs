@@ -2,6 +2,18 @@ good souce
 - [Lex Fridman - YouTube](https://www.youtube.com/c/lexfridman)
 - [松明講心理 - YouTube](https://www.youtube.com/@SongMing)
 
+
+
+
+
+[[CPFA3S - 7 effective habit]]
+
+
+
+
+
+
+
 ---
 to see
 [[蓋洛威的人生策略：幸福與成功的路徑]]

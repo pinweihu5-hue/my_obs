@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_learning/003_health_idx.md",
+                "file": "901_fleeting_note/地址.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "003_health_idx"
+              "title": "地址"
             }
           }
         ],
@@ -199,12 +199,16 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
       "edit-history:Open edit history": false,
       "vim-toggle:Toggle Vim Mode": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "5e58b587711d0306",
   "lastOpenFiles": [
+    "02_learning/value_idx.md",
+    "02_learning/CPFA3S - 7 effective habit.md",
+    "02_learning/CPFA3S - 7 effective habit.md.edtz",
+    "02_learning/003_health_idx.md",
     "README.md",
     "00_inbox/000_reading_log.md",
     "00_inbox/皮膚使用含類固醇藥膏.md",
@@ -228,10 +232,6 @@
     "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md",
     "00_inbox/tmp1.md",
     "00_inbox/archived_inbox/_habit to build.md",
-    "901_fleeting_note/obs code style example.md",
-    "901_fleeting_note/Access-Control-Allow-Credentials.md",
-    "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
-    "901_fleeting_note/CORS.md",
     "901_fleeting_note/CORS.md.edtz",
     "901_fleeting_note/basic 理解 for raft consensus algo.md.edtz",
     "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md.edtz",
@@ -241,7 +241,6 @@
     "02_learning/buy_idx.md.edtz",
     "02_learning/hotel for 2026 new year.md.edtz",
     "02_learning/《怎样激励 10 到 25 岁的人》- 中英双语 10 to 25 The Science of Motivating Young People (David Yeager) (Z-Library).pdf.md.edtz",
-    "901_fleeting_note/百歲人生：延壽的科學與策略.md.edtz",
     "100_attachements/IMG-mac_idx-20250810084840426.png",
     "100_attachements/IMG-ssh 設定 in gcp-20250308075956883.png",
     "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203344588.png",
