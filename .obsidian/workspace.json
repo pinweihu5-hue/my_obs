@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "901_fleeting_note/地址.md",
+                "file": "00_inbox/000_reading_log.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "地址"
+              "title": "000_reading_log"
             }
           }
         ],
@@ -205,6 +205,7 @@
   },
   "active": "5e58b587711d0306",
   "lastOpenFiles": [
+    "901_fleeting_note/地址.md",
     "02_learning/value_idx.md",
     "02_learning/CPFA3S - 7 effective habit.md",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
