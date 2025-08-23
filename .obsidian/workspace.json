@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_reading_log.md",
+                "file": "00_inbox/001_log.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_reading_log"
+              "title": "001_log"
             }
           }
         ]
@@ -180,9 +180,9 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "00_inbox/000_reading_log.md",
     "00_inbox/992_prompt_idx.md",
     "901_fleeting_note/皮膚使用含類固醇藥膏.md",
-    "00_inbox/000_reading_log.md",
     "901_fleeting_note/地址.md",
     "02_learning/value_idx.md",
     "02_learning/CPFA3S - 7 effective habit.md",
