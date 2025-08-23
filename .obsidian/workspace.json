@@ -13,30 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/992_prompt_idx.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "992_prompt_idx"
-            }
-          },
-          {
-            "id": "5e58b587711d0306",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "00_inbox/000_reading_log.md",
                 "mode": "source",
                 "source": false,
@@ -55,8 +31,7 @@
               "title": "000_reading_log"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,17 +178,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5e58b587711d0306",
+  "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "00_inbox/992_prompt_idx.md",
+    "901_fleeting_note/皮膚使用含類固醇藥膏.md",
+    "00_inbox/000_reading_log.md",
     "901_fleeting_note/地址.md",
     "02_learning/value_idx.md",
     "02_learning/CPFA3S - 7 effective habit.md",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
     "02_learning/003_health_idx.md",
     "README.md",
-    "00_inbox/000_reading_log.md",
-    "00_inbox/皮膚使用含類固醇藥膏.md",
-    "00_inbox/皮膚使用含類固醇藥膏.md.edtz",
+    "901_fleeting_note/皮膚使用含類固醇藥膏.md.edtz",
     "00_inbox/30_sw_design_idx.md",
     "00_inbox/dist_sys_idx.md",
     "901_fleeting_note/非功能需求.md",
@@ -226,7 +202,6 @@
     "00_inbox/99_whatever.md",
     "00_inbox/989_app_idx.md",
     "901_fleeting_note/Splitwise clone prompt.md",
-    "00_inbox/992_prompt_idx.md",
     "00_inbox/999_ai_ask.md",
     "901_fleeting_note/basic 理解 for raft consensus algo.md",
     "00_inbox/spotify music.md",
