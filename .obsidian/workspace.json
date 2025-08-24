@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "00_inbox/30_sw_design_idx.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "30_sw_design_idx"
+            }
+          },
+          {
+            "id": "0953b8f616d121de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "00_inbox/000_reading_log.md",
                 "mode": "source",
                 "source": false,
@@ -31,7 +55,8 @@
               "title": "000_reading_log"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -63,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cors",
+                "query": "restful",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,11 +203,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dfacf7235ab7ec12",
+  "active": "0953b8f616d121de",
   "lastOpenFiles": [
+    "901_fleeting_note/RESTful API  設計.md",
+    "00_inbox/30_sw_design_idx.md",
+    "00_inbox/002_on_going_thoughts.md",
+    "00_inbox/04 yt_sub分類.md",
+    "00_inbox/22_to_read.md",
+    "00_inbox/99_whatever.md",
+    "00_inbox/989_app_idx.md",
+    "00_inbox/992_prompt_idx.md",
+    "00_inbox/999_ai_ask.md",
+    "00_inbox/spotify music.md",
+    "00_inbox/tmp1.md",
     "00_inbox/001_log.md",
     "00_inbox/000_reading_log.md",
-    "00_inbox/992_prompt_idx.md",
     "901_fleeting_note/皮膚使用含類固醇藥膏.md",
     "901_fleeting_note/地址.md",
     "02_learning/value_idx.md",
@@ -191,23 +226,13 @@
     "02_learning/003_health_idx.md",
     "README.md",
     "901_fleeting_note/皮膚使用含類固醇藥膏.md.edtz",
-    "00_inbox/30_sw_design_idx.md",
     "00_inbox/dist_sys_idx.md",
     "901_fleeting_note/非功能需求.md",
     "901_fleeting_note/Learning 3 step (step3).md",
-    "00_inbox/002_on_going_thoughts.md",
-    "00_inbox/04 yt_sub分類.md",
     "00_inbox/09_inbox.md",
-    "00_inbox/22_to_read.md",
-    "00_inbox/99_whatever.md",
-    "00_inbox/989_app_idx.md",
     "901_fleeting_note/Splitwise clone prompt.md",
-    "00_inbox/999_ai_ask.md",
     "901_fleeting_note/basic 理解 for raft consensus algo.md",
-    "00_inbox/spotify music.md",
     "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md",
-    "00_inbox/tmp1.md",
-    "00_inbox/archived_inbox/_habit to build.md",
     "901_fleeting_note/CORS.md.edtz",
     "901_fleeting_note/basic 理解 for raft consensus algo.md.edtz",
     "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md.edtz",

@@ -4,7 +4,6 @@
 		- use case? u are allow to use DNS at airplane but not wife
 			- so u can use this for free at airplane
 
-
 - [[cli_tool_idx]]
 - [[git_idx]]
 java- [[keyboard_idx]]

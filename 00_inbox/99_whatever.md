@@ -1,7 +1,4 @@
 
-
-
-
 write what u think and thought here, no limitation.
 
 
