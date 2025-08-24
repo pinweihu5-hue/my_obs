@@ -6,6 +6,9 @@
 
 
 
+---
+
+
 sutdy why I want to use vim but I always fallback to normal mode?
 
 
@@ -14,6 +17,8 @@ I want to use vim since it make me coding fast, but I don't want to use vim also
 why?
 - I didn't make vim to my muscl mem
 - I suspect mouse curosr is still faster then vim motions
+
+
 
 
 
