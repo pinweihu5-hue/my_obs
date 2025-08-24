@@ -4,6 +4,21 @@
 ---
 
 
+
+
+sutdy why I want to use vim but I always fallback to normal mode?
+
+
+I want to use vim since it make me coding fast, but I don't want to use vim also since it make me coding slow
+
+why?
+- I didn't make vim to my muscl mem
+- I suspect mouse curosr is still faster then vim motions
+
+
+
+---
+
 ### . `OPTIMISTIC`
 - **樂觀鎖**（基於 `@Version` 欄位）。
 - 在交易提交時檢查版本號，若版本不同，表示該資料已被其他交易更新 → 拋出 `OptimisticLockException`。
