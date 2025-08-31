@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_reading_log.md",
+                "file": "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_reading_log"
+              "title": "任何東西你想要記下來然後你可以平穩的睡覺嘛？"
             }
           }
         ],
@@ -205,6 +205,10 @@
   },
   "active": "0953b8f616d121de",
   "lastOpenFiles": [
+    "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
+    "00_inbox/001_log.md",
+    "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
+    "00_inbox/000_reading_log.md",
     "901_fleeting_note/RESTful API  設計.md",
     "00_inbox/30_sw_design_idx.md",
     "00_inbox/002_on_going_thoughts.md",
@@ -216,8 +220,6 @@
     "00_inbox/999_ai_ask.md",
     "00_inbox/spotify music.md",
     "00_inbox/tmp1.md",
-    "00_inbox/001_log.md",
-    "00_inbox/000_reading_log.md",
     "901_fleeting_note/皮膚使用含類固醇藥膏.md",
     "901_fleeting_note/地址.md",
     "02_learning/value_idx.md",
@@ -231,8 +233,6 @@
     "901_fleeting_note/Learning 3 step (step3).md",
     "00_inbox/09_inbox.md",
     "901_fleeting_note/Splitwise clone prompt.md",
-    "901_fleeting_note/basic 理解 for raft consensus algo.md",
-    "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md",
     "901_fleeting_note/CORS.md.edtz",
     "901_fleeting_note/basic 理解 for raft consensus algo.md.edtz",
     "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md.edtz",
