@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
+                "file": "00_inbox/000_reading_log.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "任何東西你想要記下來然後你可以平穩的睡覺嘛？"
+              "title": "000_reading_log"
             }
           }
         ],
@@ -205,9 +205,9 @@
   },
   "active": "0953b8f616d121de",
   "lastOpenFiles": [
+    "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "00_inbox/001_log.md",
-    "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
     "00_inbox/000_reading_log.md",
     "901_fleeting_note/RESTful API  設計.md",
     "00_inbox/30_sw_design_idx.md",
@@ -241,7 +241,6 @@
     "901_fleeting_note/電動刮鬍刀 study.md.edtz",
     "02_learning/buy_idx.md.edtz",
     "02_learning/hotel for 2026 new year.md.edtz",
-    "02_learning/《怎样激励 10 到 25 岁的人》- 中英双语 10 to 25 The Science of Motivating Young People (David Yeager) (Z-Library).pdf.md.edtz",
     "100_attachements/IMG-mac_idx-20250810084840426.png",
     "100_attachements/IMG-ssh 設定 in gcp-20250308075956883.png",
     "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203344588.png",
