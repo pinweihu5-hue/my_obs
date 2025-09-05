@@ -54,9 +54,21 @@
               "icon": "lucide-file",
               "title": "000_reading_log"
             }
+          },
+          {
+            "id": "eced25c9e1a01d2c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,6 +197,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "switcher:Open quick switcher": false,
@@ -203,7 +216,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0953b8f616d121de",
+  "active": "eced25c9e1a01d2c",
   "lastOpenFiles": [
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
