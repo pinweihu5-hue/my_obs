@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_reading_log.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,19 +52,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_reading_log"
+              "title": "000_tmp"
             }
           },
           {
             "id": "eced25c9e1a01d2c",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.12"
+                "file": "00_inbox/000_tmp.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "icon": "lucide-file",
+              "title": "000_tmp"
             }
           }
         ],
@@ -221,7 +233,7 @@
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "00_inbox/001_log.md",
-    "00_inbox/000_reading_log.md",
+    "00_inbox/000_tmp.md",
     "901_fleeting_note/RESTful API  設計.md",
     "00_inbox/30_sw_design_idx.md",
     "00_inbox/002_on_going_thoughts.md",
