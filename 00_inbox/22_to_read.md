@@ -14,7 +14,6 @@
 
 [Why I still Lisp (and you should too!) | by Anurag Mendhekar | Jan, 2021 | Medium](https://www.notion.so/Why-I-still-Lisp-and-you-should-too-by-Anurag-Mendhekar-Jan-2021-Medium-b173685562b941beb8a0a993fb6bc962?pvs=21)
 
-[Rust for Windows | Hacker News](https://www.notion.so/Rust-for-Windows-Hacker-News-d2e859423e014a0fa59dcd95223cb241?pvs=21)
 
 [The Missing Semester of Your CS Education · the missing semester of your cs education](https://www.notion.so/The-Missing-Semester-of-Your-CS-Education-the-missing-semester-of-your-cs-education-c29c3ecb2cca44f7aa30aeeb6b3f232a?pvs=21)
 
@@ -22,7 +21,6 @@
 
 [Passerine language](https://www.notion.so/Passerine-language-97882124a5064899ad15d4ca68779ea3?pvs=21)
 
-[Parsing Protobuf at 2+GB/s: How I Learned To Love Tail Calls in C](https://www.notion.so/Parsing-Protobuf-at-2-GB-s-How-I-Learned-To-Love-Tail-Calls-in-C-47709c0667be4301952311fb48782920?pvs=21)
 
 Are We There Yet - Rich Hickey - [https://youtu.be/ScEPu1cs4l0](https://youtu.be/ScEPu1cs4l0)
 
@@ -41,7 +39,6 @@ Software is an interactive process. Sometimes it can take 5+ draft versions befo
 
 [Why Lisp? | Hacker News](https://www.notion.so/Why-Lisp-Hacker-News-e9069b08aacc4e08bb5cd8ec4dbba3e7?pvs=21)
 
-[Twelve Years of Go | Hacker News](https://www.notion.so/Twelve-Years-of-Go-Hacker-News-e3719e85f4ef44aaa320590cdd5b9cc3?pvs=21)
 
 [The Invisible JavaScript Backdoor | Hacker News](https://www.notion.so/The-Invisible-JavaScript-Backdoor-Hacker-News-d4e68d2186d846b6be8755186ceba0bd?pvs=21)
 
@@ -55,7 +52,6 @@ Software is an interactive process. Sometimes it can take 5+ draft versions befo
 
 [Up and Down the Ladder of Abstraction](https://www.notion.so/Up-and-Down-the-Ladder-of-Abstraction-c8080bd746f84ee48e011b4214fa12e1?pvs=21)
 
-[Monads are Monoids in the Category of Endofunctors](https://www.notion.so/Monads-are-Monoids-in-the-Category-of-Endofunctors-7af4c82d5dcb4da8a2bd04a60cfce11e?pvs=21)
 
 [Show HN: Imba – I have spent 7 years creating a programming language for the web | Hacker News](https://www.notion.so/Show-HN-Imba-I-have-spent-7-years-creating-a-programming-language-for-the-web-Hacker-News-9c73e5226c4e4aedb4a59faaecf06d0b?pvs=21)
 
@@ -75,7 +71,6 @@ Software is an interactive process. Sometimes it can take 5+ draft versions befo
 
 - [https://github.com/justjavac/free-programming-books-zh_CN](https://github.com/justjavac/free-programming-books-zh_CN) **免费的编程中文书籍索引**
 
-[Master Programming with best YouTube Channels - DEV](https://www.notion.so/Master-Programming-with-best-YouTube-Channels-DEV-f3bf246f8f3a418c951c65dbc859f218?pvs=21)
 
 [Assembly Language: Still Relevant Today](https://www.notion.so/Assembly-Language-Still-Relevant-Today-fdc3f70866d44921ab69a5d32fa64455?pvs=21)
 
