@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/22_to_read.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "22_to_read"
+              "title": "000_tmp"
             }
           }
         ]
@@ -181,6 +181,7 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "00_inbox/22_to_read.md",
     "00_inbox/30_sw_design_idx.md",
     "00_inbox/99_whatever.md",
     "00_inbox/989_app_idx.md",
@@ -192,7 +193,6 @@
     "00_inbox/如何做事 大衛・凱恩.md",
     "102_Omnivore/2024-06-01/我的規則 – Daniel Lemire 的博客 --- My rules – Daniel Lemire's blog.md",
     "00_inbox/09_inbox.md",
-    "00_inbox/22_to_read.md",
     "00_inbox/04 yt_sub分類.md",
     "00_inbox/002_on_going_thoughts.md",
     "00_inbox/001_log.md",
