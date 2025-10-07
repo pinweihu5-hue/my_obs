@@ -70,7 +70,7 @@ design scope
 
 
 
-### 如何偵測 node failure -> 八卦協議（gossip protocol）
+### 如何偵測 node failure -> 八卦協議（gossip protocol)
 
 工作原理如下：
 • 每個節點維護一個節點成員列表，其中包含成員 ID 和心跳計數器。

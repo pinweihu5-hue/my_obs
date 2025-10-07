@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
+                "file": "901_fleeting_note/partition.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Consistency and Consensus, DDIA CHAPTER 9"
+              "title": "partition"
             }
           },
           {
@@ -230,10 +230,14 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "901_fleeting_note/a key-val store.md",
     "901_fleeting_note/分布式系統 CAP.md",
-    "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
-    "901_fleeting_note/serializability (可串行性 )vs linearizability (線性一致性).md",
+    "901_fleeting_note/partition.md",
     "00_inbox/30_sw_design_idx.md",
+    "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
+    "999_archive/interview_2024/2024 interview index.md",
+    "901_fleeting_note/ACID.md",
+    "901_fleeting_note/serializability (可串行性 )vs linearizability (線性一致性).md",
     "00_inbox/000_tmp.md",
     "901_fleeting_note/tx and lock.md",
     "901_fleeting_note/DDIA DB transaction 交易.md",
@@ -254,10 +258,6 @@
     "00_inbox/001_log.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
-    "901_fleeting_note/RESTful API  設計.md",
-    "901_fleeting_note/皮膚使用含類固醇藥膏.md",
-    "901_fleeting_note/地址.md",
-    "02_learning/value_idx.md",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
     "901_fleeting_note/皮膚使用含類固醇藥膏.md.edtz",
     "901_fleeting_note/CORS.md.edtz",
