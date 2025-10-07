@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_tmp.md",
+                "file": "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_tmp"
+              "title": "Consistency and Consensus, DDIA CHAPTER 9"
             }
           },
           {
@@ -87,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DDIA",
+                "query": "ddia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +108,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -205,12 +206,12 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "00_inbox/30_sw_design_idx.md",
+    "00_inbox/000_tmp.md",
     "901_fleeting_note/tx and lock.md",
     "901_fleeting_note/DDIA DB transaction 交易.md",
     "901_fleeting_note/pg isolation level.md",
     "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
-    "00_inbox/30_sw_design_idx.md",
-    "00_inbox/000_tmp.md",
     "00_inbox/22_to_read.md",
     "00_inbox/99_whatever.md",
     "00_inbox/989_app_idx.md",

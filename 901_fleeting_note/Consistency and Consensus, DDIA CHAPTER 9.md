@@ -4,40 +4,35 @@ aliases:
 ---
 
 
-> **The best way of building fault-tolerant systems is to find some general-purpose abstractions with useful guarantees, implement them once, and then let applications rely on those guarantees**. This is the same approach as we used with transactions in Chapter 7: by using a transaction, the application can pretend that there are no crashes (atomicity), that nobody else is concurrently accessing the database (isolation), and that storage devices are perfectly reliable (durability). Even though crashes, race conditions, and disk failures do occur, the transaction abstraction hides those problems so that the application doesn’t need to worry about them.
+> **構建容錯系統的最佳方法是找到一些具有有用保證的通用抽象，將它們實作一次，然後讓應用程式依賴這些保證**。這與我們在第 7 章中使用交易的方法相同：透過使用交易，應用程式可以假裝沒有當機 (原子性)、沒有其他人同時存取資料庫 (隔離性)，以及儲存設備是完全可靠的 (持久性)。儘管當機、競態條件和磁碟故障確實會發生，但交易抽象隱藏了這些問題，因此應用程式無需擔心它們。
+
+> 例如，分散式系統最重要的抽象之一是 **共識 (consensus)**：即讓所有節點對某事達成一致。正如我們在本章中將看到的，儘管存在網路故障和程序故障，可靠地達成共識是一個非常棘手的問題。
+
+如果沒有這個共識，假設您的資料庫當機了，那麼要推舉哪一個新的節點出來當領導者 (leader) 就成問題，如果大家對此有一個共識，那就簡單了。
 
 
+### 一致性保證 (Consistency Guarantees)
 
-> For example, one of the most important abstractions for distributed systems is **consensus**: that is, getting all of the nodes to agree on something. As we shall see in this chapter, reliably reaching consensus in spite of network faults and process failures is a surprisingly tricky problem.
+> 大多數複寫資料庫至少提供 **最終一致性 (eventual consistency)**，這意味著如果您停止寫入資料庫並等待一段不確定的時間，最終所有讀取請求都會返回相同的值。
 
+> 當使用只提供較弱保證（這裡指最終一致性）的資料庫時，您需要時刻注意其限制，不要意外地假設太多。錯誤通常很微妙且難以透過測試發現，因為應用程式在大多數時間可能運行良好。最終一致性的邊緣情況只有在系統發生故障（例如網路中斷）或在高並發時才會顯現出來。
 
-如果沒有這個共識，say 你的 db 如果掛了，那要推舉哪一個 new node 出來當 leader, 如果大家有一個共識，那就簡單了。
+下面這段我也覺得容易搞混.. 作者也特別提到，幾乎都算是不同的議題：
 
+> **分散式一致性模型 (distributed consistency models)** 與我們之前討論的 **交易隔離級別層級 (hierarchy of transaction isolation levels)** 之間存在一些相似之處（參見第 233 頁的 “弱隔離級別”）。但雖然存在一些重疊，它們主要是不相關的問題：交易隔離主要關乎避免由並行執行的交易引起的競態條件，而分散式一致性主要關乎在延遲和故障面前協調複本的狀態。
 
+本章的重點如下：
 
-### Consistency Guarantees
+> - 我們將從檢視目前使用中最嚴格的一致性模型之一 **線性一致性 (linearizability)** 開始，並探討其優點和缺點。
+>     
+> - 然後我們將探討在分散式系統中對事件進行排序的問題（第 339 頁的 “排序保證 (Ordering Guarantees)”），特別是圍繞因果關係和全序。
+>     
+> - 在第三部分（第 352 頁的 “分散式交易和共識 (Distributed Transactions and Consensus)”）中，我們將探討如何**原子地提交分散式交易**，這最終將引導我們找到共識問題的解決方案。
+>
 
-> Most replicated databases provide at least eventual consistency, which means that if you stop writing to the database and wait for some unspecified length of time, then eventually all read requests will return the same value.
+### 線性一致性 (Linearizability)
 
-
-> When working with a database that provides only weak guarantees (這裡指 eventual consistency), you need to be constantly aware of its limitations and not accidentally assume too much. Bugs are often subtle and hard to find by testing, because the application may work well most of the time. The edge cases of eventual consistency only become apparent when there is a fault in the system (e.g., a network interruption) or at high concurrency.
-
-
-下面這段我也覺得容易搞混..作者也特別提到，幾乎都算是不同的議題
-> There is some similarity between **distributed consistency models** and the **hierarchy of transaction isolation levels** we discussed previously [4, 5] (see “Weak Isolation Levels” on page 233). But while there is some overlap, they are mostly independent concerns: transaction isolation is primarily about avoiding race conditions due to concurrently executing transactions, whereas distributed consistency is mostly about coordinating the state of replicas in the face of delays and faults.
-
-
-這章的重點如下：
-> - We will start by looking at one of the strongest consistency models in common use, **linearizability**, and examine its pros and cons.
-> - We’ll then examine the issue of ordering events in a distributed system (“**Ordering Guarantees**” on page 339), particularly around causality and total ordering.
-> - In the third section (“Distributed Transactions and Consensus” on page 352) we will explore how to **atomically commit a distributed transaction**, which will finally lead us toward solutions for the consensus problem.
-    
-
-
-### Linearizability 線性一致性
-
-> This is the idea behind linearizability [6] (also known as atomic consistency [7], strong consistency, immediate consistency, or external consistency [8]).
-> the basic idea is to make a system appear as if there were only one copy of the data, and all operations on it are atomic. With this guarantee, even though there may be multiple replicas in reality, the application does not need to worry about them.
+> 這是線性一致性（也稱為原子一致性、強一致性、即時一致性或外部一致性）背後的思想。基本思想是讓系統看起來好像只有**單一資料副本**，並且所有對其的操作都是**原子**的。有了這個保證，即使實際上有多個複本，應用程式也不需要擔心它們。
 
 
 
@@ -46,7 +41,6 @@ Alice 讀的 follower1 已經可以拿到比賽結果，但 Bob讀的 follower2,
 
 
 ### 什麼系統才叫做線性一致?
-What Makes a System Linearizable?
 
 
 下圖， write 前的 read  (get 0), and write 後的 read (get 1)的結果都是確定的
@@ -57,7 +51,7 @@ What Makes a System Linearizable?
 
 
 下圖符合 Linearizable
-> In a linearizable system we imagine that there must be some point in time (between the start and end of the write operation) at which the value of x atomically flips from 0 to 1. Thus, if one client’s read returns the new value 1, all subsequent reads must also return the new value, even if the write operation has not yet completed.
+> 在線性一致的系統中，我們可以想像在寫入操作開始和結束之間的某個時間點，x 的值會**原子性地**從 0 翻轉為 1。因此，如果一個客戶端的讀取返回了新的值 1，則所有後續的讀取也必須返回新值，即使寫入操作尚未完成。
 
 就算 write 操作 is still undergoing, 我們還是一定得假設在一個時間點後，就會讀到 1, 然後後續的操作，就算來自其他客戶，都一定要讀到 1
 ![[IMG-Consistency and Consensus, DDIA CHAPTER 9-20250810200234593.png]]
@@ -88,24 +82,22 @@ Relying on Linearizability
 
 主要是在說，我們有哪些東西需要使用這個保證
 
-#### **主從複製 (single-leader replication)**
+#### **單領導者複寫 (single-leader replication)**
 
-> A system that uses single-leader replication needs to ensure that there is indeed only one leader, not several (split brain). One way of electing a leader is to use a lock: every node that starts up tries to acquire the lock, and the one that succeeds becomes the leader [14]. No matter how this lock is implemented, it must be linearizable: all nodes must agree which node owns the lock; otherwise it is useless.
+> 使用單領導者複寫的系統需要確保確實只有一個領導者，而不是多個（腦裂，split brain）。選舉領導者的一種方法是使用鎖：每個啟動的節點都嘗試獲取該鎖，成功者成為領導者。無論此鎖如何實作，它都必須是線性一致的：所有節點必須對哪個節點擁有該鎖達成一致；否則它就毫無用處。
 
-
-Coordination services like Apache ZooKeeper [15] and etcd [16] are often used to implement distributed locks and leader election. They use consensus algorithms to implement linearizable operations in a fault-tolerant way (we discuss such algorithms later in this chapter, in “Fault-Tolerant Consensus” on page 364).iii There are still many subtle details to implementing locks and leader election correctly (see for example the fencing issue in “The leader and the lock” on page 301), and libraries like Apache Curator [17] help by providing higher-level recipes on top of ZooKeeper.
+像 Apache ZooKeeper 和 etcd 這樣的共識服務通常用於實作分散式鎖和領導者選舉。它們使用共識演算法以容錯的方式實作線性一致的操作（我們將在本章後續的 “容錯共識” 中討論它們，第 364 頁）。在實作鎖和領導者選舉時，仍有許多細微的細節需要注意（例如，參見第 301 頁 “領導者和鎖” 中關於圍欄 (fencing) 的問題），而像 Apache Curator 這樣的函式庫透過在 ZooKeeper 之上提供更高層級的配方 (recipes) 來提供幫助。
 
 
 #### 約束和唯一性保證(Constraints and uniqueness guarantees)
 
-> If you want to enforce this constraint as the data is written (such that if two people try to concurrently create a user or a file with the same name, one of them will be returned an error), you need linearizability
+> 如果您想在資料寫入時強制執行此約束（即如果兩個人嘗試同時使用相同的名稱建立使用者或檔案，其中一人將收到錯誤），則需要線性一致性。
 
+銀行帳戶不會變成複數，不會兩個人一起買到同一個座位，您不會超賣... 等等。
 
-bank a/c 不會變成複數，不會兩個人一起買到同一個位子，你不會超賣..等等
-> Similar issues arise if you want to ensure that a bank account balance never goes negative, or that you don’t sell more items than you have in stock in the warehouse, or that two people don’t concurrently book the same seat on a flight or in a theater. These constraints all require there to be a single up-to-date value (the account bal‐ ance, the stock level, the seat occupancy) that all nodes agree on.
+> 如果您想確保銀行帳戶餘額永遠不會變成負數，或者您不會賣出比倉庫中庫存更多的商品，或者兩個人不會同時預訂同一張機票或劇院座位，都會出現類似的問題。所有這些約束都要求存在一個所有節點都同意的、單一的最新值（帳戶餘額、庫存水平、座位佔用情況）。
 
-
-#### Cross-channel timing dependencies
+#### 跨通道時序依賴 (Cross-channel timing dependencies)
 
 
 下圖，image resizer 和 web server 通過兩個方式溝通(file storage and queue)，因此就有了race condition
@@ -115,38 +107,32 @@ bank a/c 不會變成複數，不會兩個人一起買到同一個位子，你�
 ![[IMG-Consistency and Consensus, DDIA CHAPTER 9-20250810200237117.png|756]]
 
 
-### 實作線性一致系統
-Implementing Linearizable Systems
+### 實作線性一致系統 (Implementing Linearizable Systems)
 
-> Since linearizability essentially means “behave as though there is only a single copy of the data, and all operations on it are atomic,” the simplest answer would be to really only use a single copy of the data.
+> 由於線性一致性本質上意味著「表現得好像只有單一資料副本，且所有操作都是原子的」，最簡單的答案是**真的只使用單一資料副本**。
 
-但是我們要考慮 fault tolerate -> 因此就需要某種 replicate 機制
+但是我們需要考慮容錯  -> 因此就需要某種複寫機制。
 
-下面我們來 review replica 機制：
+下面我們來回顧複寫機制：
 
-> Single-leader replication (potentially linearizable)  (see “Leaders and Followers” on page 152)
+> 單領導者複寫 (可能線性一致) (參見第 152 頁的 “領導者和追隨者 (Leaders and Followers)”)
 
-If you make reads from the leader, or from synchronously updated followers, they have the potential to be linearizable.
+如果您從領導者讀取，或從**同步更新**的追隨者讀取，它們有可能是線性一致的。
 
-Using the leader for reads relies on the assumption that you know for sure who the leader is. As discussed in “The Truth Is Defined by the Majority” on page 300, it is quite possible for a node to think that it is the leader, when in fact it is not -> this will violate linearizability
+使用領導者進行讀取依賴於您確切知道誰是領導者的假設。如第 300 頁的 “真理由多數決定” 中所討論的，一個節點很有可能認為自己是領導者，但實際上並非如此  -> 這將違反線性一致性。
 
-With asynchronous replication, failover may even lose com‐ mitted writes (see “Handling Node Outages” on page 156), which violates both durability and linearizability.
+使用非同步複寫時，故障轉移 (failover) 甚至可能丟失已提交的寫入（參見第 156 頁的 “處理節點中斷 (Handling Node Outages)”），這違反了持久性和線性一致性。
 
+共識演算法 (線性一致的)  
+一些共識演算法，我們將在本章稍後討論，與單領導者複寫相似。然而，共識協定包含防止腦裂和過時複本的措施。由於這些細節，共識演算法可以安全地實作線性一致的儲存。例如，ZooKeeper 和 etcd 的工作方式就是如此。
 
-Consensus algorithms (linearizable)
-Some consensus algorithms, which we will discuss later in this chapter, bear a resemblance to single-leader replication. However, consensus protocols contain measures to prevent split brain and stale replicas. Thanks to these details, con‐ sensus algorithms can implement linearizable storage safely. This is how Zoo‐ Keeper [21] and etcd [22] work, for example.
+多領導者複寫 (非線性一致的)  
+具有多領導者複寫的系統通常不是線性一致的，因為它們在多個節點上並行處理寫入並將它們非同步複寫到其他節點。因此，它們可能會產生需要解決的衝突寫入（參見第 171 頁的 “處理寫入衝突 (Handling Write Conflicts)”）。此類衝突是缺乏單一資料副本的產物。
 
+無領導者複寫 (可能非線性一致的)  
+對於具有無領導者複寫的系統（Dynamo 風格；參見第 177 頁的 “無領導者複寫”），人們有時聲稱可以透過要求法定讀取和寫入 (w+r>nw+r>n) 來獲得「強一致性」。根據法定人數的確切配置，以及您如何定義強一致性，這並不完全正確。
 
-Multi-leader replication (not linearizable)
-Systems with multi-leader replication are generally not linearizable, because they concurrently process writes on multiple nodes and asynchronously replicate them to other nodes. For this reason, they can produce conflicting writes that require resolution (see “Handling Write Conflicts” on page 171). Such conflicts are an artifact of the lack of a single copy of the data.
-
-
-Leaderless replication (probably not linearizable)
-
-For systems with leaderless replication (Dynamo-style; see “Leaderless Replication” on page 177), people sometimes claim that you can obtain “strong consistency” by requiring quorum reads and writes (w + r > n). Depending on the exact configuration of the quorums, and depending on how you define strong consistency, , this is not quite true.
-
-“Last write wins” conflict resolution methods based on time-of-day clocks (e.g., in Cassandra; see “Relying on Synchronized Clocks” on page 291) are almost certainly nonlinearizable, because clock timestamps cannot be guaranteed to be consistent with actual event ordering due to clock skew. Sloppy quorums (“Sloppy Quorums and Hinted Handoff” on page 183) also ruin any chance of linearizability. Even with strict quorums, nonlinearizable behavior is possible, as demonstrated in the next section.
-
+基於當日時間戳的「最後寫入獲勝 (Last write wins)」衝突解決方法（例如 Cassandra 中的；參見第 291 頁的 “依賴同步時鐘”），幾乎可以肯定不是線性一致的，因為時鐘時間戳可能無法保證與實際事件順序一致，這是由於時鐘偏移 (clock skew) 所致。寬鬆的法定人數（第 183 頁的 “寬鬆的法定人數和提示傳遞 (Sloppy Quorums and Hinted Handoff)”）也破壞了線性一致性的任何機會。即使使用嚴格的法定人數，也可能出現非線性一致的行為，如下一節所示。
 
 
 下圖， w+r > n, 是 strcit quorum
@@ -163,8 +149,7 @@ B read also 2 node, get 0
 
 
 PS: 還是可以透過 犧牲 perf 達到，但是一些 db design 決定不這樣做
-> Interestingly, it is possible to make Dynamo-style quorums linearizable at the cost of reduced performance: a reader must perform read repair (see “Read repair and anti- entropy” on page 178) synchronously, before returning results to the application [23], and a writer must read the latest state of a quorum of nodes before sending its writes [24, 25]. However, Riak does not perform synchronous read repair due to the performance penalty [26]. Cassandra does wait for read repair to complete on quorum reads [27], but it loses linearizability if there are multiple concurrent writes to the same key, due to its use of last-write-wins conflict resolution.
-
+> 有趣的是，可以使 Dynamo 風格的法定人數線性一致，但代價是效能降低：讀取者必須在返回結果給應用程式之前**同步** 執行讀取修復（參見第 178 頁的 “讀取修復和反熵 (Read repair and anti-entropy)”），並且寫入者在發送寫入之前必須讀取法定人數節點的最新狀態。然而，Riak 由於效能損失而未執行同步讀取修復。Cassandra 在法定讀取時確實會等待讀取修復完成，但由於其使用最後寫入獲勝的衝突解決方法，它在對同一金鑰進行多個並行寫入時會丟失線性一致性。
 
 ### 線性一致的成本 
 The Cost of Linearizability
@@ -190,15 +175,15 @@ The Cost of Linearizability
 
 
 
-> Although linearizability is a useful guarantee, surprisingly few systems are actually linearizable in practice.
+> 儘管線性一致性是一個有用的保證，但令人驚訝的是，在實務中真正線性一致的系統並不多。
 
+例如現代 CPU 的執行緒和記憶體運作就沒有線性一致性。
 
-譬如現代 CPU 的 thread 跟 memory 的運作就沒有線性一致。
-> if a thread running on one CPU core writes to a memory address, and a thread on another CPU core reads the same address shortly afterward, it is not guaranteed to read the value written by the first thread (unless a memory barrier or fence [44] is used).
+> 如果在一個 CPU 核心上運行的執行緒寫入一個記憶體位址，而另一個 CPU 核心上的執行緒在短時間後讀取相同的位址，則不保證會讀到第一個執行緒寫入的值（除非使用了記憶體屏障或柵欄 (fence)）。
 
-Why?因為速度很重要! (so this is not about trade-off b/n available and consistency)
-> The reason for this behavior is that every CPU core has its own memory cache and store buffer. Memory access first goes to the cache by default, and any changes are asynchronously written out to main memory. Since accessing data in the cache is much faster than going to main memory [45], this feature is essential for good performance on modern CPUs.
+為什麼？因為速度很重要！(所以這不是關於可用性和一致性之間的權衡)
 
+> 造成這種行為的原因是，每個 CPU 核心都有自己的記憶體快取 (cache) 和儲存緩衝區 (store buffer)。記憶體存取預設會先進入快取，任何變更都會非同步寫入主記憶體。由於從快取中存取資料比存取主記憶體快得多，此功能對於現代 CPU 上的良好效能至關重要。
 
 很多 db 選擇放棄線性一致性，也是為了 perf, 而不完全是為了 fault-tolerance
 要確保線性一致性，整個機制都會比較慢。
@@ -207,114 +192,117 @@ Why?因為速度很重要! (so this is not about trade-off b/n available and con
 有辦法找到快速的線性一致性算法嗎? 可能無法。
 有學者證明，線性一致性算法的速度隨著網路不穩定度的提高而提高，而我們基本上很難控制網路的中斷。
 
-So, A faster algorithm for linearizability does not exist, but weaker consistency models can be much faster, so this trade-off is important for latency-sensitive systems.
+因此，不存在更快的線性一致性演算法，但較弱的一致性模型可以快得多，所以這種權衡對於延遲敏感的系統非常重要。
 
 
 
-## Ordering Guarantees 順序保證
+## 排序保證 (Ordering Guarantees)
 
-> Let’s recap other contexts in which we have discussed ordering:
+> 我們回顧一下我們討論過排序的其他情境：
 
+1. 單領導者複寫中，領導者 (leader) 決定了複寫日誌中寫入的順序 (order of writes in the replication log)。
+    
+2. 交易的 **可串行性 (transaction Serializability)** 保證，確保了執行順序依照「某個順序」進行，可能是透過真的依照順序執行，還是透過鎖或中止 (abort) 來確保。
+    
+3. 我們在第 8 章中討論的分散式系統中使用時間戳和時鐘 (參見第 291 頁的 “依賴同步時鐘”) 也是另一個讓我們確認順序性的方法，到底哪一個寫入才是第一個。
 
-1. single-leader replication 中的 leader 起到了決定 order of writes in the replication log 的作用
-2. 交易的串行性(transaction Serializability)保證，確保了執行順序依照"某個順序"進行，可能是透過真的依照順序跑，還是透過 lock or abort 來確保
-3. The use of timestamps and clocks in distributed systems that we discussed in Chapter 8 (see “Relying on Synchronized Clocks” on page 291) 也是另一個讓我們確認順序性，到底哪一個 write 才是第一個
+### 排序與因果關係 (Ordering and Causality)
 
+> 排序有助於保持 **因果關係 (causality)**。
 
+我們來看看本書的一些例子：
 
-### Ordering and Causality  因果一致
+> 在 “一致性前綴讀取 (Consistent Prefix Reads)”（第 165 頁，圖 5-5）中，我們看到一個觀察者在對話中先看到答案，然後才看到問題被回答的例子。我們說問題和答案之間存在因果依賴關係。
 
+> 圖 5-9 中出現了類似的模式，我們研究了三個領導者之間的複寫，並注意到由於網路延遲，某些寫入可能會「超越」其他寫入。這裡的因果關係意味著，一個資料列必須先建立，然後才能被更新。
 
-> Ordering helps preserve **causality**.
+> 在 “偵測並行寫入 (Detecting Concurrent Writes)”（第 184 頁）中，我們觀察到，如果您有兩個操作 A 和 B，有三種可能性：A 發生在 B 之前，或 B 發生在 A 之前，或 A 和 B 是並行的。這種「發生在之前」的關係是因果關係的另一種表達。
 
+> 在交易的快照隔離背景下（第 237 頁的 “快照隔離和可重複讀取 (Snapshot Isolation and Repeatable Read)”），我們說交易是從一致的快照中讀取。但在這種情況下，「一致」意味著什麼？它意味著與因果關係一致。
 
+> （第 246 頁的 “寫入傾斜和幻讀 (Write Skew and Phantoms)”）也展示了因果依賴關係：在圖 7-8 中，Alice 被允許下線，因為交易認為 Bob 仍然在線，反之亦然。
 
-我們來看看本書的一些例子
-
-> In “Consistent Prefix Reads” on page 165 (Figure 5-5) we saw an example where the observer of a conversation saw first the answer to a question, and then the question being answered. We say that there is a causal dependency between the question and the answer.
-
-
-> A similar pattern appeared in Figure 5-9, where we looked at the replication between three leaders and noticed that some writes could “overtake” others due to network delays. Causality here means that a row must first be created before it can be updated.
-
-
-> In “Detecting Concurrent Writes” on page 184 we observed that if you have two operations A and B, there are three possibilities: either A happened before B, or B happened before A, or A and B are concurrent. This happened before relationship is another expression of causality
-
-
-> In the context of snapshot isolation for transactions (“Snapshot Isolation and Repeatable Read” on page 237), we said that a transaction reads from a consistent snapshot. But what does “consistent” mean in this context? It means consistent with causality
-
-
->  “Write Skew and Phan‐ toms” on page 246) also demonstrated causal dependencies: in Figure 7-8, Alice was allowed to go off call because the transaction thought that Bob was still on call, and vice versa.
-
-
-> In the example of Alice and Bob watching football (Figure 9-1), Alice’s exclamation is causally dependent on the announcement of the score, so Bob should also be able to see the score after hearing Alice. The same pattern appeared again in “Cross-channel timing dependencies” on page 331 in the guise of an image resizing service.
-
+> 在 Alice 和 Bob 觀看足球的例子中（圖 9-1），Alice 的驚呼在因果上依賴於比分的宣布，因此 Bob 在聽到 Alice 之後也應該能看到比分。在第 331 頁的 “跨通道時序依賴” 中，以影像縮放服務的形式再次出現了相同的模式。
 
 因此，我們可以說：
-> Causality imposes an ordering on events: 
-> cause comes before effect; 
-> a message is sent before that message is received; 
-> the question comes before the answer. 
-> And, like in real life, one thing leads to another: one node reads some data and then writes some‐ thing as a result, another node reads the thing that was written and writes something else in turn, and so on. These chains of causally dependent operations define the causal order in the system—i.e., what happened before what.
+
+> 因果關係對事件施加了排序：  
+> 原因先於結果；  
+> 訊息在被接收之前被發送；  
+> 問題先於答案。  
+> 而且，就像在現實生活中一樣，一件事導致另一件事：一個節點讀取一些資料，然後作為結果寫入一些東西，另一個節點讀取被寫入的東西，然後又寫入一些別的東西，依此類推。這些因果相關操作的鏈條定義了系統中的因果順序 —— 即什麼發生在什麼之前。
+
+如果一個系統符合因果順序，那我們會說這個系統是 **因果一致的 (causally consistent)**。
+
+快照隔離就具有因果一致性的保證：當您從資料庫讀取時，如果您看到了某個資料片段，那麼您也必須能夠看到任何在因果上先於它的資料。
+
+**因果順序不是全序**
+
+什麼是全序 (total order)？  
+給你兩個數，像 12, 3， 
+
+```
+12>312>3
+```
+
+，可以比較大小。  
+自然數就是全序。
+
+什麼是部分序 (partial order)？  
+給你兩個集合 
+
+```
+{a,b},{b,c}{a,b},{b,c}
+```
+
+。
+
+線性一致性是全序 
+
+```
+→→
+```
+
+ 我們總是可以知道哪個先，哪個後。
+
+因果關係就是部分序。  
+有時候可以區分前後。  
+但是如果是並行 (concurrent) 就無法區分。
+
+Git（分散式版本控制系統）就是部分序。  
+Git 圖就是一個圖，呈現了因果依賴。  
+有時候，Git 圖很簡單，前後明瞭。  
+有時候，有多人並行 (concurrently) 致力於同一個功能，需要解決衝突並合併。
+
+
+**線性一致性比因果一致性更強**
+
+> 線性一致性蘊含因果關係：任何線性一致的系統都將正確地保持因果關係。
+
+如同上面的佇列和檔案儲存的例子，因為有多個溝通管道，但如果系統是線性一致的，那你就不用做任何事情，也可以確保檔案儲存可以處理到最新的檔案。（否則你需要處理它）。
+
+線性一致讓系統的運行變得簡單和直覺，但是成本是效能或是可用性，因此很多系統選擇後者。
+
+有中間路線可以選擇嗎？  
+有，使用**因果一致性**。
+
+而且，
+
+> 因果一致性是**最強**的一致性模型，它**不會**因為網路延遲而變慢，並且在面對網路故障時**仍然可用**。
 
 
 
-如果一個系統符合因果性順序，那我們會說這個系統是 **因果一致的 causally consistent**
-
-snapshot isolation 就有因果一致的保證：when you read from the database, and you see some piece of data, then you must also be able to see any data that causally precedes it.
-
-
-
-**The causal order is not a total order**
-
-
-what is total order?
-給你兩個數，like 12, 3, 12>3, 可以比大小
-自然數就是 total order
-
-what is partial order
-給你兩個 set  {a, b}, {b ,c}
-
-
-Linearizability is total ordering ->  我們總是可以知道那個先，哪個後。
-
-Causality 就是 partial order 
-有時候可以區分前後
-但是如果是 cocurrent 就無法
-
-
-Git （分散版本控制系統） 就是 partial order
-Git 圖就是一個 圖，呈現了 因果依賴
-有時候， git 圖很簡單，前後明瞭
-有時候，有多人 cocurrently work on a same feature and need to resolve conflict and merge。
-
-
-**Linearizability is stronger than causal consistency**
-
-> linearizability implies causality: any system that is linearizable will preserve causality correctly
-
-如同上面的 queue and file storage 例子，因為有多個溝通管道，但如果系統是線性一致，那你就不用做任何事情，也可以確保 file storage 可以處理到最新的檔案。(o.w. you need to handle it)
-
-線性一致讓系統的運行變得很簡單和直覺，但是成本確是效能或是可用性，因此很多系統選擇後者。
-
-有中間路線可以選擇嗎?
-有，使用**因果一致**
-
-而且, 
-> causal consistency is the strongest possible consistency model that does not slow down due to network delays, and remains available in the face of network failures
-
-
-
-**Capturing causal dependencies**
+**捕捉因果依賴 (Capturing causal dependencies)**
 
 我們只需要 partial order, 可以有 cocurrent ops and run in any order, 但是只要一個 op 比另一個先發生，那另一個 replica 也要是一樣的順序（不然就違背 因果一致）。
 
 這個概念類似，如果一個 node 看到 value X, 當他要寫入 Y, 那 X and Y 就有因果關係了。
 
-這概念跟我們在 “Detecting Concurrent Writes” on page 184 類似，where we need to detect concurrent writes to the same key in order to prevent lost updates. 
+這個概念跟我們在 “偵測並行寫入”（第 184 頁）中類似，我們需要偵測對同一金鑰的並行寫入，以防止遺失更新。
 
-Causal consistency goes further: it needs to track causal dependencies across the entire database, not just for a single key. Version vectors can be generalized to do this [54].
+因果一致性更進一步：它需要追蹤整個資料庫的因果依賴關係，而不僅僅是單一金鑰。版本向量 (Version vectors) 可以推廣來做到這一點。
 
-因此， db 需要知道目前讀的資料的版本，in Figure 5-13，上一個操作的版號需要 pass 到後面，當 db 需要寫入時。A similar idea appears in the conflict detection of SSI, as discussed in “Serializable Snapshot Isola‐ tion (SSI)” on page 261: when a transaction wants to commit, the database checks whether the version of the data that it read is still up to date.
+因此，資料庫需要知道目前讀取資料的版本，在圖 5-13 中，上一個操作的版本號需要傳遞到後面，當資料庫需要寫入時。一個類似的想法出現在 SSI 的衝突偵測中，如 “可序列化快照隔離 (SSI)”（第 261 頁）中所述：當一個交易想要提交時，資料庫會檢查它所讀取的資料版本是否仍然是最新的。
 
 
 ### 用序列號來排序 Sequence Number Ordering 
@@ -329,7 +317,7 @@ db 的單領導(single leader) replication, replication log 就定義 寫入的 
 
 
 
-**Noncausal sequence number generators**
+**非因果的序列號生成器 (Noncausal sequence number generators)**
 
 如果不是 singler leader, 是multiple leader, or leaderless, or paritioned case, 以下是常見建立 corss-node 的 increasing UID 生產方法：
 
@@ -346,7 +334,7 @@ db 的單領導(single leader) replication, replication log 就定義 寫入的 
 
 
 
-**Lamport timestamps** - a simple method for generating sequence numbers that is consistent with causality
+**Lamport 時間戳 (Lamport timestamps)** - 一種**符合因果關係**的簡單生成序列號的方法。
 
 
 每一個 node 有自己的 unique identifier
@@ -367,88 +355,78 @@ It provide total ordering: 如果兩個 node 有一樣的 counter, 大的 counte
 透過上面這個機制，我們把 max counter 傳遞 acorss nodes, 因此 Lamport timestamps is 因果一致。因果關係透過 這個 counter 傳遞下去。
 
 Lamport timestamps 跟之前我們提到的 version vectors (in “Detecting Concurrent Writes” on page 184) 雖然很像，但不同。
-> version vectors can distinguish whether two operations are concurrent or whether one is causally dependent on the other, whereas Lamport timestamps always enforce a total ordering. 
+> 版本向量可以區分兩個操作是並行的還是其中一個在因果上依賴於另一個，而 Lamport 時間戳總是強制執行全序。
 
 
-**Timestamp ordering is not sufficient**
+**時間戳排序不足以保證一致性 (Timestamp ordering is not sufficient)**
 
-雖然 lamport ts 可以提供因果一致，但還是會遇到一些分布系統的常見問題。
+雖然 Lamport 時間戳可以提供因果一致性，但仍然會遇到一些分散式系統的常見問題。
 
-
-我們來舉一個常見的例子， user name 唯一性問題:
+我們來舉一個常見的例子：使用者名稱唯一性問題。
 
 兩個人想要建立一樣的名字。
 
-兩個 operaiton 是不同的 node 處理。
+兩個操作是由不同的節點處理。
 
-那如果你有 total order, 因果一致，知道哪個先，哪個後，不是可以處理嗎？你讓先的那個 win 就好。
+那如果您有全序，因果一致性，知道哪個先，哪個後，不是可以處理嗎？您讓先的那個獲勝 (win) 就好。
 
-問題是， lamport ts 的機制，你需要全部的 node 的資訊都"收集到了"，你才會知道那個先哪個後。
+問題是，Lamport 時間戳的機制，您需要**所有**節點的資訊都「收集到了」，您才會知道哪個先哪個後。
 
-那你可能就需要等待很久，譬如 user 建立名字，你還要發 req 到其他所有的 node 都確認是否也有一樣的名字，然後如果又有network delay...那就更久了。
+那您可能就需要等待很久，例如使用者建立名字，您還要發送請求到其他所有節點都確認是否也有相同的名字，然後如果又有網路延遲... 那就更久了。
 
-簡單說，上面的例子說明: 只有 total order of operations 不夠，你要做決定，要等到所有的 operation 都"完成"
+簡單說，上面的例子說明：**只有操作的全序是不夠的**，您要做決定，要等到所有的操作都「完成」。
 
-那要如何解決呢? -> introduce  **total order broadcast**
-
+那要如何解決呢？  →  引入 **全序廣播 (total order broadcast)**。
 
 ### Total Order Broadcast 全序廣播
 
+如果您的程式只在單一 CPU 核心上運行，很容易定義操作的全序：它就是 CPU 執行它們的順序。然而，在分散式系統中，讓所有節點對操作的相同全序達成一致是很棘手的。
 
-If your program runs only on a single CPU core, it is easy to define a total ordering of operations: it is simply the order in which they were executed by the CPU. However, in a distributed system, getting all nodes to agree on the same total ordering of operations is tricky. 
+在上一節中，我們討論了透過時間戳或序列號進行排序，但發現它不如單領導者複寫強大（如果您使用時間戳排序來實作唯一性約束，則無法容忍任何故障）。
 
-In the last section we discussed ordering by timestamps or sequence numbers, but found that it is not as powerful as single-leader replication (if you use timestamp ordering to implement a uniqueness constraint, you cannot tolerate any faults).
+上面提到 Lamport 時間戳遇到的問題。那我們回到單領導者複寫的情況下，一個節點當領導者，然後那個領導者產生的序列號作為順序。  
+那我們有兩個問題：  
+一個是如果我們要處理的資料量大於一個節點可以處理的要怎麼辦？  
+另一個是如果單點故障 (SPOF)，如何處理故障轉移 (failover)？
 
+分散式系統中，這個問題稱為全序廣播或原子廣播 (atomic broadcast)。
 
-上面提到 lamport ts 遇到的問題。
-那我們回到 sinlger-leader replication 的情況下，一個 node 當leader, 然後那個 leader 產生的 seq number 作為順序。
-那我們有兩個問題
-一個就是如果我們要handle 的量大於一個node 可以 handle的要怎麼辦?
-另一個是如果 spof, how to handle failover?
+基本上就是透過一個協定 (protocol)。
 
-分布系統中，這個問題叫做 total order broadcast or atomic broadcast
+這個協定是關於節點如何交換訊息 (msgs)。
 
+這個演算法需要滿足兩個條件：
 
-基本上就是透過一個 protocol
+- 可靠傳遞 (Reliable delivery)
+    - 沒有訊息丟失 (msg lost)。
+    - 如果有訊息發送給一個節點，所有節點也都要收到。
+        
+- 全序傳遞 (Totally ordered delivery)
+    - 所有人，每個節點收到的順序都要一樣。
+        
 
-這個protocol is about how node exchanging msgs
-
-這個算法需要滿足兩個條件
-
-- Reliable delivery
-	- 沒有 msg lost
-	- 如果有msg 送出去給一個node, all node 也都要收到
-- Totally ordered delivery
-	- 大家，每一個 node 收到的順序都要一樣。
-
-
-就算是 node or network fail，以上條件也要成立。
-當然如果有 node or network fail，自然就暫時無法達到，那算法需要有某種 retry 機制讓這個條件最終也要成立。
+即使節點或網路故障，以上條件也要成立。  
+當然如果有節點或網路故障，自然就暫時無法達成，那演算法需要有某種重試 (retry) 機制讓這個條件最終也要成立。
 
 
 **使用全序廣播**
 **Using total order broadcast**
 
-Consensus services,像是 ZooKeeper, etcd 都有實作 total order broadcast 全序廣播。（Consensus and total order broadcast 之間的關聯後續要提到）
+共識服務，像是 ZooKeeper、etcd 都有實作全序廣播。（共識和全序廣播之間的關聯後續要提到）。
 
+全序廣播就是我們資料庫複寫需要的。每一個訊息代表一個資料庫寫入，每一個複本處理寫入都是一樣的順序，那所有的複本就會保持一致性。（又稱為狀態機複寫 (state machine replication)，我們將在第 11 章再回頭討論它）。
 
-全序廣播 就是我們 db replication 需要的。每一個 msg 表示一個 db 寫入，每一個 replica process 寫入都是一樣的順序，那所有的 replicas 就會保持一致性。(又叫做 state machine replication [60], and we will return to it in Chapter 11)
+全序廣播也可以用來實作可序列化交易 (serializable transactions)，如 “實際序列執行”（第 252 頁）中所討論的。
 
+> 如果每個訊息代表一個要作為儲存程序執行的確定性交易，並且如果每個節點以相同的順序處理這些訊息，那麼資料庫的分區和複本將彼此保持一致。
 
-全序廣播也可以用來實作串行交易(serializable transactions), as discussed in “Actual Serial Execution” on page 252。
->  if every message represents a deterministic transaction to be executed as a stored procedure, and if every node processes those messages in the same order, then the partitions and replicas of the database are kept consistent with each other [61].
+一個關鍵是，全序廣播的順序，在訊息要傳送時就固定了。因此，一個節點不可以回溯插入一個訊息在更之前的位置（早於其他已經傳遞出去的訊息）。
 
+另一個角度去看全序廣播，可以看成是一種生成日誌 (log) 的方式。（如複寫日誌、交易日誌或寫入前日誌 (write-ahead log)）。
 
-一個關鍵是，全序廣播的順序，在 msg 要傳的時候，就固定了。因此，一個 node 是不可以回朔插入一個 msg 在更之前的位置(之前於其他已經傳遞出去的 msg)。
-
-
-另一個角度去看 全序廣播，可以幫他看成是一種生成 log 的方式。  (as in a replication log, transaction log, or write-ahead log)
-
-
-也常拿來實作 lock 服務，提供 fencing tokens (see “Fencing tokens” on page 303). 
-每一個 req 可以透過 append a msg to the append-only log 來 get lock, all msg 都是有序排列在 log 中。
-這個 seq number 可以拿來做為 fencing token, 因為是單調遞增的。 In ZooKeeper, this sequence number is called zxid [15].
-
+也常拿來實作鎖服務，提供圍欄令牌 (fencing tokens)（參見第 303 頁的 “圍欄令牌 (Fencing tokens)”）。  
+每個請求可以透過將訊息附加到 **僅附加日誌 (append-only log)** 來獲得鎖，所有訊息都依序排列在日誌中。  
+這個序列號可以用作圍欄令牌，因為它是單調遞增的。在 ZooKeeper 中，這個序列號稱為 zxid。
 
 
 **用全序廣播來實作線型儲存**
@@ -484,17 +462,15 @@ Consensus services,像是 ZooKeeper, etcd 都有實作 total order broadcast 全
 因為如果你讀的資料來自於一個 store, 那這個 store 是非同步去拿到這個 log 的資料的話，那你讀的資料就過期了。
 
 
-While this procedure ensures linearizable writes, it doesn’t guarantee linearizable reads — if you read from a store that is asynchronously updated from the log, it may be stale. (To be precise, the procedure described here provides sequential consistency [47, 64], sometimes also known as timeline consistency [65, 66], a slightly weaker guarantee than linearizability.) 
+雖然這個程序確保了線性寫入，但它不能保證線性讀取 —— 如果您從一個非同步更新自日誌的儲存中讀取，它可能是過時的。（精確地說，這裡描述的程序提供了 **順序一致性 (sequential consistency)**，有時也稱為時間線一致性，這是一個比線性一致性稍弱的保證。）
 
+要達到線性讀取，有幾個方法：
 
-
-要達到線性讀，下面有幾個方法：
-
-- You can sequence reads through the log by appending a message, reading the log, and performing the actual read when the message is delivered back to you. The message’s position in the log thus defines the point in time at which the read happens. (Quorum reads in etcd work somewhat like this [16].)
+- 您可以透過日誌對讀取進行排序，方法是附加一個訊息，讀取日誌，並在訊息傳回給您時執行實際的讀取。訊息在日誌中的位置從而定義了讀取發生的時間點。（etcd 中的法定讀取在某種程度上類似於此。）
     
-- If the log allows you to fetch the position of the latest log message in a linearizable way, you can query that position, wait for all entries up to that position to be delivered to you, and then perform the read. (This is the idea behind ZooKeeper’s sync() operation [15].)
-
-- 讓你讀的來源/replica 是用同步的方式。就是資料寫到 log, 你要等到資料讀回來，整個才會一個 operation. This technique is used in chain replication [63]; see also “Research on Replication” on page 155.)
+- 如果日誌允許您以線性一致的方式獲取最新日誌訊息的位置，您可以查詢該位置，等待所有直到該位置的條目傳遞給您，然後執行讀取。（這是 ZooKeeper 的  sync()操作背後的思想。）
+    
+- 讓您的讀取來源 / 複本使用**同步** 的方式。就是資料寫入日誌，您要等到資料讀回來，整個才算一個操作。（這種技術用於鏈式複寫 (chain replication)；另請參見第 155 頁的 “複寫研究”）。
 
 
 
@@ -522,105 +498,80 @@ While this procedure ensures linearizable writes, it doesn’t guarantee lineari
 
 最後都會回到 共識相關的算法。
 
-已經有學者證明，a linearizable compare-and-set (or increment-and-get) register  和   total order broadcast  的問題， are both equivalent to consensus [28, 67] 問題。 因此如果你解了其中一個，you can transform it into a solution for the others!
-
+已經有學者證明，一個線性一致的比較並設定 (compare-and-set) 暫存器（或遞增並獲取暫存器）和全序廣播的問題，都等同於 **共識 (consensus)** 問題。因此，如果您解決了其中一個，您可以將其轉換為解決其他問題的方法！
 下面，我們會開始看看 共識問題。
 
 
 ## Distributed Transactions and Consensus
 
 
-Consensus is one of the most important and fundamental problems in distributed computing.
+共識是分散式計算中最重要和最基礎的問題之一。
 
+目標是讓多個節點都對某事達成一致。
 
-目標就是讓 serveral nodes 都 agree on somthing
+為何需要分散式交易？
 
+領導者選舉 (Leader election)  
+故障轉移 (failover) 需要所有追隨者都「同意」誰是領導者。
 
-為何需要分散事務?
+> 在使用單領導者複寫的資料庫中，所有節點都需要對哪個節點是領導者達成一致。如果由於網路故障導致某些節點無法與其他節點通訊，領導者位置可能會受到爭議。在這種情況下，**共識對於避免糟糕的故障轉移至關重要**，從而導致腦裂情況，即兩個節點都認為自己是領導者（參見第 156 頁的 “處理節點中斷 (Handling Node Outages)”）。如果有兩個領導者，它們都會接受寫入，並且它們的資料將會分歧，從而導致不一致和資料丟失。
 
-Leader election  領導者選舉
-failover 需要 followers 對於 leader 是那一個需要"都"同意
+跨節點、分區的原子提交
 
-> **In a database with single-leader replication, all nodes need to agree on which node is the leader.** The leadership position might become contested if some nodes can’t communicate with others due to a network fault. In this case, **consensus is important to avoid a bad failover**, resulting in a split brain situation in which two nodes both believe themselves to be the leader (see “Handling Node Outages” on page 156). If there were two leaders, they would both accept writes and their data would diverge, leading to inconsistency and data loss.
+如果成功或失敗，每個節點 / 分區都需要大家「都」同意。
 
+> 在一個**支援跨越多個節點或分區的交易** 的資料庫中，我們面臨一個問題，即交易可能在某些節點上失敗，但在其他節點上成功。如果我們想保持交易的原子性（在 ACID 的意義上；參見第 223 頁的 “原子性”）， **我們必須讓所有節點對交易的結果達成一致：如果出現任何錯誤，則全部中止/回滾 (abort/roll back)，如果沒有錯誤，則全部提交 (commit)**。這種共識實例稱為原子提交問題 (atomic commit problem)。
 
+在本節中，我們將首先更詳細地探討原子提交問題。
 
-跨 node, partition 的 原子提交 
+我們先介紹兩階段提交 (two-phase commit, 2PC) 演算法，它很常見且常用，但是不夠好。
 
-如果成功或失敗，每一個 node/partition 需要大家"都"同意
-
-
-> In a database that **supports transactions spanning several nodes or partitions**, we have the problem that a transaction may fail on some nodes but succeed on others. If we want to maintain transaction atomicity (in the sense of ACID; see “Atomicity” on page 223), **we have to get all nodes to agree on the outcome of the transaction: either they all abort/roll back (if anything goes wrong) or they all commit (if nothing goes wrong).** This instance of consensus is known as the atomic commit problem 
-
-
-In this section we will first examine the atomic commit problem in more detail. 
-
-
-我們先介紹 two-phase commit (2PC) algorithm 很常見也常用，但是不是夠好。 [70, 71].
-
-我們會介紹更好的共識算法(consensus algorithms), , such as those used in ZooKeeper (Zab) and etcd (Raft).
-
-
+我們將介紹更好的共識演算法，例如 ZooKeeper (Zab) 和 etcd (Raft) 使用的演算法。
 
 ### 2階段提交 Atomic Commit and Two-Phase Commit (2PC)
 
 
+交易需要全有或全無，這是一個非常重要的保證。
 
-tx 我們需要全有或是全無，這是很重要的保證。
+對於多物件交易（參見第 228 頁的 “單物件和多物件操作”）和需要維護次級索引 (secondary indexes) 的資料庫來說更是重要。
 
-對於  multi-object transactions (see “Single-Object and Multi-Object Operations” on page 228) 和 需要維護 secondary indexes 的 db 更是重要。
+可以回去看次級索引那一章，如果您更新主鍵 (pk) 的資料，許多對應的次級索引 (sk) 都需要在不同的節點 / 分區中更新，確保所有資料都成功，或者全部都失敗非常重要。參見 [[分區 #分區和次級索引]]
 
-
-可以回去看 secondary idx 那章，如果你 update  pk 的資料，很多對應的 sk 都需要在不同的 node/parition 去 update, 確保資料全部都成功，或是全部都失敗很重要 
-see [[partition#Partitioning and Secondary Indexes]]
-
-我們需要一個分布系統下的原子提交
+我們需要一個分散式系統下的原子提交。
 
 
-**From single-node to distributed atomic commit**
+**從單節點到分散式原子提交**
+單點交易的原子性，透過資料庫引擎的 WAL 解決。  
+如果中途失敗：
 
+- 如果資料都已經寫入 WAL（在磁碟上，持久化）  →→ 表示已提交  →→ 可以用 WAL 重建。
+    
+- 如果還沒  →→ 也還沒提交  →→ 中止 (abort)，回到寫入前。
+    
 
+通常資料全部寫入磁碟後，還會有一個 **提交記錄 (commit record)**。  
+一旦這個提交記錄寫入磁碟  →→ 算提交。  
+即使當機也算提交。  
+否則算未提交，如果當機  →→ 會中止。
 
-單點的 tx 的 原子性，透過 db engine 的 WAL 搞定。
-如果中途失敗的話
-- 如果資料都已經寫入 WAL(in disk, durable) -> 表示 commited -> 可以用WAL 重建
-- 如果還沒  -> 也還沒 commit -> abort, 回到原本寫入前。
+那如果遇到需要多節點進行提交怎麼辦？  
+一些 NoSQL 資料庫沒有提供這個功能。  
+但是一些叢集關聯性資料庫有提供（參見下文 “分散式交易的實踐”）。
 
+如果我們讓節點成功就可以提交，因為很多原因（網路暫時中斷、節點暫時當機、或是超時導致的問題等等），會發生有些節點提交成功，有些失敗的情況。這樣資料就不一致了。
 
+因此我們一定得，當一個節點要提交時，一定得大家都要一起提交才行。
 
-通常資料全部都寫入 disk, 還會有一個 提交記錄 commit record [72].
-一旦這個提交記錄寫入 disk -> 算提交。 
-就算 crash 也算 commit
-o.w. 算還沒提交，如果 crash -> 會 abort
-
-
-
-那如果遇到需要多 node 進行提交怎半?
-一些 noSQL db 沒有提供這個功能
-但是一些集群關連性 db有提供 (see blow “Distributed Transactions in Practice”).
-
-
-
-
-如果我們讓 node成功就可以commit, 因為很多原因(網路暫時中斷，node暫時down, 或是timout導致問等等), 會發生有些 node commit 成功，有些失敗的情況。這樣資料就不一致了。
-
-因此我們一定得，當一個 node 要 commit 時，一定得大家都要一起 commit 才行。
-
-
-
-
-
-一旦提交，就不可以撤銷。
+一旦提交，就不可以撤銷。  
 這是基本原則。
 
-因為如果你提交後又撤銷，那其他tx使用你交易後的資料繼續去進行操作怎麼辦?
+因為如果您提交後又撤銷，那其他交易使用您交易後的資料繼續進行操作怎麼辦？
 
-這也是交易的基礎，就像是我們提到的 “Read Committed” 保證: no dirty read/write.
-就是只要提交，才可以讀和寫。
+這也是交易的基礎，就像是我們提到的「讀已提交 (Read Committed)」保證：沒有髒讀/髒寫 (dirty read/write)。  
+就是只要提交，才可以讀和寫。  
 因此就是提交後的資料就是可以安全使用的。
 
-
-PS: It is possible for the effects of a committed transaction to later be undone by another, compensating transaction [73, 74]. However, from the database’s point of view this is a separate transaction, and thus any cross-transaction correctness requirements are the application’s problem.
+附註 (PS)：已提交交易的影響之後可能被另一個 **補償交易 (compensating transaction)** 撤銷是可能的。然而，從資料庫的角度來看，這是另一個單獨的交易，因此任何跨交易的正確性要求都是應用程式的問題。
 
 
 
@@ -724,11 +675,12 @@ db1 可以問db2??
 因此這就是上面提到的， 一旦協調者決定大家要 commit or not, 第一個事情就是存到log 
 
 
-**Three-phase commit is blocking atomic commit **
+**三階段提交是阻塞的原子提交 (Three-phase commit is blocking atomic commit)**
 
-這也是為何有人把 2pc 叫做  blocking 原子提交
+這也是為何有人把 2PC 叫做**阻塞原子提交**
 
-> In theory, it is possible to make an atomic commit protocol nonblocking, so that it does not get stuck if a node fails. However, making this work in practice is not so straightforward.
+理論上，可以使原子提交協定 **非阻塞 (nonblocking)**，使其在節點失敗時不會卡住。然而，在實務中要讓這奏效並不容易。
+
 
 
 有另一個算法叫做 3PC [13, 80], 是 nonblocking 提交。
@@ -738,93 +690,80 @@ db1 可以問db2??
 ### 分散式交易的實踐  Distributed Transactions in Practice
 
 
-Distributed transactions, especially those implemented with two-phase commit, have a mixed reputation. On the one hand, they are seen as providing an important safety guarantee that would be hard to achieve otherwise; on the other hand, they are criti‐ cized for causing operational problems, killing performance, and promising more than they can deliver [81, 82, 83, 84]. Many cloud services choose not to implement distributed transactions due to the operational problems they engender [85, 86].
+分散式交易，特別是使用兩階段提交實作的，聲譽好壞參半。一方面，它們被視為提供了重要的安全保證，否則難以實現；另一方面，它們因造成操作問題、扼殺效能以及承諾過多而受到批評。許多雲端服務選擇不實作分散式交易，因為它們會引發操作問題。
 
-Some implementations of distributed transactions carry a heavy performance penalty —for example, distributed transactions in MySQL are reported to be over 10 times slower than single-node transactions [87], so it is not surprising when people advise against using them. Much of the performance cost inherent in two-phase commit is due to the additional disk forcing (fsync) that is required for crash recovery [88], and the additional network round-trips.
+一些分散式交易的實作會帶來沉重的效能代價 —— 例如，據報導 MySQL 中的分散式交易比單節點交易慢了 10 倍以上，因此人們建議不要使用它們也就不足為奇了。兩階段提交固有的效能成本很大一部分是由於 **為了當機恢復而需要的額外磁碟強制寫入 (fsync)**，以及額外的網路往返次數。
 
-However, rather than dismissing distributed transactions outright, we should exam‐ ine them in some more detail, because there are important lessons to be learned from them. To begin, we should be precise about what we mean by “distributed transac‐ tions.” Two quite different types of distributed transactions are often conflated:
+然而，與其完全拋棄分散式交易，我們應該更詳細地研究它們，因為我們可以從中學到重要的經驗教訓。首先，我們應該精確說明我們所說的「分散式交易」是什麼意思。兩種截然不同的分散式交易類型經常被混為一談：
 
+資料庫內部分散式交易 (Database-internal distributed transactions)  
+一些分散式資料庫（即在其標準配置中使用複寫和分區的資料庫）支援該資料庫節點之間的內部交易。例如，VoltDB 和 MySQL Cluster 的 NDB 儲存引擎就具有此類內部交易支援。在這種情況下，所有參與交易的節點都在運行相同的資料庫軟體。
 
-Database-internal distributed transactions
+異質分散式交易 (Heterogeneous distributed transactions)  
+在異質交易中，參與者是兩種或更多不同的技術：例如，來自不同供應商的兩個資料庫，甚至是像訊息代理 (message brokers) 這樣的非資料庫系統。跨這些系統的分散式交易必須確保原子提交，即使它們底層完全不同。
 
-Some distributed databases (i.e., databases that use replication and partitioning in their standard configuration) support internal transactions among the nodes of that database. For example, VoltDB and MySQL Cluster’s NDB storage engine have such internal transaction support. In this case, all the nodes participating in the transaction are running the same database software.
+資料庫內部分散式交易不必與任何其他系統相容，因此它們可以使用任何協定並應用特定於該特定技術的優化。因此，資料庫內部分散式交易通常可以工作得相當好。另一方面，跨異質技術的交易則更具挑戰性。
 
-Heterogeneous distributed transactions  
-In a heterogeneous transaction, the participants are two or more different tech‐ nologies: for example, two databases from different vendors, or even non- database systems such as message brokers. A distributed transaction across these systems must ensure atomic commit, even though the systems may be entirely different under the hood.
+**精確一次訊息處理 (Exactly-once message processing)**
 
-Database-internal transactions do not have to be compatible with any other system, so they can use any protocol and apply optimizations specific to that particular tech‐ nology. For that reason, database-internal distributed transactions can often work quite well. On the other hand, transactions spanning heterogeneous technologies are a lot more challenging.
+異質分散式交易允許以強大的方式整合不同的系統。例如，只有在處理訊息的資料庫交易成功提交時，才能確認來自訊息佇列的訊息已被處理。這是透過在單一交易中**原子地提交訊息確認和資料庫寫入**來實作的。有了分散式交易支援，即使訊息處理需要幾次重試才能成功，這也是可能的。如果訊息傳遞或資料庫交易失敗，兩者都會中止，因此訊息代理可以安全地稍後重傳訊息。因此，透過原子地提交訊息及其處理的副作用，我們可以確保訊息實際上只被處理一次，即使它在成功之前需要幾次重試。中止會丟棄部分完成交易的任何副作用。
 
+此類分散式交易只有在受交易影響的所有系統都能使用**相同的原子提交協定**時才可能實現。例如，假設處理訊息的副作用是傳送電子郵件，而電子郵件伺服器不支援兩階段提交：如果訊息處理失敗並重試，電子郵件可能會被傳送兩次或更多次。但是，如果處理訊息的所有副作用都在交易中止時回滾，那麼處理步驟就可以安全地重試，就好像什麼都沒發生過一樣。
 
-**Exactly-once message processing**
+我們將在第 11 章再回頭探討精確一次訊息處理的主題。我們先來看看允許此類異質分散式交易的原子提交協定。
 
-Heterogeneous distributed transactions allow diverse systems to be integrated in powerful ways. For example, a message from a message queue can be acknowledged as processed if and only if the database transaction for processing the message was successfully committed. This is implemented by atomically committing the message acknowledgment and the database writes in a single transaction. With distributed transaction support, this is possible, even if the message broker and the database are two unrelated technologies running on different machines.
+**XA 交易 (XA transactions)**
 
-If either the message delivery or the database transaction fails, both are aborted, and so the message broker may safely redeliver the message later. Thus, by atomically committing the message and the side effects of its processing, we can ensure that the message is effectively processed exactly once, even if it required a few retries before it succeeded. The abort discards any side effects of the partially completed transaction.
+X / Open XA（eXtended Architecture 的縮寫）是實作跨異質技術兩階段提交的標準。它於 1991 年引入，並被廣泛實作：許多傳統關聯式資料庫（包括 PostgreSQL、MySQL、DB2、SQL Server 和 Oracle）以及訊息代理（包括 ActiveMQ、HornetQ、MSMQ 和 IBM MQ）都支援 XA。
 
-Such a distributed transaction is only possible if all systems affected by the transac‐ tion are able to use the same atomic commit protocol, however. For example, say a side effect of processing a message is to send an email, and the email server does not support two-phase commit: it could happen that the email is sent two or more times if message processing fails and is retried. But if all side effects of processing a message are rolled back on transaction abort, then the processing step can safely be retried as if nothing had happened.
+XA 不是網路協定 —— 它只是一個用於與交易協調器介接的 C API。該 API 的綁定存在於其他語言中；例如，在 Java EE 應用程式的世界中，XA 交易是使用 Java 交易 API (JTA) 實作的，而 JTA 又得到許多使用 Java Database Connectivity (JDBC) 的資料庫驅動程式和使用 Java Message Service (JMS) API 的訊息代理驅動程式的支援。
 
-We will return to the topic of exactly-once message processing in Chapter 11. Let’s look first at the atomic commit protocol that allows such heterogeneous distributed transactions.
+XA 假設您的應用程式使用網路驅動程式或客戶端函式庫與參與的資料庫或訊息服務進行通訊。如果驅動程式支援 XA，這意味著它會呼叫 XA API 來判斷操作是否應屬於分散式交易的一部分 —— 如果是，它會將必要資訊發送到資料庫伺服器。驅動程式還提供回呼 (callbacks)，協調器可以透過這些回呼要求參與者準備 (prepare)、提交 (commit) 或中止 (abort)。
 
+交易協調器實作了 XA API。該標準並未指定它應該如何實作，但在實務中，協調器通常只是一個載入到發出交易的應用程式**相同程序**中的函式庫（而不是一個獨立的服務）。它會追蹤交易中的參與者，在要求參與者準備（透過回呼到驅動程式）後收集參與者的回應，並使用**本機磁碟上的日誌**來追蹤每個交易的提交 / 中止決策。
 
-**XA transactions**
+如果應用程式程序當機，或運行該應用程式的機器發生故障，協調器也會隨之消失。任何處於準備但未提交狀態的參與者將因此陷入 **懷疑 (doubt)** 狀態。由於協調器的日誌位於應用程式伺服器的本機磁碟上，該伺服器必須重新啟動，並且協調器函式庫必須讀取日誌以恢復每個交易的提交 / 中止結果。只有這樣，協調器才能根據需要，透過資料庫驅動程式的 XA 回呼要求參與者提交或中止。資料庫伺服器無法直接聯繫協調器，因為所有通訊都必須透過其客戶端函式庫進行。
 
+**在懷疑狀態下持有鎖**
 
-X/Open XA (short for eXtended Architecture) is a standard for implementing two- phase commit across heterogeneous technologies [76, 77]. It was introduced in 1991 and has been widely implemented: XA is supported by many traditional relational databases (including PostgreSQL, MySQL, DB2, SQL Server, and Oracle) and mes‐ sage brokers (including ActiveMQ, HornetQ, MSMQ, and IBM MQ).
+我們為什麼如此關心交易會卡在懷疑狀態？難道系統的其餘部分不能繼續工作，而只是忽略那個最終會被清理的懷疑交易嗎？
 
-XA is not a network protocol—it is merely a C API for interfacing with a transaction coordinator. Bindings for this API exist in other languages; for example, in the world of Java EE applications, XA transactions are implemented using the Java Transaction API (JTA), which in turn is supported by many drivers for databases using Java Data‐ base Connectivity (JDBC) and drivers for message brokers using the Java Message Service (JMS) APIs.
+問題在於鎖定。如第 234 頁的「讀取已提交」中所討論的，資料庫交易通常會對它們修改的任何資料列取得**行級別的獨佔鎖**，以防止髒寫。此外，如果您想要可序列化隔離，使用兩階段鎖定的資料庫也必須對交易讀取的任何資料列取得**共享鎖**（參見第 257 頁的 “兩階段鎖定 (2PL)”）。
 
-XA assumes that your application uses a network driver or client library to commu‐ nicate with the participant databases or messaging services. If the driver supports XA, that means it calls the XA API to find out whether an operation should be part of a distributed transaction—and if so, it sends the necessary information to the database server. The driver also exposes callbacks through which the coordinator can ask the participant to prepare, commit, or abort.
+資料庫不能在交易提交或中止之前釋放這些鎖（在圖 9-9 中以陰影區域表示）。因此，在使用兩階段提交時，交易必須在整個懷疑期間保留鎖。如果協調器當機並需要 20 分鐘才能重新啟動，這些鎖將被持有 20 分鐘。如果協調器的日誌因某種原因完全丟失，這些鎖將被**永遠持有** —— 或者至少要等到管理員手動解決情況為止。
 
+在鎖定這些資料的同時，任何其他交易都無法修改這些資料列。根據資料庫的不同，其他交易甚至可能被阻擋讀取這些資料列。因此，其他交易不能簡單地繼續它們的工作 —— 如果它們想存取相同資料，它們將被阻擋。這可能導致您應用程式的很大一部分在懷疑交易解決之前變得不可用。
 
-The transaction coordinator implements the XA API. The standard does not specify how it should be implemented, but in practice the coordinator is often simply a library that is loaded into the same process as the application issuing the transaction (not a separate service). It keeps track of the participants in a transaction, collects partipants’ responses after asking them to prepare (via a callback into the driver), and uses a log on the local disk to keep track of the commit/abort decision for each trans‐ action.
+**從協調者故障中恢復**
 
-If the application process crashes, or the machine on which the application is running dies, the coordinator goes with it. Any participants with prepared but uncommitted transactions are then stuck in doubt. Since the coordinator’s log is on the application server’s local disk, that server must be restarted, and the coordinator library must read the log to recover the commit/abort outcome of each transaction. Only then can the coordinator use the database driver’s XA callbacks to ask participants to commit or abort, as appropriate. The database server cannot contact the coordinator directly, since all communication must go via its client library.
+理論上，如果協調器當機並重新啟動，它應該從日誌中乾淨地恢復其狀態並解決任何懷疑交易。然而，在實務中， **孤立的懷疑交易 (orphaned in-doubt transactions)** 確實會發生 —— 即協調器因任何原因（例如，由於軟體錯誤導致交易日誌丟失或損壞）無法決定結果的交易。這些交易無法自動解決，因此它們永遠停留在資料庫中，持有鎖並阻擋其他交易。
 
+即使重新啟動資料庫伺服器也無法解決這個問題，因為 2PC 的正確實作必須在重新啟動時保留懷疑交易的鎖（否則就有可能違反原子性保證）。這是一個棘手的局面。
 
-**Holding locks while in doubt**
+唯一的出路是管理員手動決定是提交還是回滾交易。管理員必須檢查每個懷疑交易的參與者，確定任何參與者是否已經提交或中止，然後將相同的結果套用到其他參與者。解決問題可能需要大量的**手動工作**，而且很可能需要在嚴重的生產中斷期間在高度壓力和時間壓力下完成（否則，為什麼協調器會處於如此糟糕的狀態？）。
 
-Why do we care so much about a transaction being stuck in doubt? Can’t the rest of the system just get on with its work, and ignore the in-doubt transaction that will be cleaned up eventually?
+許多 XA 實作都有一個緊急逃生艙口，稱為 **啟發式決策 (heuristic decisions)**：允許參與者在沒有協調器的明確決定的情況下，單方面決定中止或提交懷疑交易。明確地說，這裡的「啟發式」是**可能破壞原子性**的委婉說法，因為它違反了兩階段提交中的承諾系統。因此，啟發式決策僅用於擺脫災難性情況，而非常規使用。
 
-The problem is with locking. As discussed in “Read Committed” on page 234, data‐ base transactions usually take a row-level exclusive lock on any rows they modify, to prevent dirty writes. In addition, if you want serializable isolation, a database using two-phase locking would also have to take a shared lock on any rows read by the transaction (see “Two-Phase Locking (2PL)” on page 257).
+分散式交易的限制
 
-The database cannot release those locks until the transaction commits or aborts (illustrated as a shaded area in Figure 9-9). Therefore, when using two-phase commit, a transaction must hold onto the locks throughout the time it is in doubt. If the coor‐ dinator has crashed and takes 20 minutes to start up again, those locks will be held for 20 minutes. If the coordinator’s log is entirely lost for some reason, those locks will be held forever—or at least until the situation is manually resolved by an admin‐ istrator.
+XA 交易解決了在多個參與資料系統之間保持一致的真實且重要問題，但正如我們所見，它們也引入了重大的操作問題。特別是，關鍵的認識是，**交易協調器本身就是一種資料庫**（其中儲存了交易結果），因此需要像對待任何其他重要資料庫一樣小心對待它：
 
-While those locks are held, no other transaction can modify those rows. Depending on the database, other transactions may even be blocked from reading those rows. Thus, other transactions cannot simply continue with their business—if they want to access that same data, they will be blocked. This can cause large parts of your applica‐ tion to become unavailable until the in-doubt transaction is resolved.
-
-
-**Recovering from coordinator failure**
-
-In theory, if the coordinator crashes and is restarted, it should cleanly recover its state from the log and resolve any in-doubt transactions. However, in practice, orphaned in-doubt transactions do occur [89, 90]—that is, transactions for which the coordina‐ tor cannot decide the outcome for whatever reason (e.g., because the transaction log has been lost or corrupted due to a software bug). These transactions cannot be resolved automatically, so they sit forever in the database, holding locks and blocking other transactions.
-
-Even rebooting your database servers will not fix this problem, since a correct imple‐ mentation of 2PC must preserve the locks of an in-doubt transaction even across restarts (otherwise it would risk violating the atomicity guarantee). It’s a sticky situation.
-
-The only way out is for an administrator to manually decide whether to commit or roll back the transactions. The administrator must examine the participants of each in-doubt transaction, determine whether any participant has committed or aborted already, and then apply the same outcome to the other participants. Resolving the problem potentially requires a lot of manual effort, and most likely needs to be done under high stress and time pressure during a serious production outage (otherwise, why would the coordinator be in such a bad state?).
-
-Many XA implementations have an emergency escape hatch called heuristic decisions: allowing a participant to unilaterally decide to abort or commit an in-doubt transac‐ tion without a definitive decision from the coordinator [76, 77, 91]. To be clear, heu‐ ristic here is a euphemism for probably breaking atomicity, since it violates the system of promises in two-phase commit. Thus, heuristic decisions are intended only for getting out of catastrophic situations, and not for regular use.
-
-
-
-Limitations of distributed transactions
-
-XA transactions solve the real and important problem of keeping several participant data systems consistent with each other, but as we have seen, they also introduce major operational problems. In particular, the key realization is that the transaction coordinator is itself a kind of database (in which transaction outcomes are stored), and so it needs to be approached with the same care as any other important database:
-
-- If the coordinator is not replicated but runs only on a single machine, it is a sin‐ gle point of failure for the entire system (since its failure causes other application servers to block on locks held by in-doubt transactions). Surprisingly, many coordinator implementations are not highly available by default, or have only rudimentary replication support.
+- 如果協調器未複寫而僅運行在單一機器上，它就是整個系統的**單點故障**（因為它的故障會導致其他應用程式伺服器因懷疑交易持有的鎖而被阻擋）。令人驚訝的是，許多協調器實作預設不是高可用的，或者只有基本的複寫支援。
     
-- Many server-side applications are developed in a stateless model (as favored by HTTP), with all persistent state stored in a database, which has the advantage that application servers can be added and removed at will. However, when the coordinator is part of the application server, it changes the nature of the deploy‐ ment. Suddenly, the coordinator’s logs become a crucial part of the durable sys‐ tem state—as important as the databases themselves, since the coordinator logs are required in order to recover in-doubt transactions after a crash. Such applica‐ tion servers are no longer stateless.
-
-- Since XA needs to be compatible with a wide range of data systems, it is necessar‐ ily a lowest common denominator. For example, it cannot detect deadlocks across different systems (since that would require a standardized protocol for systems to exchange information on the locks that each transaction is waiting for), and it does not work with SSI (see “Serializable Snapshot Isolation (SSI)” on page 261), since that would require a protocol for identifying conflicts across dif‐ ferent systems.
+- 許多伺服器端應用程式以**無狀態模型**（HTTP 所青睞）開發，所有持久狀態都儲存在資料庫中，這樣的好處是應用程式伺服器可以隨意添加和刪除。然而，當協調器成為應用程式伺服器的一部分時，它改變了部署的性質。突然之間，協調器的日誌成為持久系統狀態的**關鍵部分** —— 與資料庫本身一樣重要，因為在當機後恢復懷疑交易需要協調器日誌。這樣的應用程式伺服器不再是無狀態的。
     
-- For database-internal distributed transactions (not XA), the limitations are not so great—for example, a distributed version of SSI is possible. However, there remains the problem that for 2PC to successfully commit a transaction, all par‐ ticipants must respond. Consequently, if any part of the system is broken, the transaction also fails. Distributed transactions thus have a tendency of amplifying failures, which runs counter to our goal of building fault-tolerant systems.
+- 由於 XA 需要與廣泛的資料系統相容，它必然是**最低共同分母**。例如，它無法偵測跨不同系統的死鎖（因為這需要一個標準化的協定，讓系統交換有關每個交易正在等待的鎖的資訊），並且它不適用於 SSI（參見第 261 頁的 “可序列化快照隔離 (SSI)”），因為這需要一個跨不同系統識別衝突的協定。
     
-    Do these facts mean we should give up all hope of keeping several systems consistent with each other? Not quite—there are alternative methods that allow us to achieve the same thing without the pain of heterogeneous distributed transactions. We will return to these in Chapters 11 and 12. But first, we should wrap up the topic of consensus.
-### 容錯共識 Fault-Tolerant Consensus
+- 對於資料庫內部分散式交易（非 XA），限制沒那麼大 —— 例如，分散式 SSI 是可能的。然而，仍然存在一個問題，即 2PC 要成功提交交易，所有參與者都必須回應。因此，如果系統的任何部分損壞，交易也會失敗。分散式交易因此有**放大故障**的趨勢，這與我們構建容錯系統的目標背道而馳。
+    
+    這些事實是否意味著我們應該放棄讓多個系統保持一致的希望？不完全是 —— 還有其他方法可以讓我們在不承受異質分散式交易的痛苦下實現相同的事情。我們將在第 11 章和第 12 章再回頭探討這些方法。但首先，我們應該總結共識的主題。
+    
 
+### 容錯共識 (Fault-Tolerant Consensus)
 
-### 成員和協調服務 Membership and Coordination Services
+### 成員和協調服務 (Membership and Coordination Services)
 
-
-## Summary
-
+## 總結 (Summary)
 
 
 
