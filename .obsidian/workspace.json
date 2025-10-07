@@ -30,6 +30,30 @@
               "icon": "lucide-file",
               "title": "000_tmp"
             }
+          },
+          {
+            "id": "d509ddb5b44eff4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "901_fleeting_note/DDIA DB transaction 交易.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "DDIA DB transaction 交易"
+            }
           }
         ]
       }
@@ -63,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "restful",
+                "query": "DDIA",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,8 +205,13 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
-    "00_inbox/22_to_read.md",
+    "901_fleeting_note/tx and lock.md",
+    "901_fleeting_note/DDIA DB transaction 交易.md",
+    "901_fleeting_note/pg isolation level.md",
+    "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
     "00_inbox/30_sw_design_idx.md",
+    "00_inbox/000_tmp.md",
+    "00_inbox/22_to_read.md",
     "00_inbox/99_whatever.md",
     "00_inbox/989_app_idx.md",
     "00_inbox/992_prompt_idx.md",
@@ -196,7 +225,6 @@
     "00_inbox/04 yt_sub分類.md",
     "00_inbox/002_on_going_thoughts.md",
     "00_inbox/001_log.md",
-    "00_inbox/000_tmp.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "901_fleeting_note/RESTful API  設計.md",
@@ -206,11 +234,7 @@
     "02_learning/CPFA3S - 7 effective habit.md",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
     "02_learning/003_health_idx.md",
-    "README.md",
     "901_fleeting_note/皮膚使用含類固醇藥膏.md.edtz",
-    "00_inbox/dist_sys_idx.md",
-    "901_fleeting_note/非功能需求.md",
-    "901_fleeting_note/Learning 3 step (step3).md",
     "901_fleeting_note/CORS.md.edtz",
     "901_fleeting_note/basic 理解 for raft consensus algo.md.edtz",
     "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md.edtz",
