@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "90d5f05e08ad029f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "901_fleeting_note/分布式系統 CAP.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "分布式系統 CAP"
+            }
+          },
+          {
             "id": "d509ddb5b44eff4b",
             "type": "leaf",
             "state": {
@@ -206,12 +230,14 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "901_fleeting_note/分布式系統 CAP.md",
+    "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
+    "901_fleeting_note/serializability (可串行性 )vs linearizability (線性一致性).md",
     "00_inbox/30_sw_design_idx.md",
     "00_inbox/000_tmp.md",
     "901_fleeting_note/tx and lock.md",
     "901_fleeting_note/DDIA DB transaction 交易.md",
     "901_fleeting_note/pg isolation level.md",
-    "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
     "00_inbox/22_to_read.md",
     "00_inbox/99_whatever.md",
     "00_inbox/989_app_idx.md",
@@ -232,9 +258,7 @@
     "901_fleeting_note/皮膚使用含類固醇藥膏.md",
     "901_fleeting_note/地址.md",
     "02_learning/value_idx.md",
-    "02_learning/CPFA3S - 7 effective habit.md",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
-    "02_learning/003_health_idx.md",
     "901_fleeting_note/皮膚使用含類固醇藥膏.md.edtz",
     "901_fleeting_note/CORS.md.edtz",
     "901_fleeting_note/basic 理解 for raft consensus algo.md.edtz",
