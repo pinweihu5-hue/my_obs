@@ -1214,9 +1214,7 @@ To be more systematic learning, try read a book, todo, find a good book
 
 - 209. 在整潔的架構上弄髒你的手第二版 增加章節介紹：第十三章，管理多個Bounded Context (ID: UHyybeo0QAo)
 
-- 212. The argument for emacs in just a few minutes (vlog) | IT and DevOps Career Secrets (ID: Kr7BmHa7hyU)
 
-- 213. 3 Key Lessons For Improving NodeJS Performance (ID: bA8Dw7UoWFU)
 
 
 - 244. APIs Vs. Events | Can they coexist? | API First or Event First | Tech Primers (ID: 3t7pMx35Reg)
@@ -1265,11 +1263,11 @@ To be more systematic learning, try read a book, todo, find a good book
 - 375. "Clean" Code, Horrible Performance (ID: tD5NrevFtbU)
 - 378. Dynamic function arguments with GENERICS - Advanced TypeScript (ID: YE_3WwX-Dl8)
 - 387. Opening Old Wounds - Why Uber Engineering Switched from Postgres to MySQL (ID: _E43l5EbNI4)
+
 - 453. CHAT WRITES MY PYTHON PROGRAM! - CS50 Live, EP. 54 (pre-release) (ID: TMjiuRl-EH4)
 - 454. K-MEANS CLASSIFIER IN PYTHON! - CS50 Live, Ep. 53 (ID: hclRUk-Cg7E)
-- 457. How to Send Emails Using Python - Plain Text, Adding Attachments, HTML Emails, and More (ID: JRCJ6RtE3xU)
-- 458. Machine Learning with Scikit-learn - Data Analysis with Python and Pandas p.6 (ID: BpPJxtOk8uw)
-- 463. Transforming Code into Beautiful, Idiomatic Python (ID: OSGv2VnC0go)
+
+
 
 - 651. How computer memory works - Kanawat Senanan (ID: p3q5zWCw8J4)
 
