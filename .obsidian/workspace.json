@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/22_to_read.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "22_to_read"
+              "title": "000_tmp"
             }
           },
           {
@@ -229,6 +229,7 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "00_inbox/22_to_read.md",
     "00_inbox/992_prompt_idx.md",
     "00_inbox/999_ai_ask.md",
     "00_inbox/spotify music.md",
@@ -239,7 +240,6 @@
     "00_inbox/000_tmp.md",
     "00_inbox/002_on_going_thoughts.md",
     "00_inbox/04 yt_sub分類.md",
-    "00_inbox/22_to_read.md",
     "901_fleeting_note/partition.md",
     "901_fleeting_note/a key-val store.md",
     "901_fleeting_note/分布式系統 CAP.md",
