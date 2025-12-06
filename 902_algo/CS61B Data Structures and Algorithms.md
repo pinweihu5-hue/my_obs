@@ -8,11 +8,15 @@ aliases:
 - [[cs61b 寫 unitTest 的好處]]
 - [[cs61B linkedlist note]]
 - [[cs61b array note]]
+
+
+
 - [[cs61b 4.1 inheritance]]
 - [[cs61b 4.2- Extends, Casting, Higher Order Functions]]
 - [[cs61b 4.3-Subtype Polymorphism vs. HoFs]]
 - [[cs61b 4.4. Exceptions, Iterators, Object Methods]]
 - [[cs61b 13. Asymptotics I]]
+
 - [[cs61b Disjoint Sets, quick union]]
 - [[cs61b Asymptotics II]]
 - [[cs61b midterm point and box solution]]

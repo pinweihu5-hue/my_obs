@@ -84,7 +84,7 @@
       - [ ] [RIP (Routing Information Protocol)](http://en.wikipedia.org/wiki/Routing_Information_Protocol) is another routing protocol based on the Bellman-Ford algorithm.
   - [[cs61b  Graph Shortest Paths#Dijkstra’s Algorithm]]
   - [[cs61b  Graph Shortest Paths#A*]]
-- MST 最小生成樹
+- MST 最小生成樹: 連通所有節點且總權重最小的邊集合
   - 最小 weight 加總，包括 all vertices 的 樹 (acyclic connected graph)
   - [Minimum Spanning Trees](https://algs4.cs.princeton.edu/43mst/)
     - [EdgeWeightedGraph.java](https://algs4.cs.princeton.edu/43mst/EdgeWeightedGraph.java.html)
@@ -96,6 +96,7 @@
 - midterm
   - [Midterm 2 Review Document](https://sp19.datastructur.es/materials/review/MT2ReviewDocument.pdf) ([Solution](https://sp19.datastructur.es/materials/review/MT2ReviewDocumentSolution.pdf))
   - [Midterm 2 Review Guerrilla Section](https://sp19.datastructur.es/materials/review/MT2Guerrilla.pdf) ([Solution](https://sp19.datastructur.es/materials/review/MT2GuerrillaSolution.pdf))
+
 
 
 

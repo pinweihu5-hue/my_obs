@@ -33,9 +33,9 @@ A*: Same as Dijkstra’s but with h(v, goal) added to priority of each vertex. [
 
 ![[IMG-cs61b reductions and decomposition-20241003105024795.png|917]]
 
-LazyPrimMST.java [Demo](https://docs.google.com/presentation/d/18leOHESniaJqqehiTR-YAL4WeEEcHJyRB9aw_S1FLG0/edit#slide=id.g772f8a8e2_0_28)|
-PrimMST.java [Demo](https://docs.google.com/presentation/d/1GPizbySYMsUhnXSXKvbqV4UhPCvrt750MiqPPgU-eCY/edit#slide=id.g9a60b2f52_0_0)|
-KruskalMST.java [Demo](https://docs.google.com/presentation/d/18leOHESniaJqqehiTR-YAL4WeEEcHJyRB9aw_S1FLG0/edit#slide=id.g5347e2c8f_2213)|
+LazyPrimMST.java [Demo](https://docs.google.com/presentation/d/18leOHESniaJqqehiTR-YAL4WeEEcHJyRB9aw_S1FLG0/edit#slide=id.g772f8a8e2_0_28)
+PrimMST.java [Demo](https://docs.google.com/presentation/d/1GPizbySYMsUhnXSXKvbqV4UhPCvrt750MiqPPgU-eCY/edit#slide=id.g9a60b2f52_0_0)
+KruskalMST.java [Demo](https://docs.google.com/presentation/d/18leOHESniaJqqehiTR-YAL4WeEEcHJyRB9aw_S1FLG0/edit#slide=id.g5347e2c8f_2213)
 
 
 

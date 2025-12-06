@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_tmp.md",
+                "file": "901_fleeting_note/cs61b reductions and decomposition.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_tmp"
+              "title": "cs61b reductions and decomposition"
             }
           },
           {
@@ -111,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ddia",
+                "query": "卡住",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -229,6 +229,18 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "902_algo/CS61B Data Structures and Algorithms.md",
+    "901_fleeting_note/cs61b Basic Sorts.md",
+    "901_fleeting_note/cs61b tries.md",
+    "901_fleeting_note/cs61b k-d tree, multi-d tree.md",
+    "901_fleeting_note/cs61b Minimum Spanning Trees.md",
+    "901_fleeting_note/cs61b graph related algo summary.md",
+    "901_fleeting_note/cs61b array note.md",
+    "901_fleeting_note/cs61B linkedlist note.md",
+    "901_fleeting_note/cs61b 寫 unitTest 的好處.md",
+    "901_fleeting_note/cs61b  Java ADT.md",
+    "02_learning/000_communicate_idx.md",
+    "00_inbox/000_tmp.md",
     "00_inbox/22_to_read.md",
     "00_inbox/992_prompt_idx.md",
     "00_inbox/999_ai_ask.md",
@@ -237,24 +249,12 @@
     "00_inbox/如何做事 大衛・凱恩.md",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
     "00_inbox/001_log.md",
-    "00_inbox/000_tmp.md",
     "00_inbox/002_on_going_thoughts.md",
     "00_inbox/04 yt_sub分類.md",
     "901_fleeting_note/partition.md",
     "901_fleeting_note/a key-val store.md",
     "901_fleeting_note/分布式系統 CAP.md",
     "00_inbox/30_sw_design_idx.md",
-    "901_fleeting_note/Consistency and Consensus, DDIA CHAPTER 9.md",
-    "999_archive/interview_2024/2024 interview index.md",
-    "901_fleeting_note/ACID.md",
-    "901_fleeting_note/serializability (可串行性 )vs linearizability (線性一致性).md",
-    "901_fleeting_note/tx and lock.md",
-    "901_fleeting_note/DDIA DB transaction 交易.md",
-    "901_fleeting_note/pg isolation level.md",
-    "00_inbox/99_whatever.md",
-    "00_inbox/989_app_idx.md",
-    "102_Omnivore/2024-06-01/我的規則 – Daniel Lemire 的博客 --- My rules – Daniel Lemire's blog.md",
-    "00_inbox/09_inbox.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",

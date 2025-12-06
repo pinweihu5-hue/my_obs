@@ -10,7 +10,7 @@ why?
 - 測試的是 addLast
 - 因為 LL 只需要馬上拿到最後一個，加進去即可
 - array 需要動態增加長度, resizing
-![[IMG-cs61b array note-20241003104948826.png|823]]
+![[IMG-cs61b array note-20241003104948826.png|1070]]
 
 
 ![[IMG-cs61b array note-20241003105004334.png|715]]
