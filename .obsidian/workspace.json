@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "901_fleeting_note/cs61b reductions and decomposition.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "cs61b reductions and decomposition"
+              "title": "000_tmp"
             }
           },
           {
@@ -229,6 +229,7 @@
   },
   "active": "dfacf7235ab7ec12",
   "lastOpenFiles": [
+    "901_fleeting_note/cs61b reductions and decomposition.md",
     "902_algo/CS61B Data Structures and Algorithms.md",
     "901_fleeting_note/cs61b Basic Sorts.md",
     "901_fleeting_note/cs61b tries.md",
@@ -254,7 +255,6 @@
     "901_fleeting_note/partition.md",
     "901_fleeting_note/a key-val store.md",
     "901_fleeting_note/分布式系統 CAP.md",
-    "00_inbox/30_sw_design_idx.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
