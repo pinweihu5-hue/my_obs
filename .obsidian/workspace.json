@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_tmp.md",
+                "file": "902_algo/CS61B Data Structures and Algorithms.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_tmp"
+              "title": "CS61B Data Structures and Algorithms"
             }
           },
           {
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "901_fleeting_note/DDIA DB transaction 交易.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,10 +76,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "DDIA DB transaction 交易"
+              "title": "000_tmp"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -227,10 +228,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dfacf7235ab7ec12",
+  "active": "d509ddb5b44eff4b",
   "lastOpenFiles": [
-    "901_fleeting_note/cs61b reductions and decomposition.md",
+    "901_fleeting_note/DDIA DB transaction 交易.md",
     "902_algo/CS61B Data Structures and Algorithms.md",
+    "902_algo/leetcode/graph/graph_Topological sort.md",
+    "902_algo/leetcode/graph/graph_MST.md",
+    "902_algo/leetcode/graph/graph_Dijkstra.md",
+    "902_algo/leetcode/graph/graph_dfs.md",
+    "902_algo/leetcode/graph/graph_bfs.md",
+    "902_algo/leetcode/graph/為何  Cheapest Flights Within K Stops 要用 BFS 解，而不是用 Dijkstra 算法解？我要如何分辨.md",
+    "00_inbox/000_tmp.md",
+    "901_fleeting_note/cs61b reductions and decomposition.md",
     "901_fleeting_note/cs61b Basic Sorts.md",
     "901_fleeting_note/cs61b tries.md",
     "901_fleeting_note/cs61b k-d tree, multi-d tree.md",
@@ -241,20 +250,12 @@
     "901_fleeting_note/cs61b 寫 unitTest 的好處.md",
     "901_fleeting_note/cs61b  Java ADT.md",
     "02_learning/000_communicate_idx.md",
-    "00_inbox/000_tmp.md",
     "00_inbox/22_to_read.md",
     "00_inbox/992_prompt_idx.md",
     "00_inbox/999_ai_ask.md",
     "00_inbox/spotify music.md",
     "00_inbox/tmp1.md",
     "00_inbox/如何做事 大衛・凱恩.md",
-    "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md",
-    "00_inbox/001_log.md",
-    "00_inbox/002_on_going_thoughts.md",
-    "00_inbox/04 yt_sub分類.md",
-    "901_fleeting_note/partition.md",
-    "901_fleeting_note/a key-val store.md",
-    "901_fleeting_note/分布式系統 CAP.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
