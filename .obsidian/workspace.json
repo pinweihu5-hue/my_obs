@@ -80,15 +80,27 @@
             }
           },
           {
-            "id": "dd7d73a8a6609d31",
+            "id": "1d1e6996ddd3d915",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.10.6"
+                "file": "00_inbox/000_tmp.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.6"
+              "icon": "lucide-file",
+              "title": "000_tmp"
             }
           }
         ],
@@ -240,8 +252,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dd7d73a8a6609d31",
+  "active": "1d1e6996ddd3d915",
   "lastOpenFiles": [
+    "902_algo/CS61B Data Structures and Algorithms.md",
     "902_algo/online OA 規則.md",
     "902_algo/leetcode/Two Pointer.md",
     "902_algo/leetcode/what is subseq, 如何計算一個 subseq的組合.md",
@@ -251,7 +264,6 @@
     "902_algo/leetcode/tree/tree.md",
     "00_inbox/000_tmp.md",
     "901_fleeting_note/DDIA DB transaction 交易.md",
-    "902_algo/CS61B Data Structures and Algorithms.md",
     "902_algo/leetcode/graph/graph_Topological sort.md",
     "902_algo/leetcode/graph/graph_MST.md",
     "902_algo/leetcode/graph/graph_Dijkstra.md",
