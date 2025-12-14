@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_tmp.md",
+                "file": "902_algo/CS61B Data Structures and Algorithms.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,11 +76,23 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_tmp"
+              "title": "CS61B Data Structures and Algorithms"
+            }
+          },
+          {
+            "id": "dd7d73a8a6609d31",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -217,7 +229,6 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-importer:Open Importer": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "templater-obsidian:Templater": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
@@ -225,11 +236,20 @@
       "obsidian-textgenerator-plugin:Generate Text!": false,
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "vim-toggle:Toggle Vim Mode": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d509ddb5b44eff4b",
+  "active": "dd7d73a8a6609d31",
   "lastOpenFiles": [
+    "902_algo/online OA 規則.md",
+    "902_algo/leetcode/Two Pointer.md",
+    "902_algo/leetcode/what is subseq, 如何計算一個 subseq的組合.md",
+    "902_algo/leetcode/sorting.md",
+    "902_algo/leetcode/sliding window.md",
+    "902_algo/leetcode/pq.md",
+    "902_algo/leetcode/tree/tree.md",
+    "00_inbox/000_tmp.md",
     "901_fleeting_note/DDIA DB transaction 交易.md",
     "902_algo/CS61B Data Structures and Algorithms.md",
     "902_algo/leetcode/graph/graph_Topological sort.md",
@@ -238,7 +258,6 @@
     "902_algo/leetcode/graph/graph_dfs.md",
     "902_algo/leetcode/graph/graph_bfs.md",
     "902_algo/leetcode/graph/為何  Cheapest Flights Within K Stops 要用 BFS 解，而不是用 Dijkstra 算法解？我要如何分辨.md",
-    "00_inbox/000_tmp.md",
     "901_fleeting_note/cs61b reductions and decomposition.md",
     "901_fleeting_note/cs61b Basic Sorts.md",
     "901_fleeting_note/cs61b tries.md",
@@ -249,13 +268,6 @@
     "901_fleeting_note/cs61B linkedlist note.md",
     "901_fleeting_note/cs61b 寫 unitTest 的好處.md",
     "901_fleeting_note/cs61b  Java ADT.md",
-    "02_learning/000_communicate_idx.md",
-    "00_inbox/22_to_read.md",
-    "00_inbox/992_prompt_idx.md",
-    "00_inbox/999_ai_ask.md",
-    "00_inbox/spotify music.md",
-    "00_inbox/tmp1.md",
-    "00_inbox/如何做事 大衛・凱恩.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
