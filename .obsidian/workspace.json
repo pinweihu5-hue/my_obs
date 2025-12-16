@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "902_algo/CS61B Data Structures and Algorithms.md",
+                "file": "901_fleeting_note/cs61b quick sort.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CS61B Data Structures and Algorithms"
+              "title": "cs61b quick sort"
             }
           },
           {
@@ -254,6 +254,8 @@
   },
   "active": "1d1e6996ddd3d915",
   "lastOpenFiles": [
+    "901_fleeting_note/cs61b quick sort.md",
+    "00_inbox/000_tmp.md",
     "902_algo/CS61B Data Structures and Algorithms.md",
     "902_algo/online OA 規則.md",
     "902_algo/leetcode/Two Pointer.md",
@@ -262,7 +264,6 @@
     "902_algo/leetcode/sliding window.md",
     "902_algo/leetcode/pq.md",
     "902_algo/leetcode/tree/tree.md",
-    "00_inbox/000_tmp.md",
     "901_fleeting_note/DDIA DB transaction 交易.md",
     "902_algo/leetcode/graph/graph_Topological sort.md",
     "902_algo/leetcode/graph/graph_MST.md",
@@ -279,7 +280,6 @@
     "901_fleeting_note/cs61b array note.md",
     "901_fleeting_note/cs61B linkedlist note.md",
     "901_fleeting_note/cs61b 寫 unitTest 的好處.md",
-    "901_fleeting_note/cs61b  Java ADT.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
