@@ -61,30 +61,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "901_fleeting_note/cs61b quick sort.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "cs61b quick sort"
-            }
-          },
-          {
-            "id": "1d1e6996ddd3d915",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
@@ -102,9 +78,33 @@
               "icon": "lucide-file",
               "title": "000_tmp"
             }
+          },
+          {
+            "id": "1d1e6996ddd3d915",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_learning/004_learn_idx.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "004_learn_idx"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -136,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "卡住",
+                "query": "learning to learn",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -252,9 +252,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1d1e6996ddd3d915",
+  "active": "d509ddb5b44eff4b",
   "lastOpenFiles": [
     "901_fleeting_note/cs61b quick sort.md",
+    "02_learning/004_learn_idx.md",
     "00_inbox/000_tmp.md",
     "902_algo/CS61B Data Structures and Algorithms.md",
     "902_algo/online OA 規則.md",
@@ -279,7 +280,6 @@
     "901_fleeting_note/cs61b graph related algo summary.md",
     "901_fleeting_note/cs61b array note.md",
     "901_fleeting_note/cs61B linkedlist note.md",
-    "901_fleeting_note/cs61b 寫 unitTest 的好處.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
