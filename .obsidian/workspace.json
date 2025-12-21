@@ -136,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "learning to learn",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -254,11 +254,12 @@
   },
   "active": "d509ddb5b44eff4b",
   "lastOpenFiles": [
+    "00_inbox/tmp1.md",
+    "00_inbox/000_tmp.md",
     "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
     "100_attachements/6e9f0283bdb04897f44a4d28c7b0d2c1_MD5.png",
     "901_fleeting_note/cs61b quick sort.md",
     "02_learning/004_learn_idx.md",
-    "00_inbox/000_tmp.md",
     "902_algo/CS61B Data Structures and Algorithms.md",
     "902_algo/online OA 規則.md",
     "902_algo/leetcode/Two Pointer.md",
@@ -298,7 +299,6 @@
     "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203343411.png",
     "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203342455.png",
     "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203341439.png",
-    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203340143.png",
-    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203339313.png"
+    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203340143.png"
   ]
 }
