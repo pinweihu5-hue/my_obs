@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_tmp.md",
+                "file": "901_fleeting_note/abstract volatility away.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_tmp"
+              "title": "abstract volatility away"
             }
           },
           {
@@ -254,8 +254,8 @@
   },
   "active": "d509ddb5b44eff4b",
   "lastOpenFiles": [
-    "00_inbox/tmp1.md",
     "00_inbox/000_tmp.md",
+    "00_inbox/tmp1.md",
     "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
     "100_attachements/6e9f0283bdb04897f44a4d28c7b0d2c1_MD5.png",
     "901_fleeting_note/cs61b quick sort.md",
