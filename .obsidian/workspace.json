@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6c984c307121b8d7",
+        "id": "1863e12304444257",
         "type": "tabs",
         "children": [
           {
-            "id": "dfacf7235ab7ec12",
+            "id": "2795942923be2c68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "902_algo/CS61B Data Structures and Algorithms.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,83 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CS61B Data Structures and Algorithms"
-            }
-          },
-          {
-            "id": "90d5f05e08ad029f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "901_fleeting_note/分布式系統 CAP.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "分布式系統 CAP"
-            }
-          },
-          {
-            "id": "d509ddb5b44eff4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "901_fleeting_note/abstract volatility away.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "abstract volatility away"
-            }
-          },
-          {
-            "id": "1d1e6996ddd3d915",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_learning/004_learn_idx.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "004_learn_idx"
+              "title": "000_tmp"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -252,15 +179,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d509ddb5b44eff4b",
+  "active": "2795942923be2c68",
   "lastOpenFiles": [
+    "902_algo/CS61B Data Structures and Algorithms.md",
+    "901_fleeting_note/分布式系統 CAP.md",
+    "02_learning/004_learn_idx.md",
+    "901_fleeting_note/INFJ-A 20250707.md",
+    "901_fleeting_note/16人格 MBTI, 16personalities.md",
+    "901_fleeting_note/非對稱加密.md",
+    "901_fleeting_note/abstract volatility away.md",
     "00_inbox/000_tmp.md",
     "00_inbox/tmp1.md",
     "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
     "100_attachements/6e9f0283bdb04897f44a4d28c7b0d2c1_MD5.png",
     "901_fleeting_note/cs61b quick sort.md",
-    "02_learning/004_learn_idx.md",
-    "902_algo/CS61B Data Structures and Algorithms.md",
     "902_algo/online OA 規則.md",
     "902_algo/leetcode/Two Pointer.md",
     "902_algo/leetcode/what is subseq, 如何計算一個 subseq的組合.md",
@@ -277,11 +209,6 @@
     "902_algo/leetcode/graph/為何  Cheapest Flights Within K Stops 要用 BFS 解，而不是用 Dijkstra 算法解？我要如何分辨.md",
     "901_fleeting_note/cs61b reductions and decomposition.md",
     "901_fleeting_note/cs61b Basic Sorts.md",
-    "901_fleeting_note/cs61b tries.md",
-    "901_fleeting_note/cs61b k-d tree, multi-d tree.md",
-    "901_fleeting_note/cs61b Minimum Spanning Trees.md",
-    "901_fleeting_note/cs61b graph related algo summary.md",
-    "901_fleeting_note/cs61b array note.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
