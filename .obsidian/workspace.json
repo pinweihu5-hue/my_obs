@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "901_fleeting_note/cs61b graph related algo summary.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "cs61b graph related algo summary"
+            }
+          },
+          {
+            "id": "de6e16fa13377cc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
@@ -31,7 +55,8 @@
               "title": "000_tmp"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,16 +204,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2795942923be2c68",
+  "active": "de6e16fa13377cc8",
   "lastOpenFiles": [
+    "901_fleeting_note/cs61b graph related algo summary.md",
     "902_algo/CS61B Data Structures and Algorithms.md",
+    "00_inbox/000_tmp.md",
     "901_fleeting_note/分布式系統 CAP.md",
     "02_learning/004_learn_idx.md",
     "901_fleeting_note/INFJ-A 20250707.md",
     "901_fleeting_note/16人格 MBTI, 16personalities.md",
     "901_fleeting_note/非對稱加密.md",
     "901_fleeting_note/abstract volatility away.md",
-    "00_inbox/000_tmp.md",
     "00_inbox/tmp1.md",
     "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
     "100_attachements/6e9f0283bdb04897f44a4d28c7b0d2c1_MD5.png",
@@ -208,7 +234,6 @@
     "902_algo/leetcode/graph/graph_bfs.md",
     "902_algo/leetcode/graph/為何  Cheapest Flights Within K Stops 要用 BFS 解，而不是用 Dijkstra 算法解？我要如何分辨.md",
     "901_fleeting_note/cs61b reductions and decomposition.md",
-    "901_fleeting_note/cs61b Basic Sorts.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
