@@ -54,9 +54,21 @@
               "icon": "lucide-file",
               "title": "000_tmp"
             }
+          },
+          {
+            "id": "b65574ea5539b237",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -204,7 +216,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "de6e16fa13377cc8",
+  "active": "b65574ea5539b237",
   "lastOpenFiles": [
     "902_algo/leetcode/Greedy.md",
     "901_fleeting_note/cs61b graph related algo summary.md",
