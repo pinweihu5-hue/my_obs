@@ -78,9 +78,21 @@
               "icon": "lucide-file",
               "title": "000_tmp"
             }
+          },
+          {
+            "id": "8f3063d6c0b2c112",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -224,11 +236,10 @@
       "obsidian-textgenerator-plugin:Generate Text!": false,
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "vim-toggle:Toggle Vim Mode": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b65574ea5539b237",
+  "active": "8f3063d6c0b2c112",
   "lastOpenFiles": [
     "902_algo/leetcode/Greedy.md",
     "901_fleeting_note/cs61b graph related algo summary.md",
