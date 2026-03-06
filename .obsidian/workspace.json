@@ -78,9 +78,21 @@
               "icon": "lucide-file",
               "title": "000_tmp"
             }
+          },
+          {
+            "id": "fa2415ae411c084b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -228,7 +240,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b65574ea5539b237",
+  "active": "fa2415ae411c084b",
   "lastOpenFiles": [
     "00_inbox/如何做事 大衛・凱恩.md",
     "00_inbox/000_tmp.md",
