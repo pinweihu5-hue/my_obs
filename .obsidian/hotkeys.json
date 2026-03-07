@@ -304,5 +304,13 @@
       ],
       "key": "E"
     }
+  ],
+  "editor:add-cursor-below": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "="
+    }
   ]
 }
