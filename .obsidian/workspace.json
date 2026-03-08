@@ -80,6 +80,30 @@
             }
           },
           {
+            "id": "7713deead795142a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/000_tmp.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "000_tmp"
+            }
+          },
+          {
             "id": "fa2415ae411c084b",
             "type": "leaf",
             "state": {
@@ -104,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -157,8 +181,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -253,12 +276,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b65574ea5539b237",
+  "active": "7713deead795142a",
   "lastOpenFiles": [
+    "00_inbox/llm model pricing.md",
+    "00_inbox/llm model pricing.md.edtz",
+    "00_inbox/000_tmp.md",
     "901_fleeting_note/k3d.md",
     "901_fleeting_note/k3d-install.md",
     "901_fleeting_note/how to set k3d KUBECONFIG.md",
-    "00_inbox/000_tmp.md",
     "00_inbox/如何做事 大衛・凱恩.md",
     "100_attachements/IMG-000_tmp-20260215125823859.png",
     "100_attachements/IMG-000_tmp-20260215125503675.png",
@@ -283,8 +308,6 @@
     "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
     "100_attachements/6e9f0283bdb04897f44a4d28c7b0d2c1_MD5.png",
     "901_fleeting_note/cs61b quick sort.md",
-    "902_algo/online OA 規則.md",
-    "902_algo/leetcode/Two Pointer.md",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
     "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
     "02_learning/CPFA3S - 7 effective habit.md.edtz",
@@ -295,7 +318,6 @@
     "100_attachements/IMG-000_reading_log-20250817113903139.png",
     "00_inbox/tmp1.md.edtz",
     "901_fleeting_note/電動刮鬍刀 study.md.edtz",
-    "02_learning/buy_idx.md.edtz",
     "100_attachements/IMG-mac_idx-20250810084840426.png",
     "100_attachements/IMG-ssh 設定 in gcp-20250308075956883.png",
     "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203344588.png",
