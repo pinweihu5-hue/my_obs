@@ -56,7 +56,14 @@
       "key": "ArrowUp"
     }
   ],
-  "file-explorer:new-file": [],
+  "file-explorer:new-file": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "2"
+    }
+  ],
   "obsidian-advanced-new-file:advanced-new-file-new-tab": [
     {
       "modifiers": [
@@ -174,14 +181,6 @@
         "Alt"
       ],
       "key": "A"
-    }
-  ],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "2"
     }
   ],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
