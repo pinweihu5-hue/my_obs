@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1863e12304444257",
+        "id": "18514125aa976960",
         "type": "tabs",
         "children": [
           {
-            "id": "2795942923be2c68",
+            "id": "83cb31be3334e8a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "901_fleeting_note/cs61b graph related algo summary.md",
+                "file": "give me.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,131 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "cs61b graph related algo summary"
-            }
-          },
-          {
-            "id": "de6e16fa13377cc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_inbox/000_tmp.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "000_tmp"
-            }
-          },
-          {
-            "id": "b65574ea5539b237",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_inbox/000_tmp.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "000_tmp"
-            }
-          },
-          {
-            "id": "7713deead795142a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_inbox/000_tmp.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "000_tmp"
-            }
-          },
-          {
-            "id": "fa2415ae411c084b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_inbox/000_tmp.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "000_tmp"
-            }
-          },
-          {
-            "id": "b3eb731897904aba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_inbox/Untitled.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "give me"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "k3d",
+                "query": "system",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -300,37 +179,38 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b3eb731897904aba",
+  "active": "83cb31be3334e8a5",
   "lastOpenFiles": [
-    "00_inbox/Untitled.md.edtz",
+    "give me.md.edtz",
+    "give me.md",
+    "901_fleeting_note/cs61b graph related algo summary.md",
     "00_inbox/000_tmp.md",
+    "00_inbox/30_sw_design_idx.md",
+    "00_inbox/001_log.md",
+    "00_inbox/002_on_going_thoughts.md",
+    "00_inbox/999_ai_ask.md",
+    "00_inbox/spotify music.md",
+    "00_inbox/99_whatever.md",
+    "901_fleeting_note/Thinking Like an Architect by Gregor Hohpe.md",
+    "999_archive/101_wemo/ticket/_wemo_tickets.md",
+    "901_fleeting_note/_personal plan.md",
+    "03_programming/cloudflare.md",
+    "03_programming/dns_idx.md",
+    "03_programming/docker_idx.md",
+    "03_programming/gcp_index.md",
+    "03_programming/reverse_proxy_idx.md",
+    "03_programming/msg_queue_idx.md",
+    "02_learning/000_communicate_idx.md",
+    "02_learning/004_learn_idx.md",
+    "02_learning/006_work_skill_idx.md",
     "00_inbox/Untitled.md",
+    "00_inbox/Untitled.md.edtz",
     "901_fleeting_note/k3d-install.md",
     "901_fleeting_note/k3d.md",
     "901_fleeting_note/k3s_idx.md",
-    "00_inbox/llm model pricing.md",
     "00_inbox/llm model pricing.md.edtz",
-    "901_fleeting_note/how to set k3d KUBECONFIG.md",
-    "00_inbox/如何做事 大衛・凱恩.md",
     "100_attachements/IMG-000_tmp-20260215125823859.png",
     "100_attachements/IMG-000_tmp-20260215125503675.png",
-    "902_algo/leetcode/Greedy.md",
-    "901_fleeting_note/cs61b graph related algo summary.md",
-    "902_algo/leetcode/dp/DP 股價題.md",
-    "902_algo/leetcode/dp/DP 2D.md",
-    "902_algo/leetcode/dp/DP 1D.md",
-    "902_algo/leetcode/其他 array 題目.md",
-    "902_algo/leetcode/what is subseq, 如何計算一個 subseq的組合.md",
-    "902_algo/leetcode/parentheses 相關題.md",
-    "902_algo/leetcode/Palindrome 回文 相關題.md",
-    "00_inbox/001_log.md",
-    "902_algo/CS61B Data Structures and Algorithms.md",
-    "901_fleeting_note/分布式系統 CAP.md",
-    "02_learning/004_learn_idx.md",
-    "901_fleeting_note/INFJ-A 20250707.md",
-    "901_fleeting_note/16人格 MBTI, 16personalities.md",
-    "901_fleeting_note/非對稱加密.md",
-    "901_fleeting_note/abstract volatility away.md",
     "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
     "100_attachements/6e9f0283bdb04897f44a4d28c7b0d2c1_MD5.png",
     "00_inbox/如何做事 大衛・凱恩.md.edtz",
@@ -342,7 +222,6 @@
     "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md.edtz",
     "100_attachements/IMG-000_reading_log-20250817113903139.png",
     "00_inbox/tmp1.md.edtz",
-    "901_fleeting_note/電動刮鬍刀 study.md.edtz",
     "100_attachements/IMG-mac_idx-20250810084840426.png",
     "100_attachements/IMG-ssh 設定 in gcp-20250308075956883.png",
     "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203344588.png",
