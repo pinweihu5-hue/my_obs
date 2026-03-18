@@ -1,3 +1,22 @@
 
 
-usually, for a production java spring boot backend CI Azure pipeline, what are common stage?
+
+我想要搭捷運去這四個地方～
+
+可以幫我規劃一個順路的路線嗎？
+
+最後我想要從忠孝新生離開
+
+```
+森夜 Bread & Coffee 
+地址：106 台北市大安區復興南路一段 146 號
+
+libreadry 巢屋
+106 台北市大安區仁愛路四段 345 巷 4 弄 28 號
+
+Celebread (慶祝烘焙)
+106 台北市大安區安和路一段 102 巷 8 號
+
+Purebread Bakery
+106 台北市大安區光復南路 308 巷 21 號
+```
