@@ -1,16 +1,12 @@
 
-assume this node.js will run at win11 and mac
-
-for below usage:
-```
-nodevm install 20.11.0  
-nodevm use 20.11.0  
-nodevm list  
-nodevm current  
-nodevm remove 18.17.1
-```
-
-I only need these 1 feature: switch b/n node version
-also I know the path for different node version
-I accept maunal update the path in some config file
-
+I see different kind of task you mentioned:
+- task: Cache@2  
+- task: UseJavaVersion@1  
+- task: SonarQubePrepare@5  
+- task: SonarQubeAnalyze@5  
+- task: SonarQubePublish@5  
+- task: Docker@2
+  
+this are like magic..
+where can I find what task I can use, any doc I can check
+also it seems that there's are some predefined input, any doc?
