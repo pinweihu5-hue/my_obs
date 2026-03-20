@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "give me.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "give me"
+              "title": "000_tmp"
             }
           }
         ]
@@ -181,8 +181,8 @@
   },
   "active": "83cb31be3334e8a5",
   "lastOpenFiles": [
-    "give me.md.edtz",
     "give me.md",
+    "give me.md.edtz",
     "901_fleeting_note/cs61b graph related algo summary.md",
     "00_inbox/000_tmp.md",
     "00_inbox/30_sw_design_idx.md",
@@ -221,7 +221,6 @@
     "901_fleeting_note/basic 理解 for raft consensus algo.md.edtz",
     "901_fleeting_note/The Raft Consensus Algorithm  Raft 共識演算法.md.edtz",
     "100_attachements/IMG-000_reading_log-20250817113903139.png",
-    "00_inbox/tmp1.md.edtz",
     "100_attachements/IMG-mac_idx-20250810084840426.png",
     "100_attachements/IMG-ssh 設定 in gcp-20250308075956883.png",
     "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203344588.png",
