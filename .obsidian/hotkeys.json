@@ -311,5 +311,13 @@
       ],
       "key": "="
     }
+  ],
+  "obsidian-editor-shortcuts:joinLines": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "J"
+    }
   ]
 }
