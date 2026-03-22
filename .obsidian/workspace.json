@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/000_tmp.md",
+                "file": "00_inbox/000_RTL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "000_tmp"
+              "title": "000_RTL"
             }
           }
         ]
@@ -181,10 +181,12 @@
   },
   "active": "83cb31be3334e8a5",
   "lastOpenFiles": [
+    "00_inbox/000_RTL.md.edtz",
+    "00_inbox/000_tmp.md",
+    "00_inbox/000_RTL.md",
     "give me.md",
     "give me.md.edtz",
     "901_fleeting_note/cs61b graph related algo summary.md",
-    "00_inbox/000_tmp.md",
     "00_inbox/30_sw_design_idx.md",
     "00_inbox/001_log.md",
     "00_inbox/002_on_going_thoughts.md",
@@ -207,7 +209,6 @@
     "00_inbox/Untitled.md.edtz",
     "901_fleeting_note/k3d-install.md",
     "901_fleeting_note/k3d.md",
-    "901_fleeting_note/k3s_idx.md",
     "00_inbox/llm model pricing.md.edtz",
     "100_attachements/IMG-000_tmp-20260215125823859.png",
     "100_attachements/IMG-000_tmp-20260215125503675.png",
