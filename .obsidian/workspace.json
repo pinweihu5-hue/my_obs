@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "901_fleeting_note/短網址 short url.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "短網址 short url"
+              "title": "000_tmp"
             }
           },
           {
@@ -216,8 +216,8 @@
   },
   "active": "f77c120370ca442a",
   "lastOpenFiles": [
-    "00_inbox/30_sw_design_idx.md",
     "901_fleeting_note/短網址 short url.md",
+    "00_inbox/30_sw_design_idx.md",
     "00_inbox/000_RTL.md",
     "00_inbox/001_log.md",
     "00_inbox/0001_thoughts.md",
