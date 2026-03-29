@@ -54,16 +54,6 @@
               "icon": "lucide-file",
               "title": "000_tmp"
             }
-          },
-          {
-            "id": "bd35a15846f68afa",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
           }
         ],
         "currentTab": 1
@@ -98,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "url",
+                "query": "web crawler",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +109,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -216,12 +207,13 @@
   },
   "active": "f77c120370ca442a",
   "lastOpenFiles": [
-    "901_fleeting_note/短網址 short url.md",
+    "901_fleeting_note/web crawler 網路爬蟲.md",
     "00_inbox/30_sw_design_idx.md",
+    "00_inbox/000_tmp.md",
+    "901_fleeting_note/短網址 short url.md",
     "00_inbox/000_RTL.md",
     "00_inbox/001_log.md",
     "00_inbox/0001_thoughts.md",
-    "00_inbox/000_tmp.md",
     "00_inbox/000_RTL.md.edtz",
     "give me.md",
     "give me.md.edtz",
@@ -244,7 +236,6 @@
     "02_learning/006_work_skill_idx.md",
     "00_inbox/0001_thoughts.md.edtz",
     "901_fleeting_note/k3d-install.md",
-    "901_fleeting_note/k3d.md",
     "00_inbox/llm model pricing.md.edtz",
     "100_attachements/IMG-000_tmp-20260215125823859.png",
     "100_attachements/IMG-000_tmp-20260215125503675.png",

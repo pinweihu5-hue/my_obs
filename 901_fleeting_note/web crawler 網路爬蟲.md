@@ -66,7 +66,7 @@
 		- 我們用很多 queue, 每一個 queue 都是一個特定的 domain
 		- worker 每一次只會從 一個 q 拿出來處理，一個 q 不可以被太多 worker 同時處理 -> 來解決 impolite
 		- 沒有 priority 機制 -> 我們也可以根據不同的 pr, 來建立很多 queue, 我們讓 worker 去 高 pr queue 拿 task 的機率比較大
-![[IMG-web crawler 網路爬蟲-20250810200246002.png|818]]
+![[IMG-web crawler 網路爬蟲-20250810200246002.png|854]]
 
 
 - Robots.txt
