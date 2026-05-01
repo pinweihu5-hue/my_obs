@@ -59,9 +59,9 @@
   "file-explorer:new-file": [
     {
       "modifiers": [
-        "Alt"
+        "Mod"
       ],
-      "key": "2"
+      "key": "N"
     }
   ],
   "obsidian-advanced-new-file:advanced-new-file-new-tab": [
@@ -121,14 +121,7 @@
       "key": "L"
     }
   ],
-  "templater-obsidian:create-new-note-from-template": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "N"
-    }
-  ],
+  "templater-obsidian:create-new-note-from-template": [],
   "file-explorer:reveal-active-file": [
     {
       "modifiers": [

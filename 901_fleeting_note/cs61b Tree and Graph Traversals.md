@@ -430,7 +430,7 @@ ref: [Bipartite Graphs - Georgia Tech - Computability, Complexity, Theory: Algor
 就是你的每一個 egge, 都是一邊紅色，一邊黑色
 
 why bipartite 等價於 no odd-length cycle?
-因為你如果想要分兩邊，但是奇數cycle如下，你一定會有 edge 讓你兩邊的 color 一樣£
+因為你如果想要分兩邊，但是奇數cycle如下，你一定會有 edge 讓你兩邊的 color 一樣
 ![[IMG-cs61b Tree and Graph Traversals-20241003105328610.png|837]]
 
 

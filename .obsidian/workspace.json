@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "949444197558a1b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "901_fleeting_note/非功能需求.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "非功能需求"
+            }
+          },
+          {
             "id": "f77c120370ca442a",
             "type": "leaf",
             "state": {
@@ -56,12 +80,12 @@
             }
           },
           {
-            "id": "bd863b5806ebb322",
+            "id": "81ee7bbdabaf493e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/Untitled.md",
+                "file": "00_inbox/Untitled 2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,11 +100,179 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Untitled 2"
+            }
+          },
+          {
+            "id": "6692e5e6ec691f87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "901_fleeting_note/cs61b tries.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "cs61b tries"
+            }
+          },
+          {
+            "id": "ebee5b7ba1ab434b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "901_fleeting_note/cs61b Minimum Spanning Trees.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "cs61b Minimum Spanning Trees"
+            }
+          },
+          {
+            "id": "bd863b5806ebb322",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "999_archive/interview_2023/interview_2023_idx.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "interview_2023_idx"
+            }
+          },
+          {
+            "id": "c4bf0126d734b790",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "999_archive/interview_2023/tmp.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "tmp"
+            }
+          },
+          {
+            "id": "3a910a5b5a431596",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/000_tmp.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "000_tmp"
+            }
+          },
+          {
+            "id": "8fc7e0433159d0b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/cs-book 目錄結構.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "cs-book 目錄結構"
+            }
+          },
+          {
+            "id": "88d83ab7d305ec91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/LLM 模型比較 cost 分數.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "LLM 模型比較 cost 分數"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -112,7 +304,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "web crawler",
+                "query": "cs61b",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -205,7 +397,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.5
+    "width": 266.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,52 +417,50 @@
       "obsidian-textgenerator-plugin:Generate Text!": false,
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "vim-toggle:Toggle Vim Mode": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bd863b5806ebb322",
+  "active": "88d83ab7d305ec91",
   "lastOpenFiles": [
-    "00_inbox/Untitled.md.edtz",
-    "00_inbox/000_tmp.md",
+    "00_inbox/a1.md",
+    "00_inbox/cs-book 目錄結構.md",
+    "00_inbox/LLM 模型比較 cost 分數.md",
+    "00_inbox/LLM 模型比較 cost 分數.md.edtz",
+    "00_inbox/Untitled 2.md",
+    "00_inbox/Untitled 2.md.edtz",
+    "00_inbox/Untitled 1.md",
     "00_inbox/Untitled.md",
-    "901_fleeting_note/web crawler 網路爬蟲.md",
-    "00_inbox/30_sw_design_idx.md",
-    "901_fleeting_note/短網址 short url.md",
-    "00_inbox/000_RTL.md",
-    "00_inbox/001_log.md",
-    "00_inbox/0001_thoughts.md",
-    "00_inbox/000_RTL.md.edtz",
-    "give me.md",
-    "give me.md.edtz",
-    "901_fleeting_note/cs61b graph related algo summary.md",
-    "00_inbox/002_on_going_thoughts.md",
-    "00_inbox/999_ai_ask.md",
-    "00_inbox/spotify music.md",
-    "00_inbox/99_whatever.md",
-    "901_fleeting_note/Thinking Like an Architect by Gregor Hohpe.md",
-    "999_archive/101_wemo/ticket/_wemo_tickets.md",
-    "901_fleeting_note/_personal plan.md",
-    "03_programming/cloudflare.md",
-    "03_programming/dns_idx.md",
-    "03_programming/docker_idx.md",
-    "03_programming/gcp_index.md",
-    "03_programming/reverse_proxy_idx.md",
-    "03_programming/msg_queue_idx.md",
-    "02_learning/000_communicate_idx.md",
-    "02_learning/004_learn_idx.md",
-    "00_inbox/0001_thoughts.md.edtz",
-    "00_inbox/llm model pricing.md.edtz",
+    "00_inbox/Untitled 4.md",
+    "00_inbox/Untitled 4.md.edtz",
+    "00_inbox/000_tmp.md",
+    "999_archive/interview_2023/Untitled 1.md",
+    "901_fleeting_note/test on bull queue when pod is not graceful shutdown.md",
+    "999_archive/interview_2023/Untitled 1.md.edtz",
+    "999_archive/interview_2023/tmp.md",
+    "999_archive/interview_2023/tmp.md.edtz",
+    "999_archive/interview_2023/Untitled.md",
+    "999_archive/interview_2023/interview_2023_idx.md",
+    "901_fleeting_note/Untitled.md",
+    "901_fleeting_note/cs61b Minimum Spanning Trees.md",
+    "902_algo/CS61B Data Structures and Algorithms.md",
+    "901_fleeting_note/cs61b B-Trees.md",
+    "901_fleeting_note/cs61b pq and heap.md",
+    "901_fleeting_note/cs61b Tree and Graph Traversals.md",
+    "901_fleeting_note/cs61b  Java ADT.md",
+    "901_fleeting_note/cs61B linkedlist note.md",
+    "901_fleeting_note/cs61b tries.md",
+    "901_fleeting_note/autocomplete, typeahead, search-as-you-type.md",
+    "103_Excalidraw/algo_cs61b_percolate.excalidraw.md",
+    "02_learning/555_pjt_idx.md",
+    "00_inbox/a1.md.edtz",
+    "00_inbox/Untitled 3.md.edtz",
+    "00_inbox/cs-book 目錄結構.md.edtz",
+    "00_inbox/Untitled 1.md.edtz",
+    "00_inbox/Untitled.md.edtz",
     "100_attachements/IMG-000_tmp-20260215125823859.png",
     "100_attachements/IMG-000_tmp-20260215125503675.png",
     "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
     "100_attachements/6e9f0283bdb04897f44a4d28c7b0d2c1_MD5.png",
-    "00_inbox/如何做事 大衛・凱恩.md.edtz",
-    "00_inbox/任何東西你想要記下來然後你可以平穩的睡覺嘛？.md.edtz",
-    "02_learning/CPFA3S - 7 effective habit.md.edtz",
-    "901_fleeting_note/皮膚使用含類固醇藥膏.md.edtz",
-    "901_fleeting_note/CORS.md.edtz",
-    "901_fleeting_note/basic 理解 for raft consensus algo.md.edtz",
     "100_attachements/IMG-000_reading_log-20250817113903139.png",
     "100_attachements/IMG-mac_idx-20250810084840426.png",
     "100_attachements/IMG-ssh 設定 in gcp-20250308075956883.png",
