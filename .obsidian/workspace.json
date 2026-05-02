@@ -301,7 +301,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/Untitled 6.md",
+                "file": "00_inbox/000_RTL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -316,11 +316,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled 6"
+              "title": "000_RTL"
+            }
+          },
+          {
+            "id": "eab993a23b0741ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/dd.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "dd"
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -377,8 +401,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5,
-    "collapsed": true
+    "width": 319.5
   },
   "right": {
     "id": "a138ca7a8d2ed5fa",
@@ -470,15 +493,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "394215edf09c3d12",
+  "active": "eab993a23b0741ce",
   "lastOpenFiles": [
+    "00_inbox/dd.md.edtz",
+    "00_inbox/000_RTL.md",
+    "00_inbox/dd.md",
+    "00_inbox/000_tmp.md",
+    "00_inbox/001_log.md",
+    "00_inbox/002_on_going_thoughts.md",
+    "00_inbox/09_inbox.md",
+    "00_inbox/22_to_read.md",
+    "00_inbox/cs-book 目錄結構.md",
+    "00_inbox/如何做事 大衛・凱恩.md",
+    "00_inbox/LLM 模型比較 cost 分數.md",
+    "00_inbox/04 yt_sub分類.md",
+    "00_inbox/Untitled 6.md",
     "00_inbox/Untitled 6.md.edtz",
     "00_inbox/Untitled 5.md",
-    "00_inbox/Untitled 6.md",
     "00_inbox/Untitled 5.md.edtz",
-    "00_inbox/LLM 模型比較 cost 分數.md",
     "00_inbox/a1.md",
-    "00_inbox/cs-book 目錄結構.md",
     "00_inbox/LLM 模型比較 cost 分數.md.edtz",
     "00_inbox/Untitled 2.md",
     "00_inbox/Untitled 2.md.edtz",
@@ -486,7 +519,6 @@
     "00_inbox/Untitled.md",
     "00_inbox/Untitled 4.md",
     "00_inbox/Untitled 4.md.edtz",
-    "00_inbox/000_tmp.md",
     "999_archive/interview_2023/Untitled 1.md",
     "901_fleeting_note/test on bull queue when pod is not graceful shutdown.md",
     "999_archive/interview_2023/Untitled 1.md.edtz",
@@ -496,18 +528,9 @@
     "999_archive/interview_2023/interview_2023_idx.md",
     "901_fleeting_note/Untitled.md",
     "901_fleeting_note/cs61b Minimum Spanning Trees.md",
-    "902_algo/CS61B Data Structures and Algorithms.md",
-    "901_fleeting_note/cs61b B-Trees.md",
-    "901_fleeting_note/cs61b pq and heap.md",
-    "901_fleeting_note/cs61b Tree and Graph Traversals.md",
-    "901_fleeting_note/cs61b  Java ADT.md",
-    "901_fleeting_note/cs61B linkedlist note.md",
-    "901_fleeting_note/cs61b tries.md",
-    "901_fleeting_note/autocomplete, typeahead, search-as-you-type.md",
     "00_inbox/a1.md.edtz",
     "00_inbox/Untitled 3.md.edtz",
     "00_inbox/cs-book 目錄結構.md.edtz",
-    "00_inbox/Untitled 1.md.edtz",
     "100_attachements/IMG-000_tmp-20260215125823859.png",
     "100_attachements/IMG-000_tmp-20260215125503675.png",
     "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
