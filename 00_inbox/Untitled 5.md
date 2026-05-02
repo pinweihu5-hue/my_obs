@@ -41,7 +41,7 @@ step2:
 help me setup below gorules
 
 request, input
-```
+™```
 {
 "name": "ben",
 "value": 42
