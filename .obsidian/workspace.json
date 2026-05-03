@@ -373,7 +373,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/Untitled 9.md",
+                "file": "00_inbox/Apache Cassandra (NoSQL).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -388,7 +388,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled 9"
+              "title": "Apache Cassandra (NoSQL)"
             }
           }
         ],
@@ -449,7 +449,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 319.5,
+    "collapsed": true
   },
   "right": {
     "id": "a138ca7a8d2ed5fa",
@@ -554,9 +555,9 @@
     "100_attachements/88ea3550099356808682ac00156ffd2f_MD5.png",
     "100_attachements/7dc6d790ae693a0095bb1a20efb198dc_MD5.png",
     "100_attachements/fcc2ac444afc49cd4277f5dbc14bf586_MD5.png",
-    "00_inbox/Untitled 9.md.edtz",
+    "00_inbox/Apache Cassandra (NoSQL).md.edtz",
     "00_inbox/LLM 模型比較 cost 分數.md",
-    "00_inbox/Untitled 9.md",
+    "00_inbox/Apache Cassandra (NoSQL).md",
     "00_inbox/Untitled.base",
     "00_inbox/Untitled 8.md",
     "00_inbox/Untitled 7.md",
