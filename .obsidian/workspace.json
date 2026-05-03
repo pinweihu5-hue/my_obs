@@ -366,9 +366,33 @@
               "icon": "lucide-file",
               "title": "LLM 模型比較 cost 分數"
             }
+          },
+          {
+            "id": "8d8aa8b09b90b31a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/Untitled 9.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 9"
+            }
           }
         ],
-        "currentTab": 14
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -517,12 +541,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3353f83c38f23dc5",
+  "active": "8d8aa8b09b90b31a",
   "lastOpenFiles": [
+    "100_attachements/5609d3263d4c124338145d0512d8716a_MD5.png",
+    "100_attachements/4d8d0ce6ed3b89cedd6e9e987d68280a_MD5.png",
+    "100_attachements/7ea32e0b27c7648325cbee9281750489_MD5.png",
+    "100_attachements/c72cc3fe91c6b2733f8c86e36cd0e6f4_MD5.png",
+    "100_attachements/4836a868a40c5c355ffc95a40972342b_MD5.png",
+    "100_attachements/cbab9bb57b7c09079cfd603598ea4d36_MD5.png",
+    "100_attachements/f9ccf8f30144f072f75f63294fe7318d_MD5.png",
+    "100_attachements/ad3c4997714b3e342ac5a94254f4c3bb_MD5.png",
+    "100_attachements/88ea3550099356808682ac00156ffd2f_MD5.png",
+    "100_attachements/7dc6d790ae693a0095bb1a20efb198dc_MD5.png",
+    "100_attachements/fcc2ac444afc49cd4277f5dbc14bf586_MD5.png",
+    "00_inbox/Untitled 9.md.edtz",
+    "00_inbox/LLM 模型比較 cost 分數.md",
+    "00_inbox/Untitled 9.md",
     "00_inbox/Untitled.base",
     "00_inbox/Untitled 8.md",
-    "00_inbox/LLM 模型比較 cost 分數.md",
-    "100_attachements/Pasted image 20260502185543.png",
     "00_inbox/Untitled 7.md",
     "00_inbox/dd.md",
     "00_inbox/dd.md.edtz",
@@ -552,17 +588,6 @@
     "999_archive/interview_2023/Untitled 1.md.edtz",
     "999_archive/interview_2023/tmp.md",
     "999_archive/interview_2023/tmp.md.edtz",
-    "999_archive/interview_2023/Untitled.md",
-    "999_archive/interview_2023/interview_2023_idx.md",
-    "00_inbox/a1.md.edtz",
-    "100_attachements/IMG-000_tmp-20260215125823859.png",
-    "100_attachements/IMG-000_tmp-20260215125503675.png",
-    "100_attachements/abbd56c147f12fc3f9cf9224859a6659_MD5.jpg",
-    "100_attachements/6e9f0283bdb04897f44a4d28c7b0d2c1_MD5.png",
-    "100_attachements/IMG-000_reading_log-20250817113903139.png",
-    "100_attachements/IMG-mac_idx-20250810084840426.png",
-    "100_attachements/IMG-ssh 設定 in gcp-20250308075956883.png",
-    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203344588.png",
-    "100_attachements/IMG-Java 基础常见面试题总结 (上)-20250811203343411.png"
+    "999_archive/interview_2023/Untitled.md"
   ]
 }
