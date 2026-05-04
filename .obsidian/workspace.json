@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/30_sw_design_idx.md",
+                "file": "00_inbox/a1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "30_sw_design_idx"
+              "title": "a1"
             }
           },
           {
@@ -371,28 +371,16 @@
             "id": "8d8aa8b09b90b31a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "00_inbox/Apache Cassandra (NoSQL).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "00_inbox/Untitled 1.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "Apache Cassandra (NoSQL)"
+              "icon": "lucide-table",
+              "title": "Untitled 1"
             }
           }
-        ],
-        "currentTab": 15
+        ]
       }
     ],
     "direction": "vertical"
@@ -449,8 +437,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5,
-    "collapsed": true
+    "width": 319.5
   },
   "right": {
     "id": "a138ca7a8d2ed5fa",
@@ -542,8 +529,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8d8aa8b09b90b31a",
+  "active": "83cb31be3334e8a5",
   "lastOpenFiles": [
+    "00_inbox/000_RTL.md",
+    "00_inbox/30_sw_design_idx.md",
+    "00_inbox/Untitled 1.base",
+    "00_inbox/Apache Cassandra (NoSQL).md",
     "100_attachements/5609d3263d4c124338145d0512d8716a_MD5.png",
     "100_attachements/4d8d0ce6ed3b89cedd6e9e987d68280a_MD5.png",
     "100_attachements/7ea32e0b27c7648325cbee9281750489_MD5.png",
@@ -554,16 +545,13 @@
     "100_attachements/ad3c4997714b3e342ac5a94254f4c3bb_MD5.png",
     "100_attachements/88ea3550099356808682ac00156ffd2f_MD5.png",
     "100_attachements/7dc6d790ae693a0095bb1a20efb198dc_MD5.png",
-    "100_attachements/fcc2ac444afc49cd4277f5dbc14bf586_MD5.png",
     "00_inbox/Apache Cassandra (NoSQL).md.edtz",
     "00_inbox/LLM 模型比較 cost 分數.md",
-    "00_inbox/Apache Cassandra (NoSQL).md",
     "00_inbox/Untitled.base",
     "00_inbox/Untitled 8.md",
     "00_inbox/Untitled 7.md",
     "00_inbox/dd.md",
     "00_inbox/dd.md.edtz",
-    "00_inbox/000_RTL.md",
     "00_inbox/000_tmp.md",
     "00_inbox/001_log.md",
     "00_inbox/002_on_going_thoughts.md",
@@ -588,7 +576,6 @@
     "901_fleeting_note/test on bull queue when pod is not graceful shutdown.md",
     "999_archive/interview_2023/Untitled 1.md.edtz",
     "999_archive/interview_2023/tmp.md",
-    "999_archive/interview_2023/tmp.md.edtz",
     "999_archive/interview_2023/Untitled.md"
   ]
 }
