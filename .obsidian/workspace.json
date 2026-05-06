@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/a1.md",
+                "file": "00_inbox/09_inbox.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "a1"
+              "title": "09_inbox"
             }
           },
           {
@@ -380,7 +380,8 @@
               "title": "Untitled 1"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -529,9 +530,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "83cb31be3334e8a5",
+  "active": "f77c120370ca442a",
   "lastOpenFiles": [
+    "901_fleeting_note/非功能需求.md",
+    "00_inbox/09_inbox.md",
     "00_inbox/000_RTL.md",
+    "00_inbox/04 yt_sub分類.md",
+    "00_inbox/a1.md",
     "00_inbox/30_sw_design_idx.md",
     "00_inbox/Untitled 1.base",
     "00_inbox/Apache Cassandra (NoSQL).md",
@@ -555,16 +560,13 @@
     "00_inbox/000_tmp.md",
     "00_inbox/001_log.md",
     "00_inbox/002_on_going_thoughts.md",
-    "00_inbox/09_inbox.md",
     "00_inbox/22_to_read.md",
     "00_inbox/cs-book 目錄結構.md",
     "00_inbox/如何做事 大衛・凱恩.md",
-    "00_inbox/04 yt_sub分類.md",
     "00_inbox/Untitled 6.md",
     "00_inbox/Untitled 6.md.edtz",
     "00_inbox/Untitled 5.md",
     "00_inbox/Untitled 5.md.edtz",
-    "00_inbox/a1.md",
     "00_inbox/LLM 模型比較 cost 分數.md.edtz",
     "00_inbox/Untitled 2.md",
     "00_inbox/Untitled 2.md.edtz",
@@ -575,7 +577,6 @@
     "999_archive/interview_2023/Untitled 1.md",
     "901_fleeting_note/test on bull queue when pod is not graceful shutdown.md",
     "999_archive/interview_2023/Untitled 1.md.edtz",
-    "999_archive/interview_2023/tmp.md",
-    "999_archive/interview_2023/Untitled.md"
+    "999_archive/interview_2023/tmp.md"
   ]
 }
