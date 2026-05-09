@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/Untitled 10.md",
+                "file": "00_inbox/001_log.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled 10"
+              "title": "001_log"
+            }
+          },
+          {
+            "id": "fd43ab5f283f944c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "003_raw/10_principles_for_agent_native_CLIs.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "10_principles_for_agent_native_CLIs"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 200
   },
   "right": {
     "id": "a138ca7a8d2ed5fa",
@@ -205,11 +229,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fb2540f636a4a3d9",
+  "active": "fd43ab5f283f944c",
   "lastOpenFiles": [
-    "00_inbox/Untitled 10.md.edtz",
+    "003_raw/a1dd.md",
+    "003_raw/10_principles_for_agent_native_CLIs.md",
+    "00_inbox/a1dd.md",
     "00_inbox/001_log.md",
+    "003_raw",
     "00_inbox/Untitled 10.md",
+    "00_inbox/Untitled 10.md.edtz",
     "00_inbox/09_inbox.md",
     "901_fleeting_note/非功能需求.md",
     "00_inbox/Untitled 9.md",
@@ -245,13 +273,9 @@
     "00_inbox/Untitled 7.md",
     "00_inbox/dd.md.edtz",
     "00_inbox/002_on_going_thoughts.md",
-    "00_inbox/22_to_read.md",
-    "00_inbox/如何做事 大衛・凱恩.md",
     "00_inbox/Untitled 6.md.edtz",
     "00_inbox/Untitled 5.md.edtz",
     "00_inbox/LLM 模型比較 cost 分數.md.edtz",
-    "00_inbox/Untitled 2.md.edtz",
-    "00_inbox/Untitled 4.md.edtz",
-    "999_archive/interview_2023/Untitled 1.md.edtz"
+    "00_inbox/Untitled 2.md.edtz"
   ]
 }
