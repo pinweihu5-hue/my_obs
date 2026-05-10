@@ -26,5 +26,6 @@
   "vim-yank-highlight",
   "vim-toggle",
   "obsidian-relative-line-numbers",
-  "obsidian-git"
+  "obsidian-git",
+  "omnisearch"
 ]

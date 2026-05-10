@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "003_raw/10_principles_for_agent_native_CLIs.md",
+                "file": "00_inbox/llm compare, model compare.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "10_principles_for_agent_native_CLIs"
+              "title": "llm compare, model compare"
             }
           }
         ],
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cs61b",
+                "query": "inverted idx",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 294.5
   },
   "right": {
     "id": "a138ca7a8d2ed5fa",
@@ -225,14 +225,18 @@
       "obsidian-textgenerator-plugin:Generate Text!": false,
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "vim-toggle:Toggle Vim Mode": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "omnisearch:Omnisearch": false
     }
   },
   "active": "fd43ab5f283f944c",
   "lastOpenFiles": [
+    "00_inbox/spotify music.md",
+    "103_Excalidraw/llm overview.md",
+    "003_raw/10_principles_for_agent_native_CLIs.md",
     "003_raw/如何寫出工業級Skill.md",
     "003_raw/a1dd.md",
-    "003_raw/10_principles_for_agent_native_CLIs.md",
     "00_inbox/a1dd.md",
     "00_inbox/001_log.md",
     "003_raw",
@@ -242,7 +246,7 @@
     "901_fleeting_note/非功能需求.md",
     "00_inbox/Untitled 9.md",
     "00_inbox/Untitled 1.base",
-    "00_inbox/LLM 模型比較 cost 分數.md",
+    "00_inbox/llm compare, model compare.md",
     "00_inbox/dd.md",
     "00_inbox/000_RTL.md",
     "00_inbox/Untitled 5.md",
@@ -269,12 +273,10 @@
     "100_attachements/7dc6d790ae693a0095bb1a20efb198dc_MD5.png",
     "00_inbox/Apache Cassandra (NoSQL).md.edtz",
     "00_inbox/Untitled.base",
-    "00_inbox/Untitled 8.md",
-    "00_inbox/Untitled 7.md",
     "00_inbox/dd.md.edtz",
     "00_inbox/Untitled 6.md.edtz",
     "00_inbox/Untitled 5.md.edtz",
-    "00_inbox/LLM 模型比較 cost 分數.md.edtz",
+    "00_inbox/llm compare, model compare.md.edtz",
     "00_inbox/Untitled 2.md.edtz"
   ]
 }

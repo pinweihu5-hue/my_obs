@@ -18,4 +18,4 @@ GPT-5.5                            , output: $5      , input: $30      , 智慧�
 
 
 https://artificialanalysis.ai/#intelligence-efficiency-tabs
-![[Pasted image 20260502185543.png|1283]]
+![[IMG-llm compare, model compare-20260510095327081.png|1283]]

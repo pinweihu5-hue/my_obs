@@ -19,13 +19,6 @@
   "switcher:open": [
     {
       "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "E"
-    },
-    {
-      "modifiers": [
         "Alt"
       ],
       "key": "E"
@@ -99,7 +92,8 @@
   "omnisearch:show-modal": [
     {
       "modifiers": [
-        "Alt"
+        "Ctrl",
+        "Shift"
       ],
       "key": "E"
     }
@@ -312,5 +306,14 @@
       ],
       "key": "J"
     }
-  ]
+  ],
+  "omnisearch:show-modal-infile": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "editor:open-search": []
 }
