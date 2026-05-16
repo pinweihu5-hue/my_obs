@@ -23,3 +23,35 @@ todo for knowing about tolarai
    - **絕對不能用 `--no-verify
     wat is no verify? what is this principle for?
 1. Wikilink 支援**：`[[note-name]]` 語法連結筆記 -> what code is related to implement for this?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
