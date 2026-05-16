@@ -1,4 +1,3 @@
-
 to know abt fzf
 
 for each one, i wana know how to implement?

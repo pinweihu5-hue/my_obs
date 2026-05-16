@@ -4,7 +4,9 @@
   "baseFontSize": 20,
   "cssTheme": "Atom",
   "monospaceFontFamily": "",
-  "enabledCssSnippets": [],
+  "enabledCssSnippets": [
+    "vimRC_mode"
+  ],
   "textFontFamily": "sans-serif",
   "interfaceFontFamily": "Inter,Maple Mono NF CN"
 }
