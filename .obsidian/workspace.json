@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_inbox/Untitled 13.md",
+                "file": "00_inbox/000_tmp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled 13"
+              "title": "000_tmp"
             }
           }
         ]
@@ -183,8 +183,9 @@
   },
   "active": "6efffb421da9b212",
   "lastOpenFiles": [
-    "00_inbox/001_log.md",
     "00_inbox/Untitled 13.md",
+    "00_inbox/Untitled 13.md.edtz",
+    "00_inbox/001_log.md",
     "00_inbox/Untitled 12.md",
     "00_inbox/Untitled 12.md.edtz",
     "00_inbox/Untitled 11.md",
@@ -213,7 +214,6 @@
     "901_fleeting_note/cs61b Minimum Spanning Trees.md",
     "901_fleeting_note/cs61b tries.md",
     "00_inbox/Untitled 2.md",
-    "00_inbox/04 yt_sub分類.md",
     "100_attachements/5609d3263d4c124338145d0512d8716a_MD5.png",
     "100_attachements/4d8d0ce6ed3b89cedd6e9e987d68280a_MD5.png",
     "100_attachements/7ea32e0b27c7648325cbee9281750489_MD5.png",
@@ -227,7 +227,6 @@
     "00_inbox/Apache Cassandra (NoSQL).md.edtz",
     "00_inbox/Untitled.base",
     "00_inbox/dd.md.edtz",
-    "00_inbox/Untitled 6.md.edtz",
-    "00_inbox/Untitled 5.md.edtz"
+    "00_inbox/Untitled 6.md.edtz"
   ]
 }
