@@ -30,8 +30,53 @@
               "icon": "lucide-file",
               "title": "000_tmp"
             }
+          },
+          {
+            "id": "b77d23a674371471",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_inbox/Untitled 14.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 14"
+            }
+          },
+          {
+            "id": "e0ff3bad7710cb3d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "9541ede5d384670b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,8 +226,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6efffb421da9b212",
+  "active": "b77d23a674371471",
   "lastOpenFiles": [
+    "00_inbox/Untitled 14.md.edtz",
+    "00_inbox/000_tmp.md",
+    "00_inbox/Untitled 14.md",
     "00_inbox/Untitled 13.md",
     "00_inbox/Untitled 13.md.edtz",
     "00_inbox/001_log.md",
@@ -208,12 +256,10 @@
     "00_inbox/000_RTL.md",
     "00_inbox/Untitled 5.md",
     "00_inbox/cs-book 目錄結構.md",
-    "00_inbox/000_tmp.md",
     "999_archive/interview_2023/tmp.md",
     "999_archive/interview_2023/interview_2023_idx.md",
     "901_fleeting_note/cs61b Minimum Spanning Trees.md",
     "901_fleeting_note/cs61b tries.md",
-    "00_inbox/Untitled 2.md",
     "100_attachements/5609d3263d4c124338145d0512d8716a_MD5.png",
     "100_attachements/4d8d0ce6ed3b89cedd6e9e987d68280a_MD5.png",
     "100_attachements/7ea32e0b27c7648325cbee9281750489_MD5.png",

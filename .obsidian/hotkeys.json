@@ -315,5 +315,23 @@
       "key": "F"
     }
   ],
-  "editor:open-search": []
+  "editor:open-search": [],
+  "workspace:next-tab": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "]"
+    }
+  ],
+  "workspace:previous-tab": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "["
+    }
+  ]
 }
