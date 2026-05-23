@@ -256,8 +256,7 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "vim-toggle:Toggle Vim Mode": false,
       "obsidian-git:Open Git source control": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "omnisearch:Omnisearch": false
     }
   },
   "active": "5fb786c0dae01bc1",
